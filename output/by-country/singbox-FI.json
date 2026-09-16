@@ -25,39 +25,25 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇫🇮 芬兰 (Finland) 02 - situba",
-      "server": "65.109.215.118",
-      "server_port": 1080,
-      "method": "chacha20-ietf-poly1305",
-      "password": "rSeYcig_XBy8q3k33NpK3A"
-    },
-    {
       "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 03 - situba",
-      "server": "185.255.179.11",
-      "server_port": 9443,
-      "uuid": "d9d0f208-d582-41d5-bb7b-742671402810",
+      "tag": "🇫🇮 芬兰 (Finland) 02 - situba",
+      "server": "fl.windconnect.pro",
+      "server_port": 443,
+      "uuid": "af00e0c4-decf-48f2-9013-56abe9c9efcd",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "hub-se-02.hanvpn.cc",
-        "insecure": false,
+        "server_name": "fl.windconnect.pro",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": ""
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "40Tmrw44FhOyoqCQiOfR2kCgxEPXrBLLv6oYFvjbGUI",
+          "short_id": "3c6ec7b2d73a28b6"
         }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "se02-grpc-8e47a"
       }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 04 - situba",
-      "server": "2.29.42.188",
-      "server_port": 443,
-      "uuid": "2713d763-325f-4dcb-8656-cca54cbea4d9"
     },
     {
       "type": "selector",
@@ -65,9 +51,7 @@
       "outbounds": [
         "auto",
         "🇫🇮 芬兰 (Finland) 01 - situba",
-        "🇫🇮 芬兰 (Finland) 02 - situba",
-        "🇫🇮 芬兰 (Finland) 03 - situba",
-        "🇫🇮 芬兰 (Finland) 04 - situba"
+        "🇫🇮 芬兰 (Finland) 02 - situba"
       ]
     },
     {
@@ -75,9 +59,7 @@
       "tag": "auto",
       "outbounds": [
         "🇫🇮 芬兰 (Finland) 01 - situba",
-        "🇫🇮 芬兰 (Finland) 02 - situba",
-        "🇫🇮 芬兰 (Finland) 03 - situba",
-        "🇫🇮 芬兰 (Finland) 04 - situba"
+        "🇫🇮 芬兰 (Finland) 02 - situba"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
