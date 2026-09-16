@@ -9,14 +9,65 @@ proxies:
   port: 8443
   udp: true
   type: vless
-  uuid: 94f1b60a-7786-4ab4-a1f6-eb5591c3d645
+  uuid: 5059a06c-ed43-48d8-a276-b202c55019e8
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
     public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
   servername: tradingview.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 - name: 🇦🇪 阿联酋 (UAE) 02 - situba
+  server: 128.241.25.72
+  port: 30021
+  udp: true
+  type: vless
+  uuid: 65f26a08-9a5e-4b28-9004-f98676cc1e49
+  tls: true
+  servername: 2-gys60wmzb6bqzd.qpsjn114hh3vlph9z60sesz0agjawpwroneg.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: 2-gys60wmzb6bqzd.qpsjn114hh3vlph9z60sesz0agjawpwroneg.workers.dev
+- name: 🇦🇪 阿联酋 (UAE) 03 - situba
+  server: 31.56.189.27
+  port: 2087
+  udp: true
+  type: vless
+  uuid: df9f5aca-eda0-428f-a752-e53866153d12
+  tls: true
+  servername: srv-21bac9.vless.monster
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: freegrpc
+- name: 🇦🇪 阿联酋 (UAE) 04 - situba
+  server: 116.204.164.27
+  port: 7443
+  udp: true
+  type: vless
+  uuid: 00274dd7-7cee-420d-9942-b24d047611a7
+  tls: true
+  servername: 8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: 8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev
+- name: 🇦🇪 阿联酋 (UAE) 05 - situba
+  server: 85.204.107.181
+  port: 8080
+  udp: true
+  type: hysteria2
+  password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
+  sni: hopp-romania-new.roxa.org
+  skip-cert-verify: true
+- name: 🇦🇪 阿联酋 (UAE) 06 - situba
   server: 130.49.161.70
   port: 443
   udp: true
@@ -26,28 +77,23 @@ proxies:
   skip-cert-verify: false
   obfs: salamander
   obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
-- name: 🇦🇪 阿联酋 (UAE) 03 - situba
-  server: srv-21bac9.vless.monster
-  port: 2087
+- name: 🇦🇪 阿联酋 (UAE) 07 - situba
+  server: 144.31.135.38
+  port: 9444
   udp: true
   type: vless
-  uuid: df9f5aca-eda0-428f-a752-e53866153d12
+  uuid: 01c96414-9fcd-4f79-9274-2c8d8045e48d
   tls: true
-  servername: srv-21bac9.vless.monster
+  servername: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
   skip-cert-verify: false
-  network: grpc
-  grpc-opts:
-    grpc-service-name: freegrpc
-- name: 🇦🇪 阿联酋 (UAE) 04 - situba
-  server: 85.204.107.181
-  port: 8080
-  udp: true
-  type: hysteria2
-  password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
-  sni: hopp-romania-new.roxa.org
-  skip-cert-verify: true
-- name: 🇦🇪 阿联酋 (UAE) 05 - situba
-  server: uae.unixzone.us
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
+- name: 🇦🇪 阿联酋 (UAE) 08 - situba
+  server: 84.235.244.108
   port: 22573
   udp: true
   type: vless
@@ -67,6 +113,9 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 03 - situba
   - 🇦🇪 阿联酋 (UAE) 04 - situba
   - 🇦🇪 阿联酋 (UAE) 05 - situba
+  - 🇦🇪 阿联酋 (UAE) 06 - situba
+  - 🇦🇪 阿联酋 (UAE) 07 - situba
+  - 🇦🇪 阿联酋 (UAE) 08 - situba
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -77,5 +126,8 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 03 - situba
   - 🇦🇪 阿联酋 (UAE) 04 - situba
   - 🇦🇪 阿联酋 (UAE) 05 - situba
+  - 🇦🇪 阿联酋 (UAE) 06 - situba
+  - 🇦🇪 阿联酋 (UAE) 07 - situba
+  - 🇦🇪 阿联酋 (UAE) 08 - situba
 rules:
 - MATCH,PROXIES
