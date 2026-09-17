@@ -4,24 +4,26 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇱🇹 立陶宛 (Lithuania) 01 - situba
-  server: 195.238.126.20
-  port: 9001
+- name: 🇧🇷 巴西 (Brazil) 01 - situba
+  server: 189.74.97.47
+  port: 2087
   udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: UkXRsXvR6buDMG2Y
+  type: vless
+  uuid: 894fe9f0-b998-49c0-8003-a5007de921e1
+  network: ws
+  ws-opts:
+    path: /755276b33b6f
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇱🇹 立陶宛 (Lithuania) 01 - situba
+  - 🇧🇷 巴西 (Brazil) 01 - situba
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇱🇹 立陶宛 (Lithuania) 01 - situba
+  - 🇧🇷 巴西 (Brazil) 01 - situba
 rules:
 - MATCH,PROXIES

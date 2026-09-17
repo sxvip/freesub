@@ -12,7 +12,7 @@ proxies:
   cipher: 2022-blake3-aes-256-gcm
   password: fnvo82p9y4AKykZXyIFtnodFy6fQmWnVlI2SvGleOB0=
 - name: 🇸🇬 新加坡 (Singapore) 02 - situba
-  server: 149.88.23.207
+  server: 149.88.23.202
   port: 18000
   udp: true
   type: vmess
@@ -27,19 +27,13 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: XV4bvaJIWoxl3IYEC1e6W7
 - name: 🇸🇬 新加坡 (Singapore) 04 - situba
-  server: 210.152.85.154
-  port: 19364
+  server: 149.88.23.207
+  port: 18000
   udp: true
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  tls: true
-  servername: cdn8848.776676.xyz
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /collect/user/products?ed=2560
-    headers:
-      Host: cdn8848.776676.xyz
+  type: vmess
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
 - name: 🇸🇬 新加坡 (Singapore) 05 - situba
   server: 146.235.16.130
   port: 19825
@@ -54,7 +48,7 @@ proxies:
   servername: sg2-8sb.6121999.dpdns.org
   client-fingerprint: chrome
 - name: 🇸🇬 新加坡 (Singapore) 06 - situba
-  server: 13.212.83.43
+  server: 13.212.32.171
   port: 443
   udp: true
   type: hysteria2
@@ -62,24 +56,20 @@ proxies:
   sni: vpn-sg-001.fastervpn.world
   skip-cert-verify: true
 - name: 🇸🇬 新加坡 (Singapore) 07 - situba
-  server: 217.217.254.126
-  port: 2053
-  udp: true
-  type: vless
-  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
-  tls: true
-  reality-opts:
-    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
-    short-id: 87829de0e2bb82cb
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
-- name: 🇸🇬 新加坡 (Singapore) 08 - situba
-  server: 13.212.32.171
+  server: 47.129.189.148
   port: 443
   udp: true
   type: hysteria2
   password: qQe1z5kU8kN6SlKnDt9Ru3Qp
   sni: vpn-sg-001.fastervpn.world
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 08 - situba
+  server: 138.2.73.238
+  port: 50160
+  udp: true
+  type: hysteria2
+  password: f87376e17da040ed04c9665ce8972930
+  sni: 138.2.73.238
   skip-cert-verify: true
 - name: 🇸🇬 新加坡 (Singapore) 09 - situba
   server: 103.137.22.71
@@ -90,29 +80,14 @@ proxies:
   tls: true
   servername: cdn8848.776676.xyz
   skip-cert-verify: false
-  client-fingerprint: edge
   network: ws
   ws-opts:
-    path: /register?ed=2560
+    path: /register?ed=2560fp=chrome
     headers:
       Host: cdn8848.776676.xyz
 - name: 🇸🇬 新加坡 (Singapore) 10 - situba
-  server: 45.202.247.152
-  port: 443
-  udp: true
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  tls: true
-  servername: cdn8848.776676.xyz
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /jump.html/star?ed=2560fp=chrome
-    headers:
-      Host: cdn8848.776676.xyz
-- name: 🇸🇬 新加坡 (Singapore) 11 - situba
   server: 3.0.111.82
-  port: 12972
+  port: 10574
   udp: true
   type: vless
   uuid: 814bd064-544d-4255-a070-5705c03f6da9
@@ -122,7 +97,21 @@ proxies:
     public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
     short-id: 48050fab
   servername: www.apple.com
-  client-fingerprint: ios
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 11 - situba
+  server: 209.33.167.234
+  port: 443
+  udp: true
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  tls: true
+  servername: cdn8848.776676.xyz
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: cdn8848.776676.xyz
 - name: 🇸🇬 新加坡 (Singapore) 12 - situba
   server: 43.175.131.30
   port: 443
@@ -138,35 +127,19 @@ proxies:
     headers:
       Host: cdn8848.776676.xyz
 - name: 🇸🇬 新加坡 (Singapore) 13 - situba
-  server: 140.245.38.33
-  port: 2096
+  server: 3.0.111.82
+  port: 12972
   udp: true
   type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  flow: xtls-rprx-vision
   tls: true
-  servername: cdn8848.776676.xyz
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /class/season
-    headers:
-      Host: cdn8848.776676.xyz
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
+  client-fingerprint: ios
 - name: 🇸🇬 新加坡 (Singapore) 14 - situba
-  server: 209.33.167.234
-  port: 443
-  udp: true
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  tls: true
-  servername: cdn8848.776676.xyz
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: cdn8848.776676.xyz
-- name: 🇸🇬 新加坡 (Singapore) 15 - situba
   server: 45.77.241.190
   port: 8441
   udp: true
@@ -180,6 +153,18 @@ proxies:
     path: /act/company/intro
     headers:
       Host: cdn8848.776676.xyz
+- name: 🇸🇬 新加坡 (Singapore) 15 - situba
+  server: 217.217.254.126
+  port: 2053
+  udp: true
+  type: vless
+  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
+  tls: true
+  reality-opts:
+    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
+    short-id: 87829de0e2bb82cb
+  servername: www.cloudflare.com
+  client-fingerprint: random
 - name: 🇸🇬 新加坡 (Singapore) 16 - situba
   server: 43.159.4.80
   port: 443
@@ -189,46 +174,46 @@ proxies:
   tls: true
   servername: cdn8848.776676.xyz
   skip-cert-verify: false
-  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /episode/files?ed=2560fp=chrome
+    path: /
     headers:
       Host: cdn8848.776676.xyz
 - name: 🇸🇬 新加坡 (Singapore) 17 - situba
-  server: 138.2.73.238
-  port: 50160
+  server: 8.222.70.238
+  port: 443
   udp: true
-  type: hysteria2
-  password: f87376e17da040ed04c9665ce8972930
-  sni: www.bing.com
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  tls: true
+  servername: cdn8848.776676.xyz
   skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /mall/china/doc?ed=2560fp=chrome
+    headers:
+      Host: cdn8848.776676.xyz
 - name: 🇸🇬 新加坡 (Singapore) 18 - situba
-  server: 3.0.111.82
-  port: 10574
+  server: 8.222.84.103
+  port: 443
   udp: true
   type: vless
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-  flow: xtls-rprx-vision
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   tls: true
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  servername: www.apple.com
-  client-fingerprint: chrome
+  servername: cdn8848.776676.xyz
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /member/discount?ed=2560fp=chrome
+    headers:
+      Host: cdn8848.776676.xyz
 - name: 🇸🇬 新加坡 (Singapore) 19 - situba
-  server: 3.0.111.82
-  port: 17623
+  server: 129.150.52.139
+  port: 56927
   udp: true
-  type: vless
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  servername: www.apple.com
-  client-fingerprint: edge
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: cAUXme9Y9EAWi28SXTU+es4KTr42+2hpNvFd7VohRO8=
 proxy-groups:
 - name: PROXIES
   type: select
