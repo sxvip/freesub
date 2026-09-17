@@ -12,16 +12,8 @@
       "password": "itzvpn@321"
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇮🇹 意大利 (Italy) 02 - situba",
-      "server": "185.164.175.81",
-      "server_port": 19999,
-      "method": "aes-256-gcm",
-      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
-    },
-    {
       "type": "vless",
-      "tag": "🇮🇹 意大利 (Italy) 03 - situba",
+      "tag": "🇮🇹 意大利 (Italy) 02 - situba",
       "server": "57.131.38.163",
       "server_port": 2053,
       "uuid": "d4b08cd6-0903-411a-9dac-45dbdf5c9712",
@@ -45,8 +37,7 @@
       "outbounds": [
         "auto",
         "🇮🇹 意大利 (Italy) 01 - situba",
-        "🇮🇹 意大利 (Italy) 02 - situba",
-        "🇮🇹 意大利 (Italy) 03 - situba"
+        "🇮🇹 意大利 (Italy) 02 - situba"
       ]
     },
     {
@@ -54,8 +45,7 @@
       "tag": "auto",
       "outbounds": [
         "🇮🇹 意大利 (Italy) 01 - situba",
-        "🇮🇹 意大利 (Italy) 02 - situba",
-        "🇮🇹 意大利 (Italy) 03 - situba"
+        "🇮🇹 意大利 (Italy) 02 - situba"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
