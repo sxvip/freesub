@@ -6,33 +6,12 @@ log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01 - situba
   server: 217.30.10.44
-  port: 9095
+  port: 9063
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: N7j3pdTYkKmsy8CR
+  password: aQqJbtwFGcCCaeL3
 - name: 🇵🇱 波兰 (Poland) 02 - situba
-  server: 217.30.10.44
-  port: 9041
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: U6qnYRhfyDmn8sgn
-- name: 🇵🇱 波兰 (Poland) 03 - situba
-  server: 217.30.10.44
-  port: 9052
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: jt2ekBNc9HuVtm2a
-- name: 🇵🇱 波兰 (Poland) 04 - situba
-  server: 217.30.10.44
-  port: 9071
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: mENfxTFQpRKKh4As
-- name: 🇵🇱 波兰 (Poland) 05 - situba
   server: 185.223.57.10
   port: 33743
   udp: true
@@ -46,7 +25,14 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: TunService
-- name: 🇵🇱 波兰 (Poland) 06 - situba
+- name: 🇵🇱 波兰 (Poland) 03 - situba
+  server: 217.30.10.44
+  port: 9099
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: 7heRqkPG3hg4UnRm
+- name: 🇵🇱 波兰 (Poland) 04 - situba
   server: 50.7.248.237
   port: 443
   udp: true
@@ -57,6 +43,24 @@ proxies:
   servername: pl-new-dedic.failspace.top
   skip-cert-verify: false
   client-fingerprint: firefox
+- name: 🇵🇱 波兰 (Poland) 05 - situba
+  server: 144.31.5.64
+  port: 443
+  udp: true
+  type: vless
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+  flow: xtls-rprx-vision
+  tls: true
+  servername: pl6.moritech.net
+  skip-cert-verify: false
+- name: 🇵🇱 波兰 (Poland) 06 - situba
+  server: streambox.wwwinternetvideo.click
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 865e271f7c97b549b024255c9d02cebe9cc0c2c070a82b1e11bb11b9cd88dd01
+  sni: streambox.wwwinternetvideo.click
+  skip-cert-verify: true
 - name: 🇵🇱 波兰 (Poland) 07 - situba
   server: 194.61.121.93
   port: 7538
@@ -73,31 +77,27 @@ proxies:
   sni: admin.wwwinternetvideo.click
   skip-cert-verify: false
 - name: 🇵🇱 波兰 (Poland) 09 - situba
-  server: atomic-prase23893.my-vm.work
-  port: 8088
+  server: 144.31.2.33
+  port: 443
   udp: true
   type: vless
-  uuid: tmp_user
-  network: ws
-  ws-opts:
-    path: /api
-    headers:
-      Host: queuev4.vk.com
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+  flow: xtls-rprx-vision
+  tls: true
+  servername: pl3.moritech.net
+  skip-cert-verify: false
+  client-fingerprint: firefox
 - name: 🇵🇱 波兰 (Poland) 10 - situba
-  server: 178.95.176.16
-  port: 2086
+  server: 144.31.5.3
+  port: 443
   udp: true
-  type: vmess
-  uuid: f6361af8-bb8f-4609-bf5d-3fc0f688f47b
-  alterId: 0
-  cipher: auto
-- name: 🇵🇱 波兰 (Poland) 11 - situba
-  server: 178.95.176.16
-  port: 1080
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: rSeYcig_XBy8q3k33NpK3A
+  type: vless
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+  flow: xtls-rprx-vision
+  tls: true
+  servername: pl4.moritech.net
+  skip-cert-verify: false
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -113,7 +113,6 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 08 - situba
   - 🇵🇱 波兰 (Poland) 09 - situba
   - 🇵🇱 波兰 (Poland) 10 - situba
-  - 🇵🇱 波兰 (Poland) 11 - situba
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -129,6 +128,5 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 08 - situba
   - 🇵🇱 波兰 (Poland) 09 - situba
   - 🇵🇱 波兰 (Poland) 10 - situba
-  - 🇵🇱 波兰 (Poland) 11 - situba
 rules:
 - MATCH,PROXIES
