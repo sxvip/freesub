@@ -5,20 +5,28 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇷 法国 (France) 01 - situba
-  server: 15.237.252.23
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇫🇷 法国 (France) 02 - situba
   server: 13.39.233.161
   port: 443
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
+- name: 🇫🇷 法国 (France) 02 - situba
+  server: 13.38.76.125
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
 - name: 🇫🇷 法国 (France) 03 - situba
+  server: 35.181.166.40
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: 35.181.166.40
+  skip-cert-verify: true
+- name: 🇫🇷 法国 (France) 04 - situba
   server: 62.210.147.2
   port: 43115
   udp: true
@@ -26,16 +34,8 @@ proxies:
   password: github.com/Alvin9999-newpac/fanqiang
   sni: www.microsoft.com
   skip-cert-verify: true
-- name: 🇫🇷 法国 (France) 04 - situba
-  server: 62.210.7.139
-  port: 60111
-  udp: true
-  type: hysteria2
-  password: github.com/Alvin9999-newpac/fanqiang
-  sni: whatsapp.com
-  skip-cert-verify: true
 - name: 🇫🇷 法国 (France) 05 - situba
-  server: 62.210.91.2
+  server: 62.210.91.10
   port: 23576
   udp: true
   type: vless
@@ -48,7 +48,35 @@ proxies:
   servername: fuck.rkn
   client-fingerprint: chrome
 - name: 🇫🇷 法国 (France) 06 - situba
-  server: 62.210.91.10
+  server: vpn-fr-002.fastervpn.world
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: 127.0.0.1
+  skip-cert-verify: true
+- name: 🇫🇷 法国 (France) 07 - situba
+  server: 51.77.217.70
+  port: 2053
+  udp: true
+  type: vless
+  uuid: bf16ee0c-8b3c-41e4-ab3a-8b48033c404e
+  tls: true
+  reality-opts:
+    public-key: g63cT3uI0Y5iUtj3m__RYz7nmR1eIK4AYikdnZCl63w
+    short-id: bfe58beb41f1d09f
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇫🇷 法国 (France) 08 - situba
+  server: 62.210.7.139
+  port: 60111
+  udp: true
+  type: hysteria2
+  password: github.com/Alvin9999-newpac/fanqiang
+  sni: google.com
+  skip-cert-verify: true
+- name: 🇫🇷 法国 (France) 09 - situba
+  server: 62.210.91.2
   port: 23576
   udp: true
   type: vless
@@ -59,57 +87,8 @@ proxies:
     public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
     short-id: '01'
   servername: fuck.rkn
-  client-fingerprint: ''
-- name: 🇫🇷 法国 (France) 07 - situba
-  server: 35.181.166.40
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 35.181.166.40
-  skip-cert-verify: true
-- name: 🇫🇷 法国 (France) 08 - situba
-  server: 45.205.0.6
-  port: 443
-  udp: true
-  type: trojan
-  password: humanity
-  sni: www.calmlunch.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /assignment
-- name: 🇫🇷 法国 (France) 09 - situba
-  server: 151.247.197.253
-  port: 36723
-  udp: true
-  type: hysteria2
-  password: Krab9Hyst2_Rk7pQ2xL
-  sni: 151.247.197.253
-  skip-cert-verify: true
+  client-fingerprint: chrome
 - name: 🇫🇷 法国 (France) 10 - situba
-  server: 185.255.179.166
-  port: 443
-  udp: true
-  type: trojan
-  password: humanity
-  sni: www.calmlunch.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /assignment
-- name: 🇫🇷 法国 (France) 11 - situba
-  server: 185.114.72.31
-  port: 2053
-  udp: true
-  type: trojan
-  password: humanity
-  sni: www.calmlunch.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /assignment
-- name: 🇫🇷 法国 (France) 12 - situba
   server: 162.19.10.99
   port: 443
   udp: true
@@ -120,28 +99,44 @@ proxies:
   servername: nasnet-162191099-direct.mbghalibaf.com
   skip-cert-verify: false
   client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 13 - situba
-  server: 13.38.76.125
-  port: 443
+- name: 🇫🇷 法国 (France) 11 - situba
+  server: 151.247.197.253
+  port: 36723
   udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇫🇷 法国 (France) 14 - situba
+  type: hysteria2
+  password: Krab9Hyst2_Rk7pQ2xL
+  sni: 151.247.197.253
+  skip-cert-verify: true
+- name: 🇫🇷 法国 (France) 12 - situba
   server: 173.212.201.85
   port: 443
   udp: true
   type: hysteria2
   password: gf1:gfhysteria2024
-  sni: 173.212.201.85
+  sni: www.docker.com
   skip-cert-verify: true
-- name: 🇫🇷 法国 (France) 15 - situba
-  server: 15.237.137.134
+- name: 🇫🇷 法国 (France) 13 - situba
+  server: 104.18.8.83
   port: 443
   udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
+  type: trojan
+  password: humanity
+  sni: www.calmlunch.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /assignment
+- name: 🇫🇷 法国 (France) 14 - situba
+  server: 185.114.72.31
+  port: 2053
+  udp: true
+  type: trojan
+  password: humanity
+  sni: www.calmlunch.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /assignment
 proxy-groups:
 - name: PROXIES
   type: select
@@ -161,7 +156,6 @@ proxy-groups:
   - 🇫🇷 法国 (France) 12 - situba
   - 🇫🇷 法国 (France) 13 - situba
   - 🇫🇷 法国 (France) 14 - situba
-  - 🇫🇷 法国 (France) 15 - situba
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -181,6 +175,5 @@ proxy-groups:
   - 🇫🇷 法国 (France) 12 - situba
   - 🇫🇷 法国 (France) 13 - situba
   - 🇫🇷 法国 (France) 14 - situba
-  - 🇫🇷 法国 (France) 15 - situba
 rules:
 - MATCH,PROXIES
