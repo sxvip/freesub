@@ -5,22 +5,27 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇰🇷 韩国 (South Korea) 01 (家宽) - situba",
-      "server": "hg.zhujue.us",
-      "server_port": 11000,
-      "uuid": "0e46345c-f33b-4f9b-b8ec-90e7c986af7e",
-      "flow": "xtls-rprx-vision",
+      "tag": "🇨🇿 捷克 (Czech) 01 - situba",
+      "server": "172.67.141.75",
+      "server_port": 443,
+      "uuid": "de78c0b1-c5c8-412a-bd92-430d1f2e2642",
       "tls": {
         "enabled": true,
-        "server_name": "s0.awsstatic.com",
+        "server_name": "FroSTy-PonD-7436.SHHabbYAt914.woRkErS.dEv",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "sFRyah8EOSGcab8TfIdkq53c5HBSwAVfYQCyvZ0_BG4",
-          "short_id": ""
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/NmrU9ImDG7jA7oFEem",
+        "headers": {
+          "Host": "frosty-pond-7436.shhabbyat914.workers.dev"
         }
       }
     },
@@ -29,14 +34,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇰🇷 韩国 (South Korea) 01 (家宽) - situba"
+        "🇨🇿 捷克 (Czech) 01 - situba"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇰🇷 韩国 (South Korea) 01 (家宽) - situba"
+        "🇨🇿 捷克 (Czech) 01 - situba"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
