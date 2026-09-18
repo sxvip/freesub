@@ -5,9 +5,9 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇸🇦 沙特 (Saudi Arabia) 01 - situba",
-      "server": "132.243.203.207",
-      "server_port": 8443,
+      "tag": "🇨🇿 捷克 (Czech) 01 - situba",
+      "server": "89.110.66.154",
+      "server_port": 443,
       "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
       "tls": {
         "enabled": true,
@@ -16,7 +16,6 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/lives?ed=2560fp=chrome",
         "headers": {
           "Host": "cdn8848.776676.xyz"
         }
@@ -27,14 +26,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇸🇦 沙特 (Saudi Arabia) 01 - situba"
+        "🇨🇿 捷克 (Czech) 01 - situba"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇸🇦 沙特 (Saudi Arabia) 01 - situba"
+        "🇨🇿 捷克 (Czech) 01 - situba"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
