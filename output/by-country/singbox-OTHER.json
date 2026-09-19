@@ -6,16 +6,13 @@
     {
       "type": "vless",
       "tag": "🌐 其他地区 (Other) 01 - situba",
-      "server": "104.25.30.10",
+      "server": "104.16.156.227",
       "server_port": 443,
-      "uuid": "807cd1e0-f4ce-4785-b7a3-cde0c1614b8d",
+      "uuid": "b8d8a5b0-867f-4491-b4e4-30edc04bb10e",
       "tls": {
         "enabled": true,
-        "server_name": "de14.69lover.my",
+        "server_name": "u.srilankangrill.online",
         "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -23,9 +20,9 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/api/v2/6c316c769ad6853c/stream",
+        "path": "/",
         "headers": {
-          "Host": "de14.69lover.my"
+          "Host": "u.srilankangrill.online"
         }
       }
     },
