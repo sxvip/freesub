@@ -35,17 +35,6 @@
     {
       "type": "vless",
       "tag": "🇦🇺 澳大利亚 (Australia) 03 - situba",
-      "server": "103.75.119.126",
-      "server_port": 2087,
-      "uuid": "731f177e-00aa-480c-b935-661456139a32",
-      "transport": {
-        "type": "ws",
-        "path": "/7586c69d3dc9"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇦🇺 澳大利亚 (Australia) 04 - situba",
       "server": "34.87.244.111",
       "server_port": 443,
       "uuid": "325bc1be-0cb7-4cf7-bd35-a79ded91bbbd",
@@ -64,6 +53,29 @@
       }
     },
     {
+      "type": "hysteria2",
+      "tag": "🇦🇺 澳大利亚 (Australia) 04 - situba",
+      "server": "vpn-au-002.fastervpn.world",
+      "server_port": 443,
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
+      "tls": {
+        "enabled": true,
+        "server_name": "whatsapp.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇦🇺 澳大利亚 (Australia) 05 - situba",
+      "server": "103.75.119.126",
+      "server_port": 2087,
+      "uuid": "731f177e-00aa-480c-b935-661456139a32",
+      "transport": {
+        "type": "ws",
+        "path": "/7586c69d3dc9"
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -71,7 +83,8 @@
         "🇦🇺 澳大利亚 (Australia) 01 - situba",
         "🇦🇺 澳大利亚 (Australia) 02 - situba",
         "🇦🇺 澳大利亚 (Australia) 03 - situba",
-        "🇦🇺 澳大利亚 (Australia) 04 - situba"
+        "🇦🇺 澳大利亚 (Australia) 04 - situba",
+        "🇦🇺 澳大利亚 (Australia) 05 - situba"
       ]
     },
     {
@@ -81,7 +94,8 @@
         "🇦🇺 澳大利亚 (Australia) 01 - situba",
         "🇦🇺 澳大利亚 (Australia) 02 - situba",
         "🇦🇺 澳大利亚 (Australia) 03 - situba",
-        "🇦🇺 澳大利亚 (Australia) 04 - situba"
+        "🇦🇺 澳大利亚 (Australia) 04 - situba",
+        "🇦🇺 澳大利亚 (Australia) 05 - situba"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

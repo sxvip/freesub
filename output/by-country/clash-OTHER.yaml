@@ -4,32 +4,32 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇺🇸 美国 (United States) 01 (家宽) - situba
-  server: 104.21.78.225
+- name: 🌐 其他地区 (Other) 01 - situba
+  server: 104.25.30.10
   port: 443
   udp: true
   type: vless
-  uuid: 4ce7cb8a-f9b1-4bfa-a80d-9e168c61a633
+  uuid: 807cd1e0-f4ce-4785-b7a3-cde0c1614b8d
   tls: true
-  servername: curly-night-6928.ggdhchjk.workers.dev
+  servername: de14.69lover.my
   skip-cert-verify: false
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /sync
+    path: /api/v2/6c316c769ad6853c/stream
     headers:
-      Host: curly-night-6928.ggdhchjk.workers.dev
+      Host: de14.69lover.my
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇺🇸 美国 (United States) 01 (家宽) - situba
+  - 🌐 其他地区 (Other) 01 - situba
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 (United States) 01 (家宽) - situba
+  - 🌐 其他地区 (Other) 01 - situba
 rules:
 - MATCH,PROXIES

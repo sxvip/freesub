@@ -5,14 +5,17 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 01 (家宽) - situba",
-      "server": "104.21.78.225",
+      "tag": "🌐 其他地区 (Other) 01 - situba",
+      "server": "104.25.30.10",
       "server_port": 443,
-      "uuid": "4ce7cb8a-f9b1-4bfa-a80d-9e168c61a633",
+      "uuid": "807cd1e0-f4ce-4785-b7a3-cde0c1614b8d",
       "tls": {
         "enabled": true,
-        "server_name": "curly-night-6928.ggdhchjk.workers.dev",
+        "server_name": "de14.69lover.my",
         "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -20,9 +23,9 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/sync",
+        "path": "/api/v2/6c316c769ad6853c/stream",
         "headers": {
-          "Host": "curly-night-6928.ggdhchjk.workers.dev"
+          "Host": "de14.69lover.my"
         }
       }
     },
@@ -31,14 +34,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇺🇸 美国 (United States) 01 (家宽) - situba"
+        "🌐 其他地区 (Other) 01 - situba"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇺🇸 美国 (United States) 01 (家宽) - situba"
+        "🌐 其他地区 (Other) 01 - situba"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
