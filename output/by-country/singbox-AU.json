@@ -14,26 +14,6 @@
     {
       "type": "vless",
       "tag": "🇦🇺 澳大利亚 (Australia) 02 - situba",
-      "server": "34.87.229.148",
-      "server_port": 443,
-      "uuid": "4f865f35-cf47-4e7f-a7e6-8882511a1b36",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "OgTkmAQdLjipA9oLloxbU5BAX3hPjzbvkEGHF4aZ8z4",
-          "short_id": "8a7d5e0248cdb1b1"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇦🇺 澳大利亚 (Australia) 03 - situba",
       "server": "51.161.204.244",
       "server_port": 443,
       "uuid": "36e89875-9c53-482b-bc41-d3890e9da176",
@@ -49,6 +29,24 @@
           "enabled": true,
           "public_key": "gCAazs5uxNuMZIxfDdw8wPE0nwKY4QfBfBkQveKAkEk",
           "short_id": "0ad08b47f498efd2"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇦🇺 澳大利亚 (Australia) 03 - situba",
+      "server": "152.67.101.72",
+      "server_port": 23010,
+      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
+      "tls": {
+        "enabled": true,
+        "server_name": "cdn8848.776676.xyz",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "cdn8848.776676.xyz"
         }
       }
     },
@@ -73,18 +71,6 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇦🇺 澳大利亚 (Australia) 05 - situba",
-      "server": "vpn-au-002.fastervpn.world",
-      "server_port": 443,
-      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
-      "tls": {
-        "enabled": true,
-        "server_name": "whatsapp.com",
-        "insecure": true
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -92,8 +78,7 @@
         "🇦🇺 澳大利亚 (Australia) 01 - situba",
         "🇦🇺 澳大利亚 (Australia) 02 - situba",
         "🇦🇺 澳大利亚 (Australia) 03 - situba",
-        "🇦🇺 澳大利亚 (Australia) 04 - situba",
-        "🇦🇺 澳大利亚 (Australia) 05 - situba"
+        "🇦🇺 澳大利亚 (Australia) 04 - situba"
       ]
     },
     {
@@ -103,8 +88,7 @@
         "🇦🇺 澳大利亚 (Australia) 01 - situba",
         "🇦🇺 澳大利亚 (Australia) 02 - situba",
         "🇦🇺 澳大利亚 (Australia) 03 - situba",
-        "🇦🇺 澳大利亚 (Australia) 04 - situba",
-        "🇦🇺 澳大利亚 (Australia) 05 - situba"
+        "🇦🇺 澳大利亚 (Australia) 04 - situba"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
