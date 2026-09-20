@@ -4,32 +4,32 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🌐 其他地区 (Other) 01 - situba
-  server: 104.18.28.234
-  port: 443
+- name: 🇧🇪 比利时 (Belgium) 01 - situba
+  server: 185.113.223.183
+  port: 8443
   udp: true
   type: vless
-  uuid: f6b5a6a3-f3e1-63ca-bb68-bdc400000000
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   tls: true
-  servername: netlivpn5505.ffffdsaaa.workers.dev
+  servername: cdn8848.776676.xyz
   skip-cert-verify: false
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /
+    path: /channels/act
     headers:
-      Host: netlivpn5505.ffffdsaaa.workers.dev
+      Host: cdn8848.776676.xyz
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🌐 其他地区 (Other) 01 - situba
+  - 🇧🇪 比利时 (Belgium) 01 - situba
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🌐 其他地区 (Other) 01 - situba
+  - 🇧🇪 比利时 (Belgium) 01 - situba
 rules:
 - MATCH,PROXIES
