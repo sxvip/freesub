@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇺 澳大利亚 (Australia) 01 - situba
-  server: 82.198.246.250
+  server: 82.198.246.233
   port: 180
   udp: true
   type: vmess
@@ -21,18 +21,6 @@ proxies:
   sni: whatsapp.com
   skip-cert-verify: true
 - name: 🇦🇺 澳大利亚 (Australia) 03 - situba
-  server: 34.87.244.111
-  port: 443
-  udp: true
-  type: vless
-  uuid: 325bc1be-0cb7-4cf7-bd35-a79ded91bbbd
-  tls: true
-  reality-opts:
-    public-key: fsdIMU2apN1C_NbkL7mHTsBKEfhwbDhgCRcB8ICf03E
-    short-id: d725f0dd8cce210f
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇦🇺 澳大利亚 (Australia) 04 - situba
   server: 34.87.229.148
   port: 443
   udp: true
@@ -44,21 +32,7 @@ proxies:
     short-id: 8a7d5e0248cdb1b1
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇦🇺 澳大利亚 (Australia) 05 - situba
-  server: 103.136.146.73
-  port: 443
-  udp: true
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  tls: true
-  servername: cdn8848.776676.xyz
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: cdn8848.776676.xyz
-- name: 🇦🇺 澳大利亚 (Australia) 06 - situba
+- name: 🇦🇺 澳大利亚 (Australia) 04 - situba
   server: 51.161.204.244
   port: 443
   udp: true
@@ -70,7 +44,19 @@ proxies:
     public-key: gCAazs5uxNuMZIxfDdw8wPE0nwKY4QfBfBkQveKAkEk
     short-id: 0ad08b47f498efd2
   servername: www.cloudflare.com
-  client-fingerprint: firefox
+  client-fingerprint: random
+- name: 🇦🇺 澳大利亚 (Australia) 05 - situba
+  server: 34.87.244.111
+  port: 443
+  udp: true
+  type: vless
+  uuid: 325bc1be-0cb7-4cf7-bd35-a79ded91bbbd
+  tls: true
+  reality-opts:
+    public-key: fsdIMU2apN1C_NbkL7mHTsBKEfhwbDhgCRcB8ICf03E
+    short-id: d725f0dd8cce210f
+  servername: www.cloudflare.com
+  client-fingerprint: random
 proxy-groups:
 - name: PROXIES
   type: select
@@ -81,7 +67,6 @@ proxy-groups:
   - 🇦🇺 澳大利亚 (Australia) 03 - situba
   - 🇦🇺 澳大利亚 (Australia) 04 - situba
   - 🇦🇺 澳大利亚 (Australia) 05 - situba
-  - 🇦🇺 澳大利亚 (Australia) 06 - situba
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -92,6 +77,5 @@ proxy-groups:
   - 🇦🇺 澳大利亚 (Australia) 03 - situba
   - 🇦🇺 澳大利亚 (Australia) 04 - situba
   - 🇦🇺 澳大利亚 (Australia) 05 - situba
-  - 🇦🇺 澳大利亚 (Australia) 06 - situba
 rules:
 - MATCH,PROXIES

@@ -5,7 +5,21 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - situba
-  server: 132.243.203.243
+  server: 89.110.66.154
+  port: 443
+  udp: true
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  tls: true
+  servername: cdn8848.776676.xyz
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: cdn8848.776676.xyz
+- name: 🇷🇺 俄罗斯 (Russia) 02 - situba
+  server: 31.59.46.140
   port: 8443
   udp: true
   type: vless
@@ -16,17 +30,47 @@ proxies:
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /archive?ed=2560
+    path: /travel/intro?ed=2560
     headers:
       Host: cdn8848.776676.xyz
-- name: 🇷🇺 俄罗斯 (Russia) 02 - situba
+- name: 🇷🇺 俄罗斯 (Russia) 03 - situba
+  server: 5.101.114.44
+  port: 2053
+  udp: true
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  tls: true
+  servername: cdn8848.776676.xyz
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /collection/directory?ed=2560
+    headers:
+      Host: cdn8848.776676.xyz
+- name: 🇷🇺 俄罗斯 (Russia) 04 - situba
+  server: 157.228.142.148
+  port: 8443
+  udp: true
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  tls: true
+  servername: cdn8848.776676.xyz
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /act/rank/lang?ed=2560
+    headers:
+      Host: cdn8848.776676.xyz
+- name: 🇷🇺 俄罗斯 (Russia) 05 - situba
   server: 91.240.86.70
   port: 22443
   udp: true
   type: hysteria2
   password: 3f63c86c-ac4a-4900-85cf-4fedf93c2ca5
-  sni: hy.quattro-tech.ru
-  skip-cert-verify: false
+  sni: itsallproxy.quattro-tech.ru
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -34,6 +78,9 @@ proxy-groups:
   - AUTO
   - 🇷🇺 俄罗斯 (Russia) 01 - situba
   - 🇷🇺 俄罗斯 (Russia) 02 - situba
+  - 🇷🇺 俄罗斯 (Russia) 03 - situba
+  - 🇷🇺 俄罗斯 (Russia) 04 - situba
+  - 🇷🇺 俄罗斯 (Russia) 05 - situba
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -41,5 +88,8 @@ proxy-groups:
   proxies:
   - 🇷🇺 俄罗斯 (Russia) 01 - situba
   - 🇷🇺 俄罗斯 (Russia) 02 - situba
+  - 🇷🇺 俄罗斯 (Russia) 03 - situba
+  - 🇷🇺 俄罗斯 (Russia) 04 - situba
+  - 🇷🇺 俄罗斯 (Russia) 05 - situba
 rules:
 - MATCH,PROXIES

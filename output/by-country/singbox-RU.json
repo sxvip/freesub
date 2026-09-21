@@ -6,7 +6,25 @@
     {
       "type": "vless",
       "tag": "🇷🇺 俄罗斯 (Russia) 01 - situba",
-      "server": "132.243.203.243",
+      "server": "89.110.66.154",
+      "server_port": 443,
+      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
+      "tls": {
+        "enabled": true,
+        "server_name": "cdn8848.776676.xyz",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "cdn8848.776676.xyz"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 俄罗斯 (Russia) 02 - situba",
+      "server": "31.59.46.140",
       "server_port": 8443,
       "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
       "tls": {
@@ -20,7 +38,53 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/archive?ed=2560",
+        "path": "/travel/intro?ed=2560",
+        "headers": {
+          "Host": "cdn8848.776676.xyz"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 俄罗斯 (Russia) 03 - situba",
+      "server": "5.101.114.44",
+      "server_port": 2053,
+      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
+      "tls": {
+        "enabled": true,
+        "server_name": "cdn8848.776676.xyz",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/collection/directory?ed=2560",
+        "headers": {
+          "Host": "cdn8848.776676.xyz"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 俄罗斯 (Russia) 04 - situba",
+      "server": "157.228.142.148",
+      "server_port": 8443,
+      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
+      "tls": {
+        "enabled": true,
+        "server_name": "cdn8848.776676.xyz",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/act/rank/lang?ed=2560",
         "headers": {
           "Host": "cdn8848.776676.xyz"
         }
@@ -28,14 +92,14 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇷🇺 俄罗斯 (Russia) 02 - situba",
+      "tag": "🇷🇺 俄罗斯 (Russia) 05 - situba",
       "server": "91.240.86.70",
       "server_port": 22443,
       "password": "3f63c86c-ac4a-4900-85cf-4fedf93c2ca5",
       "tls": {
         "enabled": true,
-        "server_name": "hy.quattro-tech.ru",
-        "insecure": false
+        "server_name": "itsallproxy.quattro-tech.ru",
+        "insecure": true
       }
     },
     {
@@ -44,7 +108,10 @@
       "outbounds": [
         "auto",
         "🇷🇺 俄罗斯 (Russia) 01 - situba",
-        "🇷🇺 俄罗斯 (Russia) 02 - situba"
+        "🇷🇺 俄罗斯 (Russia) 02 - situba",
+        "🇷🇺 俄罗斯 (Russia) 03 - situba",
+        "🇷🇺 俄罗斯 (Russia) 04 - situba",
+        "🇷🇺 俄罗斯 (Russia) 05 - situba"
       ]
     },
     {
@@ -52,7 +119,10 @@
       "tag": "auto",
       "outbounds": [
         "🇷🇺 俄罗斯 (Russia) 01 - situba",
-        "🇷🇺 俄罗斯 (Russia) 02 - situba"
+        "🇷🇺 俄罗斯 (Russia) 02 - situba",
+        "🇷🇺 俄罗斯 (Russia) 03 - situba",
+        "🇷🇺 俄罗斯 (Russia) 04 - situba",
+        "🇷🇺 俄罗斯 (Russia) 05 - situba"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
