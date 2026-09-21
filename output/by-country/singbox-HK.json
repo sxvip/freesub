@@ -4,16 +4,56 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
+      "type": "trojan",
       "tag": "🇭🇰 中国香港 (Hong Kong) 01 - situba",
-      "server": "sth.free-outline.giize.com",
-      "server_port": 1081,
-      "method": "chacha20-ietf-poly1305",
-      "password": "wwj19enpp68px8t7"
+      "server": "119.246.1.143",
+      "server_port": 443,
+      "password": "BxceQaOe",
+      "tls": {
+        "enabled": true,
+        "server_name": "t.me",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 02 - situba",
+      "server": "202.146.222.174",
+      "server_port": 443,
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
+      "tls": {
+        "enabled": true,
+        "server_name": "https://t.me/wangcai2🇨🇳",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 03 - situba",
+      "server": "202.146.222.29",
+      "server_port": 443,
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
+      "tls": {
+        "enabled": true,
+        "server_name": "https://t.me/wangcai2рҹүёрҹүі",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 04 - situba",
+      "server": "202.146.222.89",
+      "server_port": 443,
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
+      "tls": {
+        "enabled": true,
+        "server_name": "vk.com",
+        "insecure": true
+      }
     },
     {
       "type": "vless",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 02 - situba",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 05 - situba",
       "server": "162.128.157.164",
       "server_port": 443,
       "uuid": "5e8e81ac-a1c4-4543-b81e-651bf9872b54",
@@ -33,54 +73,26 @@
       }
     },
     {
-      "type": "trojan",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 03 - situba",
-      "server": "119.246.1.143",
-      "server_port": 443,
-      "password": "BxceQaOe",
-      "tls": {
-        "enabled": true,
-        "server_name": "t.me/ripaojiedian",
-        "insecure": true
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 04 - situba",
-      "server": "46.17.44.112",
-      "server_port": 10301,
-      "method": "aes-256-gcm",
-      "password": "bdb313adf74c2ede"
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 05 - situba",
-      "server": "202.146.222.89",
-      "server_port": 443,
-      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
-      "tls": {
-        "enabled": true,
-        "server_name": "202.146.222.89",
-        "insecure": true
-      }
-    },
-    {
-      "type": "hysteria2",
+      "type": "vless",
       "tag": "🇭🇰 中国香港 (Hong Kong) 06 - situba",
-      "server": "202.146.222.174",
-      "server_port": 443,
-      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
+      "server": "195.58.144.56",
+      "server_port": 11907,
+      "uuid": "07cb07b9-0c4d-46c1-a15a-b147511b6b07",
       "tls": {
         "enabled": true,
-        "server_name": "https%3a%2f%2ft.me%2fwangcai2",
-        "insecure": true
+        "server_name": "195.58.144.56",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       }
     },
     {
       "type": "vless",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 07 - situba",
-      "server": "yydsscawshk.cfooov.xyz",
-      "server_port": 55613,
+      "tag": "🇭🇰 中国香港 (Hong Kong) 07 (家宽) - situba",
+      "server": "sczznmbbbzgwlwzdhsql.jiedddym.com",
+      "server_port": 43142,
       "uuid": "17ab31f7-c021-4aec-83b2-ab48de8886bd",
       "flow": "xtls-rprx-vision",
       "tls": {
@@ -92,35 +104,14 @@
         },
         "reality": {
           "enabled": true,
-          "public_key": "6vUAa9qtG9mACrund-or8p6rA5jTQGvD9jE9I5F2WUw",
-          "short_id": "7e1be95628c1"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 08 - situba",
-      "server": "68.64.183.49",
-      "server_port": 50045,
-      "uuid": "72f59ca4-df5d-4ab1-af97-3e0a10ba56fd",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "aws.amazon.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "cxzKVlA9i0WAztJ9QJ0v4nactMJKLXDyzJd00hBFGQ4",
-          "short_id": ""
+          "public_key": "HGk0MQ7l4mWgJo1-7PctGx5pf88HECBpLRUtBSemkzY",
+          "short_id": "b93f2026953855c5"
         }
       }
     },
     {
       "type": "hysteria2",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 09 - situba",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 08 - situba",
       "server": "mz.hkychina.com",
       "server_port": 8443,
       "password": "HysTeria2026!Proxy",
@@ -131,41 +122,16 @@
       }
     },
     {
-      "type": "hysteria2",
+      "type": "shadowsocks",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 09 - situba",
+      "server": "103.136.150.119",
+      "server_port": 10081,
+      "method": "aes-256-gcm",
+      "password": "72553320ae6bcc8f"
+    },
+    {
+      "type": "vless",
       "tag": "🇭🇰 中国香港 (Hong Kong) 10 - situba",
-      "server": "202.146.222.29",
-      "server_port": 443,
-      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.bing.com",
-        "insecure": true
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 11 - situba",
-      "server": "207.57.135.28",
-      "server_port": 27659,
-      "uuid": "ecee6ef1-5172-4543-bf81-e4aaf64db01c",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.paypal.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "KFp1q4xOR_FZQYwRBFTLhyf5cOSVjrPNDkUG-RblNmg",
-          "short_id": ""
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 12 - situba",
       "server": "47.239.6.251",
       "server_port": 13779,
       "uuid": "928e6cce-8ced-4243-9a48-a6642edd09b0",
@@ -185,61 +151,6 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 13 - situba",
-      "server": "104.16.60.10",
-      "server_port": 443,
-      "uuid": "cdf5205e-897f-46a7-8d7f-21a61a80b466",
-      "tls": {
-        "enabled": true,
-        "server_name": "hk1.69lover.my",
-        "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/api/v2/e2fe4e52a165854d/stream",
-        "headers": {
-          "Host": "hk1.69lover.my"
-        }
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 14 - situba",
-      "server": "103.136.150.119",
-      "server_port": 10081,
-      "method": "aes-256-gcm",
-      "password": "72553320ae6bcc8f"
-    },
-    {
-      "type": "vless",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 15 - situba",
-      "server": "45.152.65.68",
-      "server_port": 37574,
-      "uuid": "e2353f83-9a40-4b46-82e1-666b1652d479",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.amazon.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "Pu-3VzlM8PPRnOTVZOC8HVGr4WwG5yOYiIrbVJYU5RI",
-          "short_id": ""
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -250,15 +161,10 @@
         "🇭🇰 中国香港 (Hong Kong) 04 - situba",
         "🇭🇰 中国香港 (Hong Kong) 05 - situba",
         "🇭🇰 中国香港 (Hong Kong) 06 - situba",
-        "🇭🇰 中国香港 (Hong Kong) 07 - situba",
+        "🇭🇰 中国香港 (Hong Kong) 07 (家宽) - situba",
         "🇭🇰 中国香港 (Hong Kong) 08 - situba",
         "🇭🇰 中国香港 (Hong Kong) 09 - situba",
-        "🇭🇰 中国香港 (Hong Kong) 10 - situba",
-        "🇭🇰 中国香港 (Hong Kong) 11 - situba",
-        "🇭🇰 中国香港 (Hong Kong) 12 - situba",
-        "🇭🇰 中国香港 (Hong Kong) 13 - situba",
-        "🇭🇰 中国香港 (Hong Kong) 14 - situba",
-        "🇭🇰 中国香港 (Hong Kong) 15 - situba"
+        "🇭🇰 中国香港 (Hong Kong) 10 - situba"
       ]
     },
     {
@@ -271,15 +177,10 @@
         "🇭🇰 中国香港 (Hong Kong) 04 - situba",
         "🇭🇰 中国香港 (Hong Kong) 05 - situba",
         "🇭🇰 中国香港 (Hong Kong) 06 - situba",
-        "🇭🇰 中国香港 (Hong Kong) 07 - situba",
+        "🇭🇰 中国香港 (Hong Kong) 07 (家宽) - situba",
         "🇭🇰 中国香港 (Hong Kong) 08 - situba",
         "🇭🇰 中国香港 (Hong Kong) 09 - situba",
-        "🇭🇰 中国香港 (Hong Kong) 10 - situba",
-        "🇭🇰 中国香港 (Hong Kong) 11 - situba",
-        "🇭🇰 中国香港 (Hong Kong) 12 - situba",
-        "🇭🇰 中国香港 (Hong Kong) 13 - situba",
-        "🇭🇰 中国香港 (Hong Kong) 14 - situba",
-        "🇭🇰 中国香港 (Hong Kong) 15 - situba"
+        "🇭🇰 中国香港 (Hong Kong) 10 - situba"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

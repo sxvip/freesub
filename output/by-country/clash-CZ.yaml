@@ -5,15 +5,45 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇿 捷克 (Czech) 01 - situba
-  server: 153.76.185.183
+  server: 188.114.97.8
+  port: 8443
+  udp: true
+  type: vless
+  uuid: d4d2d3f3-9dec-4e8f-8daf-145ecac96e66
+  tls: true
+  servername: cRIMSON-LeAf-7E45.hzhdUuEBFjDCB.workERs.DEv
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /eyJqdW5rIjoiODgwQ1AwWDV0MnFTRWE1cCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
+    headers:
+      Host: crimson-leaf-7e45.hzhduuebfjdcb.workers.dev
+- name: 🇨🇿 捷克 (Czech) 02 - situba
+  server: 153.76.185.189
   port: 3090
   udp: true
   type: vless
-  uuid: 4220f4b9-f20e-4566-b461-6becf700ef56
+  uuid: 5ebdc9ee-8b41-4487-93af-231cb0b47d60
   network: grpc
   grpc-opts:
     grpc-service-name: vless
-- name: 🇨🇿 捷克 (Czech) 02 - situba
+- name: 🇨🇿 捷克 (Czech) 03 - situba
+  server: 109.107.155.76
+  port: 2053
+  udp: true
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  tls: true
+  servername: cdn8848.776676.xyz
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: cdn8848.776676.xyz
+- name: 🇨🇿 捷克 (Czech) 04 - situba
   server: 95.85.230.35
   port: 443
   udp: true
@@ -24,7 +54,7 @@ proxies:
   reality-opts:
     public-key: mJ-0fJDvKp0rhuyUvs1bw4RasRRM-BEOAl9iAZ8gXy0
   servername: de.oblaco.bet
-  client-fingerprint: ''
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -32,6 +62,8 @@ proxy-groups:
   - AUTO
   - 🇨🇿 捷克 (Czech) 01 - situba
   - 🇨🇿 捷克 (Czech) 02 - situba
+  - 🇨🇿 捷克 (Czech) 03 - situba
+  - 🇨🇿 捷克 (Czech) 04 - situba
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -39,5 +71,7 @@ proxy-groups:
   proxies:
   - 🇨🇿 捷克 (Czech) 01 - situba
   - 🇨🇿 捷克 (Czech) 02 - situba
+  - 🇨🇿 捷克 (Czech) 03 - situba
+  - 🇨🇿 捷克 (Czech) 04 - situba
 rules:
 - MATCH,PROXIES
