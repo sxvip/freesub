@@ -27,57 +27,17 @@ proxies:
   grpc-opts:
     grpc-service-name: grpc
 - name: 🇫🇮 芬兰 (Finland) 03 - situba
-  server: 185.79.138.71
-  port: 448
+  server: 95.217.24.119
+  port: 2087
   udp: true
   type: vless
-  uuid: 0b0915d7-6800-4580-a44b-77d84f105e6a
-  tls: true
-  reality-opts:
-    public-key: CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8
-    short-id: cd21e552537c7c0b
-  servername: www.samsung.com
-  client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 04 - situba
-  server: 202.166.187.132
-  port: 443
-  udp: true
-  type: vless
-  uuid: 8be20011-59b1-4118-91ed-83e8e6b662cd
-  tls: true
-  servername: f.yoptybla.ru
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: f.yoptybla.ru
-- name: 🇫🇮 芬兰 (Finland) 05 - situba
-  server: 144.31.28.106
-  port: 8443
-  udp: true
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  tls: true
-  servername: cdn8848.776676.xyz
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /trade
-    headers:
-      Host: cdn8848.776676.xyz
-- name: 🇫🇮 芬兰 (Finland) 06 - situba
-  server: est1313.ggisopi.su
-  port: 443
-  udp: true
-  type: vless
-  uuid: d0f0a880-0df1-48c9-bdf1-5669fb9483ce
+  uuid: ddc0bc7e-04c6-4ff9-9adb-c68c71606e8f
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I
-  servername: est1313.ggisopi.su
+    public-key: _FKzdndiMfCSU5YLVXSBqzk2lIG0W2-DauFpos684Uc
+    short-id: e9fae729e40ae07e
+  servername: 62.238.103.54
   client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
@@ -87,9 +47,6 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 01 - situba
   - 🇫🇮 芬兰 (Finland) 02 - situba
   - 🇫🇮 芬兰 (Finland) 03 - situba
-  - 🇫🇮 芬兰 (Finland) 04 - situba
-  - 🇫🇮 芬兰 (Finland) 05 - situba
-  - 🇫🇮 芬兰 (Finland) 06 - situba
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -98,8 +55,5 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 01 - situba
   - 🇫🇮 芬兰 (Finland) 02 - situba
   - 🇫🇮 芬兰 (Finland) 03 - situba
-  - 🇫🇮 芬兰 (Finland) 04 - situba
-  - 🇫🇮 芬兰 (Finland) 05 - situba
-  - 🇫🇮 芬兰 (Finland) 06 - situba
 rules:
 - MATCH,PROXIES

@@ -5,72 +5,57 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - situba
-  server: 89.110.66.154
+  server: 104.17.148.22
   port: 443
+  udp: true
+  type: vless
+  uuid: 518de0d4-6ce8-4404-80db-23c4a8806128
+  tls: true
+  servername: ez-5faafb.esmaoi.workers.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /eyJqdW5rIjoiQkFLTnhqM2tZTSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0
+    headers:
+      Host: ez-5faafb.esmaoi.workers.dev
+- name: 🇷🇺 俄罗斯 (Russia) 02 - situba
+  server: 172.64.145.202
+  port: 2083
   udp: true
   type: vless
   uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   tls: true
-  servername: cdn8848.776676.xyz
-  skip-cert-verify: true
+  servername: newwk1.f1w.de5.net
+  skip-cert-verify: false
+  client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: cdn8848.776676.xyz
-- name: 🇷🇺 俄罗斯 (Russia) 02 - situba
-  server: 31.59.46.140
-  port: 8443
-  udp: true
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  tls: true
-  servername: cdn8848.776676.xyz
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /travel/intro?ed=2560
-    headers:
-      Host: cdn8848.776676.xyz
+      Host: newwk1.f1w.de5.net
 - name: 🇷🇺 俄罗斯 (Russia) 03 - situba
-  server: 5.101.114.44
-  port: 2053
-  udp: true
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  tls: true
-  servername: cdn8848.776676.xyz
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /collection/directory?ed=2560
-    headers:
-      Host: cdn8848.776676.xyz
-- name: 🇷🇺 俄罗斯 (Russia) 04 - situba
-  server: 157.228.142.148
+  server: 188.114.97.8
   port: 8443
   udp: true
   type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  uuid: d4d2d3f3-9dec-4e8f-8daf-145ecac96e66
   tls: true
-  servername: cdn8848.776676.xyz
+  servername: cRIMSON-LeAf-7E45.hzhdUuEBFjDCB.workERs.DEv
   skip-cert-verify: false
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /act/rank/lang?ed=2560
+    path: /eyJqdW5rIjoiODgwQ1AwWDV0MnFTRWE1cCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
     headers:
-      Host: cdn8848.776676.xyz
-- name: 🇷🇺 俄罗斯 (Russia) 05 - situba
+      Host: crimson-leaf-7e45.hzhduuebfjdcb.workers.dev
+- name: 🇷🇺 俄罗斯 (Russia) 04 - situba
   server: 91.240.86.70
   port: 22443
   udp: true
   type: hysteria2
   password: 3f63c86c-ac4a-4900-85cf-4fedf93c2ca5
   sni: itsallproxy.quattro-tech.ru
-  skip-cert-verify: true
+  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select
@@ -80,7 +65,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 02 - situba
   - 🇷🇺 俄罗斯 (Russia) 03 - situba
   - 🇷🇺 俄罗斯 (Russia) 04 - situba
-  - 🇷🇺 俄罗斯 (Russia) 05 - situba
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -90,6 +74,5 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 02 - situba
   - 🇷🇺 俄罗斯 (Russia) 03 - situba
   - 🇷🇺 俄罗斯 (Russia) 04 - situba
-  - 🇷🇺 俄罗斯 (Russia) 05 - situba
 rules:
 - MATCH,PROXIES

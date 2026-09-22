@@ -38,83 +38,21 @@
     {
       "type": "vless",
       "tag": "🇫🇮 芬兰 (Finland) 03 - situba",
-      "server": "185.79.138.71",
-      "server_port": 448,
-      "uuid": "0b0915d7-6800-4580-a44b-77d84f105e6a",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.samsung.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8",
-          "short_id": "cd21e552537c7c0b"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 04 - situba",
-      "server": "202.166.187.132",
-      "server_port": 443,
-      "uuid": "8be20011-59b1-4118-91ed-83e8e6b662cd",
-      "tls": {
-        "enabled": true,
-        "server_name": "f.yoptybla.ru",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "f.yoptybla.ru"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 05 - situba",
-      "server": "144.31.28.106",
-      "server_port": 8443,
-      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
-      "tls": {
-        "enabled": true,
-        "server_name": "cdn8848.776676.xyz",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/trade",
-        "headers": {
-          "Host": "cdn8848.776676.xyz"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 06 - situba",
-      "server": "est1313.ggisopi.su",
-      "server_port": 443,
-      "uuid": "d0f0a880-0df1-48c9-bdf1-5669fb9483ce",
+      "server": "95.217.24.119",
+      "server_port": 2087,
+      "uuid": "ddc0bc7e-04c6-4ff9-9adb-c68c71606e8f",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "est1313.ggisopi.su",
+        "server_name": "62.238.103.54",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I",
-          "short_id": ""
+          "public_key": "_FKzdndiMfCSU5YLVXSBqzk2lIG0W2-DauFpos684Uc",
+          "short_id": "e9fae729e40ae07e"
         }
       }
     },
@@ -125,10 +63,7 @@
         "auto",
         "🇫🇮 芬兰 (Finland) 01 - situba",
         "🇫🇮 芬兰 (Finland) 02 - situba",
-        "🇫🇮 芬兰 (Finland) 03 - situba",
-        "🇫🇮 芬兰 (Finland) 04 - situba",
-        "🇫🇮 芬兰 (Finland) 05 - situba",
-        "🇫🇮 芬兰 (Finland) 06 - situba"
+        "🇫🇮 芬兰 (Finland) 03 - situba"
       ]
     },
     {
@@ -137,10 +72,7 @@
       "outbounds": [
         "🇫🇮 芬兰 (Finland) 01 - situba",
         "🇫🇮 芬兰 (Finland) 02 - situba",
-        "🇫🇮 芬兰 (Finland) 03 - situba",
-        "🇫🇮 芬兰 (Finland) 04 - situba",
-        "🇫🇮 芬兰 (Finland) 05 - situba",
-        "🇫🇮 芬兰 (Finland) 06 - situba"
+        "🇫🇮 芬兰 (Finland) 03 - situba"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
