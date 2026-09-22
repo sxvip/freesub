@@ -4,29 +4,8 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇨🇭 瑞士 (Switzerland) 01 - situba",
-      "server": "138.124.60.146",
-      "server_port": 443,
-      "uuid": "bbfd1f68-ec64-452f-8404-9e2bcf1df951",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "usa.oblaco.bet",
-        "utls": {
-          "enabled": true,
-          "fingerprint": ""
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "mJ-0fJDvKp0rhuyUvs1bw4RasRRM-BEOAl9iAZ8gXy0",
-          "short_id": ""
-        }
-      }
-    },
-    {
       "type": "hysteria2",
-      "tag": "🇨🇭 瑞士 (Switzerland) 02 - situba",
+      "tag": "🇨🇭 瑞士 (Switzerland) 01 - situba",
       "server": "82.38.64.229",
       "server_port": 8443,
       "password": "we9_I1893UFj3149xbr1_k8qvJ8734ic_Mx82gH",
@@ -38,6 +17,27 @@
     },
     {
       "type": "vless",
+      "tag": "🇨🇭 瑞士 (Switzerland) 02 - situba",
+      "server": "138.124.60.146",
+      "server_port": 443,
+      "uuid": "bbfd1f68-ec64-452f-8404-9e2bcf1df951",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "usa.oblaco.bet",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "mJ-0fJDvKp0rhuyUvs1bw4RasRRM-BEOAl9iAZ8gXy0",
+          "short_id": ""
+        }
+      }
+    },
+    {
+      "type": "vless",
       "tag": "🇨🇭 瑞士 (Switzerland) 03 - situba",
       "server": "151.242.2.81",
       "server_port": 443,
@@ -45,11 +45,7 @@
       "tls": {
         "enabled": true,
         "server_name": "cf9.rumedia-cdn.com",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "qq"
-        }
+        "insecure": false
       },
       "transport": {
         "type": "ws",
@@ -60,37 +56,13 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇨🇭 瑞士 (Switzerland) 04 - situba",
-      "server": "199.232.249.220",
-      "server_port": 443,
-      "uuid": "8abb648a-b004-42a4-aa05-49cdc2f94d4e",
-      "tls": {
-        "enabled": true,
-        "server_name": "global.fastly.com",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "safari"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "sardach3.global.ssl.fastly.net"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇨🇭 瑞士 (Switzerland) 01 - situba",
         "🇨🇭 瑞士 (Switzerland) 02 - situba",
-        "🇨🇭 瑞士 (Switzerland) 03 - situba",
-        "🇨🇭 瑞士 (Switzerland) 04 - situba"
+        "🇨🇭 瑞士 (Switzerland) 03 - situba"
       ]
     },
     {
@@ -99,8 +71,7 @@
       "outbounds": [
         "🇨🇭 瑞士 (Switzerland) 01 - situba",
         "🇨🇭 瑞士 (Switzerland) 02 - situba",
-        "🇨🇭 瑞士 (Switzerland) 03 - situba",
-        "🇨🇭 瑞士 (Switzerland) 04 - situba"
+        "🇨🇭 瑞士 (Switzerland) 03 - situba"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
