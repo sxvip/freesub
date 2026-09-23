@@ -6,13 +6,13 @@ log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01 - situba
   server: 217.30.10.44
-  port: 9099
+  port: 9062
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: 7heRqkPG3hg4UnRm
+  password: tkhHVxxfM2QErBWe
 - name: 🇵🇱 波兰 (Poland) 02 - situba
-  server: 185.223.57.16
+  server: 185.223.57.10
   port: 33743
   udp: true
   type: vless
@@ -21,7 +21,7 @@ proxies:
   reality-opts:
     public-key: wGMBs7bvzyzA0-OUiwSkOOTDEMdxEOsSdRzxiP8GGQY
   servername: www.google.com
-  client-fingerprint: qq
+  client-fingerprint: edge
   network: grpc
   grpc-opts:
     grpc-service-name: TunService
@@ -39,25 +39,6 @@ proxies:
   servername: prod.pl-node-01.security-sbrf.ru
   client-fingerprint: firefox
 - name: 🇵🇱 波兰 (Poland) 04 - situba
-  server: admin.wwwinternetvideo.click
-  port: 443
-  udp: true
-  type: hysteria2
-  password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
-  sni: admin.wwwinternetvideo.click
-  skip-cert-verify: true
-- name: 🇵🇱 波兰 (Poland) 05 - situba
-  server: 144.31.2.33
-  port: 443
-  udp: true
-  type: vless
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
-  flow: xtls-rprx-vision
-  tls: true
-  servername: pl3.moritech.net
-  skip-cert-verify: false
-  client-fingerprint: firefox
-- name: 🇵🇱 波兰 (Poland) 06 - situba
   server: 144.31.171.108
   port: 8444
   udp: true
@@ -70,35 +51,15 @@ proxies:
     short-id: 93f5b0d1a8ce6247
   servername: pl1.chromevpn.cc
   client-fingerprint: ''
-- name: 🇵🇱 波兰 (Poland) 07 - situba
-  server: 217.30.10.44
-  port: 9062
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: tkhHVxxfM2QErBWe
-- name: 🇵🇱 波兰 (Poland) 08 - situba
-  server: 144.31.5.3
+- name: 🇵🇱 波兰 (Poland) 05 - situba
+  server: 45.192.12.93
   port: 443
   udp: true
-  type: vless
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
-  flow: xtls-rprx-vision
-  tls: true
-  servername: pl4.moritech.net
+  type: hysteria2
+  password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
+  sni: admin.wwwinternetvideo.click
   skip-cert-verify: false
-  client-fingerprint: firefox
-- name: 🇵🇱 波兰 (Poland) 09 - situba
-  server: 144.31.5.64
-  port: 443
-  udp: true
-  type: vless
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
-  flow: xtls-rprx-vision
-  tls: true
-  servername: pl6.moritech.net
-  skip-cert-verify: false
-- name: 🇵🇱 波兰 (Poland) 10 - situba
+- name: 🇵🇱 波兰 (Poland) 06 - situba
   server: 188.114.96.19
   port: 80
   udp: true
@@ -111,6 +72,16 @@ proxies:
     path: /
     headers:
       Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
+- name: 🇵🇱 波兰 (Poland) 07 - situba
+  server: 144.31.5.64
+  port: 443
+  udp: true
+  type: vless
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+  flow: xtls-rprx-vision
+  tls: true
+  servername: pl6.moritech.net
+  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select
@@ -123,9 +94,6 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 05 - situba
   - 🇵🇱 波兰 (Poland) 06 - situba
   - 🇵🇱 波兰 (Poland) 07 - situba
-  - 🇵🇱 波兰 (Poland) 08 - situba
-  - 🇵🇱 波兰 (Poland) 09 - situba
-  - 🇵🇱 波兰 (Poland) 10 - situba
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -138,8 +106,5 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 05 - situba
   - 🇵🇱 波兰 (Poland) 06 - situba
   - 🇵🇱 波兰 (Poland) 07 - situba
-  - 🇵🇱 波兰 (Poland) 08 - situba
-  - 🇵🇱 波兰 (Poland) 09 - situba
-  - 🇵🇱 波兰 (Poland) 10 - situba
 rules:
 - MATCH,PROXIES

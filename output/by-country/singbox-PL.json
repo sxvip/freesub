@@ -7,14 +7,14 @@
       "type": "shadowsocks",
       "tag": "🇵🇱 波兰 (Poland) 01 - situba",
       "server": "217.30.10.44",
-      "server_port": 9099,
+      "server_port": 9062,
       "method": "aes-256-cfb",
-      "password": "7heRqkPG3hg4UnRm"
+      "password": "tkhHVxxfM2QErBWe"
     },
     {
       "type": "vless",
       "tag": "🇵🇱 波兰 (Poland) 02 - situba",
-      "server": "185.223.57.16",
+      "server": "185.223.57.10",
       "server_port": 33743,
       "uuid": "b3a11068-1a7e-4643-85de-7c82cce46943",
       "tls": {
@@ -22,7 +22,7 @@
         "server_name": "www.google.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "qq"
+          "fingerprint": "edge"
         },
         "reality": {
           "enabled": true,
@@ -57,40 +57,8 @@
       }
     },
     {
-      "type": "hysteria2",
+      "type": "vless",
       "tag": "🇵🇱 波兰 (Poland) 04 - situba",
-      "server": "admin.wwwinternetvideo.click",
-      "server_port": 443,
-      "password": "YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc",
-      "tls": {
-        "enabled": true,
-        "server_name": "admin.wwwinternetvideo.click",
-        "insecure": true
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 05 - situba",
-      "server": "144.31.2.33",
-      "server_port": 443,
-      "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "pl3.moritech.net",
-        "insecure": false,
-        "alpn": [
-          "h2"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 06 - situba",
       "server": "144.31.171.108",
       "server_port": 8444,
       "uuid": "02bd8b5a-170b-4a79-8e68-9cec710272c7",
@@ -110,36 +78,35 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇵🇱 波兰 (Poland) 07 - situba",
-      "server": "217.30.10.44",
-      "server_port": 9062,
-      "method": "aes-256-cfb",
-      "password": "tkhHVxxfM2QErBWe"
-    },
-    {
-      "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 08 - situba",
-      "server": "144.31.5.3",
+      "type": "hysteria2",
+      "tag": "🇵🇱 波兰 (Poland) 05 - situba",
+      "server": "45.192.12.93",
       "server_port": 443,
-      "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
-      "flow": "xtls-rprx-vision",
+      "password": "YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc",
       "tls": {
         "enabled": true,
-        "server_name": "pl4.moritech.net",
-        "insecure": false,
-        "alpn": [
-          "h2"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
+        "server_name": "admin.wwwinternetvideo.click",
+        "insecure": false
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇵🇱 波兰 (Poland) 06 - situba",
+      "server": "188.114.96.19",
+      "server_port": 80,
+      "uuid": "aed88e79-5762-4d2f-86fa-f438f32a7654",
+      "security": "auto",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "google.whatsapp.snapp.torob.basalam.hesanid8.ir."
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 09 - situba",
+      "tag": "🇵🇱 波兰 (Poland) 07 - situba",
       "server": "144.31.5.64",
       "server_port": 443,
       "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
@@ -154,21 +121,6 @@
       }
     },
     {
-      "type": "vmess",
-      "tag": "🇵🇱 波兰 (Poland) 10 - situba",
-      "server": "188.114.96.19",
-      "server_port": 80,
-      "uuid": "aed88e79-5762-4d2f-86fa-f438f32a7654",
-      "security": "auto",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "google.whatsapp.snapp.torob.basalam.hesanid8.ir."
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -179,10 +131,7 @@
         "🇵🇱 波兰 (Poland) 04 - situba",
         "🇵🇱 波兰 (Poland) 05 - situba",
         "🇵🇱 波兰 (Poland) 06 - situba",
-        "🇵🇱 波兰 (Poland) 07 - situba",
-        "🇵🇱 波兰 (Poland) 08 - situba",
-        "🇵🇱 波兰 (Poland) 09 - situba",
-        "🇵🇱 波兰 (Poland) 10 - situba"
+        "🇵🇱 波兰 (Poland) 07 - situba"
       ]
     },
     {
@@ -195,10 +144,7 @@
         "🇵🇱 波兰 (Poland) 04 - situba",
         "🇵🇱 波兰 (Poland) 05 - situba",
         "🇵🇱 波兰 (Poland) 06 - situba",
-        "🇵🇱 波兰 (Poland) 07 - situba",
-        "🇵🇱 波兰 (Poland) 08 - situba",
-        "🇵🇱 波兰 (Poland) 09 - situba",
-        "🇵🇱 波兰 (Poland) 10 - situba"
+        "🇵🇱 波兰 (Poland) 07 - situba"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
