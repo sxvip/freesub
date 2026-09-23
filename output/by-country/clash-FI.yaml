@@ -5,67 +5,37 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01 - situba
-  server: 2.27.175.71
-  port: 443
+  server: 193.23.201.65
+  port: 5432
   udp: true
   type: vless
-  uuid: 0dca2cfe-98eb-4f9d-9a47-cf87510c558b
-  tls: true
-  servername: assets-fi.pleiades.codes
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-service-name: cdn.v1.AssetService
-- name: 🇫🇮 芬兰 (Finland) 02 - situba
-  server: 92.255.79.246
-  port: 443
-  udp: true
-  type: vless
-  uuid: 8057eabc-921d-0001-9acb-80ccc6b48379
-  tls: true
-  reality-opts:
-    public-key: 8P2rVrZZ8v1q7WpYiRWnZ_nk2UI_4PqpN_DdZP91700
-  servername: supbober.mafioznik.xyz
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-service-name: Lizat
-- name: 🇫🇮 芬兰 (Finland) 03 - situba
-  server: 138.124.183.18
-  port: 9443
-  udp: true
-  type: vless
-  uuid: d9d0f208-d582-41d5-bb7b-742671402810
-  tls: true
-  servername: hub-se-03.hanvpn.cc
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-service-name: se03-grpc-8e47a
-- name: 🇫🇮 芬兰 (Finland) 04 - situba
-  server: 62.238.103.54
-  port: 2083
-  udp: true
-  type: vless
-  uuid: d78de562-872e-43dd-be48-e9d7b06c87a3
+  uuid: e84e0918-68ca-4fcc-a1d1-b566fd9ac7ee
   flow: xtls-rprx-vision
   tls: true
-  reality-opts:
-    public-key: tADYkZWWksM_mCqqwlRHCciSCXnP3JMYrPi5eoRHh2s
-    short-id: d059fb98048c5318
-  servername: www.yahoo.com
-  client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 05 - situba
+  servername: 193.23.201.65
+  skip-cert-verify: false
+  client-fingerprint: safari
+- name: 🇫🇮 芬兰 (Finland) 02 - situba
   server: iq5ny.pleiades.codes
   port: 8443
   udp: true
   type: hysteria2
   password: 0dca2cfe-98eb-4f9d-9a47-cf87510c558b
   sni: iq5ny.pleiades.codes
-  skip-cert-verify: false
-- name: 🇫🇮 芬兰 (Finland) 06 - situba
+  skip-cert-verify: true
+- name: 🇫🇮 芬兰 (Finland) 03 - situba
+  server: 62.60.229.124
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 5b754a1a-11aa-4df9-a8ba-44af9a579fe1
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: MjRaYQ5TjfU2rfHxVQ2Sa4nXRHHvsMvi3DW-x09n8Ts
+  servername: finland.b2ai.top
+  client-fingerprint: chrome
+- name: 🇫🇮 芬兰 (Finland) 04 - situba
   server: 31.76.80.230
   port: 8443
   udp: true
@@ -78,6 +48,19 @@ proxies:
   network: ws
   ws-opts:
     path: /assets
+- name: 🇫🇮 芬兰 (Finland) 05 - situba
+  server: 2.27.175.71
+  port: 443
+  udp: true
+  type: vless
+  uuid: 0dca2cfe-98eb-4f9d-9a47-cf87510c558b
+  tls: true
+  servername: assets-fi.pleiades.codes
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: cdn.v1.AssetService
 proxy-groups:
 - name: PROXIES
   type: select
@@ -88,7 +71,6 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 03 - situba
   - 🇫🇮 芬兰 (Finland) 04 - situba
   - 🇫🇮 芬兰 (Finland) 05 - situba
-  - 🇫🇮 芬兰 (Finland) 06 - situba
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -99,6 +81,5 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 03 - situba
   - 🇫🇮 芬兰 (Finland) 04 - situba
   - 🇫🇮 芬兰 (Finland) 05 - situba
-  - 🇫🇮 芬兰 (Finland) 06 - situba
 rules:
 - MATCH,PROXIES
