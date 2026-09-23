@@ -16,7 +16,7 @@ proxies:
     public-key: cYwrRCz_hKgT_JE8WywuLE3XOkAEqCTuBiUvXAaEjn8
     short-id: 694ee64512cfcbef
   servername: moldova.cdn-europe.org
-  client-fingerprint: chrome
+  client-fingerprint: random
 - name: 🇲🇩 摩尔多瓦 (Moldova) 02 - situba
   server: 185.103.167.76
   port: 4443
