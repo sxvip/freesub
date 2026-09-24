@@ -32,14 +32,6 @@ proxies:
     headers:
       Host: cf3.rumedia-cdn.com
 - name: 🇷🇺 俄罗斯 (Russia) 03 - situba
-  server: 91.240.86.70
-  port: 22443
-  udp: true
-  type: hysteria2
-  password: 3f63c86c-ac4a-4900-85cf-4fedf93c2ca5
-  sni: hy.quattro-tech.ru
-  skip-cert-verify: true
-- name: 🇷🇺 俄罗斯 (Russia) 04 - situba
   server: 45.12.75.242
   port: 26424
   udp: true
@@ -51,19 +43,19 @@ proxies:
     short-id: 23103e1e
   servername: ya.ru
   client-fingerprint: chrome
-- name: 🇷🇺 俄罗斯 (Russia) 05 - situba
-  server: 193.151.108.35
-  port: 43000
+- name: 🇷🇺 俄罗斯 (Russia) 04 - situba
+  server: 138.124.121.233
+  port: 443
   udp: true
   type: vless
-  uuid: 47f79fc1-0646-40e8-8a58-73e85d183d5a
+  uuid: 8e826a69-63f6-0001-a67d-4a1958e8b2d2
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: iEIUvfQSP4eHihDkzb-qAQ-9zGaIINRJDvgwOrt6bkQ
-    short-id: 75df7f65ba2a8155
-  servername: 193.151.108.35
-  client-fingerprint: safari
+    public-key: WWeAHWUVD-phmnjNJ823cer0c4CMIbEs08AhsuEZmDc
+    short-id: a696de84963656de
+  servername: amd.com
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -73,7 +65,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 02 - situba
   - 🇷🇺 俄罗斯 (Russia) 03 - situba
   - 🇷🇺 俄罗斯 (Russia) 04 - situba
-  - 🇷🇺 俄罗斯 (Russia) 05 - situba
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -83,6 +74,5 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 02 - situba
   - 🇷🇺 俄罗斯 (Russia) 03 - situba
   - 🇷🇺 俄罗斯 (Russia) 04 - situba
-  - 🇷🇺 俄罗斯 (Russia) 05 - situba
 rules:
 - MATCH,PROXIES
