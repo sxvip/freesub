@@ -4,33 +4,8 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
-      "tag": "🇩🇪 德国 (Germany) 01 - situba",
-      "server": "199.232.78.101",
-      "server_port": 443,
-      "password": "MItIVPN",
-      "tls": {
-        "enabled": true,
-        "server_name": "ssl.fastly.com",
-        "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "headers": {
-          "Host": "mitivpn---ss--s---mitivpn-11e.global.ssl.fastly.net"
-        }
-      }
-    },
-    {
       "type": "shadowsocks",
-      "tag": "🇩🇪 德国 (Germany) 02 - situba",
+      "tag": "🇩🇪 德国 (Germany) 01 - situba",
       "server": "51.195.126.38",
       "server_port": 8388,
       "method": "chacha20-ietf-poly1305",
@@ -38,11 +13,19 @@
     },
     {
       "type": "shadowsocks",
+      "tag": "🇩🇪 德国 (Germany) 02 - situba",
+      "server": "8.209.74.72",
+      "server_port": 20001,
+      "method": "chacha20-ietf-poly1305",
+      "password": "PWpjPo3tqhPN4yRZ"
+    },
+    {
+      "type": "shadowsocks",
       "tag": "🇩🇪 德国 (Germany) 03 - situba",
-      "server": "185.226.172.8",
-      "server_port": 8008,
-      "method": "aes-256-gcm",
-      "password": "XKFKl2rULjIp74"
+      "server": "209.46.102.22",
+      "server_port": 8388,
+      "method": "chacha20-ietf-poly1305",
+      "password": "1hhrqrokj3ag"
     },
     {
       "type": "hysteria2",
@@ -59,21 +42,21 @@
     {
       "type": "vless",
       "tag": "🇩🇪 德国 (Germany) 05 - situba",
-      "server": "189.24.107.174",
+      "server": "31.77.161.15",
       "server_port": 443,
-      "uuid": "596be9d9-0bb9-41bc-bff5-1adb483cbc32",
+      "uuid": "adc11f30-e4cb-4985-bf5e-f9ded69c019f",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.cloudflare.com",
+        "server_name": "nvidia.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "edge"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "gox8U8f-JNoWrH7BLfIRBsw3mKwEjIDUOcgozmi_nzQ",
-          "short_id": "8b36e9b7b3"
+          "public_key": "fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI",
+          "short_id": "db04ce8bdb8900f1"
         }
       }
     },
@@ -85,33 +68,41 @@
       "password": "e3c3b722-1264-4cdc-a97c-b0a1bb73cd67",
       "tls": {
         "enabled": true,
-        "server_name": "onecloudstream.com",
+        "server_name": "95.85.252.47",
         "insecure": true
       }
     },
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇩🇪 德国 (Germany) 07 - situba",
-      "server": "144.31.159.86",
-      "server_port": 443,
-      "uuid": "b5d6221d-e3ad-4453-b5c6-8bf7ccaa7aa5",
-      "flow": "xtls-rprx-vision",
+      "server": "185.226.172.8",
+      "server_port": 8008,
+      "method": "aes-256-gcm",
+      "password": "XKFKl2rULjIp74"
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 德国 (Germany) 08 - situba",
+      "server": "162.55.242.208",
+      "server_port": 2053,
+      "uuid": "659ffdfa-47d2-47d7-af40-5afe0907eead",
       "tls": {
         "enabled": true,
-        "server_name": "de3.duck-proxy.com",
-        "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
+        "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "safari"
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "jeS6Zu-p1Gf6GtraIAbpgQoSeT26Xq3GqgqVxccbVhY",
+          "short_id": "4d14da19b19cfc8c"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 08 - situba",
+      "tag": "🇩🇪 德国 (Germany) 09 - situba",
       "server": "159.69.103.251",
       "server_port": 80,
       "uuid": "1bbef2cd-2851-4f00-b37e-a2478a1e5a70",
@@ -132,84 +123,83 @@
     },
     {
       "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 09 - situba",
-      "server": "31.77.161.15",
+      "tag": "🇩🇪 德国 (Germany) 10 - situba",
+      "server": "82.118.19.153",
       "server_port": 443,
-      "uuid": "adc11f30-e4cb-4985-bf5e-f9ded69c019f",
+      "uuid": "adcaa148-7c66-4282-a81a-99ec8afa029d",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "nvidia.com",
+        "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI",
-          "short_id": "db04ce8bdb8900f1"
+          "public_key": "Tiuy8om5Lk0pWL95-8LaFFTwH0vbURVMoOkaW9xGaiE",
+          "short_id": "670ed9f350bd8ee0"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 10 - situba",
-      "server": "64.188.79.106",
+      "tag": "🇩🇪 德国 (Germany) 11 - situba",
+      "server": "144.31.159.86",
       "server_port": 443,
-      "uuid": "94006a20-6cd6-4751-a14d-c5a0bacb68bb",
+      "uuid": "b5d6221d-e3ad-4453-b5c6-8bf7ccaa7aa5",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "yandex.ru",
+        "server_name": "de3.duck-proxy.com",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
         "utls": {
           "enabled": true,
-          "fingerprint": ""
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "dBvFkg2zny545Ws6H_LXKEohOYV2MW_zACRrRQE1IUg",
-          "short_id": "992e5a9a"
+          "fingerprint": "chrome"
         }
       }
     },
     {
       "type": "shadowsocks",
-      "tag": "🇩🇪 德国 (Germany) 11 - situba",
-      "server": "creativegermany.zanity.net",
-      "server_port": 5228,
-      "method": "chacha20-ietf-poly1305",
-      "password": "IdU1jzHh7ZszbUC5v2mA9W"
+      "tag": "🇩🇪 德国 (Germany) 12 - situba",
+      "server": "2.58.81.221",
+      "server_port": 80,
+      "method": "aes-256-gcm",
+      "password": "kKEd0rBrd56Furjz"
     },
     {
       "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 12 - situba",
+      "tag": "🇩🇪 德国 (Germany) 13 - situba",
+      "server": "defrnode.jumpernode.online",
+      "server_port": 443,
+      "uuid": "8af93649-403b-46d8-9966-923d4c58402c",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "buckeye-retail-website.amazon.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "XTarABsaaFbjYNk6lRKnUzGavHzeqMIP7B8dZGNCvkE",
+          "short_id": "5c6481cdd4"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 德国 (Germany) 14 - situba",
       "server": "163.8.195.241",
       "server_port": 2087,
       "uuid": "56ba5d34-ef22-4ba6-8090-4188b807df54",
       "transport": {
         "type": "ws",
         "path": "/29c8fed7ca22"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 13 - situba",
-      "server": "gerwai1488.vvzzkontaktezzvv.garden",
-      "server_port": 443,
-      "uuid": "4bdeee92-97e8-414d-bef6-ec1d5e2ab73b",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "gerwai1488.vvzzkontaktezzvv.garden",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "EYfpgja4VjpLUnWHtDJQ1XZk6xL5j4rXwf80Sw6keV0",
-          "short_id": "0c13e8822e7f58aa"
-        }
       }
     },
     {
@@ -229,7 +219,8 @@
         "🇩🇪 德国 (Germany) 10 - situba",
         "🇩🇪 德国 (Germany) 11 - situba",
         "🇩🇪 德国 (Germany) 12 - situba",
-        "🇩🇪 德国 (Germany) 13 - situba"
+        "🇩🇪 德国 (Germany) 13 - situba",
+        "🇩🇪 德国 (Germany) 14 - situba"
       ]
     },
     {
@@ -248,7 +239,8 @@
         "🇩🇪 德国 (Germany) 10 - situba",
         "🇩🇪 德国 (Germany) 11 - situba",
         "🇩🇪 德国 (Germany) 12 - situba",
-        "🇩🇪 德国 (Germany) 13 - situba"
+        "🇩🇪 德国 (Germany) 13 - situba",
+        "🇩🇪 德国 (Germany) 14 - situba"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
