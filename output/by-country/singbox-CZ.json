@@ -4,21 +4,28 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
-      "tag": "🌐 其他地区 (Other) 01 - situba",
-      "server": "104.18.9.83",
+      "type": "vless",
+      "tag": "🇨🇿 捷克 (Czech) 01 - situba",
+      "server": "104.21.91.50",
       "server_port": 443,
-      "password": "humanity",
+      "uuid": "3e43ffd1-3f7b-45b0-a955-c249010c7ebc",
       "tls": {
         "enabled": true,
-        "server_name": "www.calmlunch.com",
-        "insecure": false
+        "server_name": "Open-39.AVL-a47261.WorKErS.DeV",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       },
       "transport": {
         "type": "ws",
-        "path": "/assignment",
+        "path": "/vl/9Vd7GxzImsNPSKUT9uIK0uYIARIV?ed=2560",
         "headers": {
-          "Host": "www.calmlunch.com"
+          "Host": "open-39.avl-a47261.workers.dev"
         }
       }
     },
@@ -27,14 +34,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🌐 其他地区 (Other) 01 - situba"
+        "🇨🇿 捷克 (Czech) 01 - situba"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🌐 其他地区 (Other) 01 - situba"
+        "🇨🇿 捷克 (Czech) 01 - situba"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
