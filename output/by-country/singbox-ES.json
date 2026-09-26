@@ -53,13 +53,53 @@
       }
     },
     {
+      "type": "vmess",
+      "tag": "🇪🇸 西班牙 (Spain) 04 - situba",
+      "server": "66.163.118.73",
+      "server_port": 22324,
+      "uuid": "04621bae-ab36-11ec-b909-0242ac120002",
+      "security": "auto"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇪🇸 西班牙 (Spain) 05 - situba",
+      "server": "108.181.121.226",
+      "server_port": 8388,
+      "method": "chacha20-ietf-poly1305",
+      "password": "WSyL4XTwNsdv"
+    },
+    {
+      "type": "vless",
+      "tag": "🇪🇸 西班牙 (Spain) 06 - situba",
+      "server": "esbe.vihodest.net",
+      "server_port": 443,
+      "uuid": "88956de8-38db-449c-8410-4b70a4fb5c9b",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "esbe.vihodest.net",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "ihEweXseofZYKT-AB6cTtQ1IlXgC3a7HHAsi-o50yFE",
+          "short_id": "e93196a756abca09"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇪🇸 西班牙 (Spain) 01 - situba",
         "🇪🇸 西班牙 (Spain) 02 - situba",
-        "🇪🇸 西班牙 (Spain) 03 - situba"
+        "🇪🇸 西班牙 (Spain) 03 - situba",
+        "🇪🇸 西班牙 (Spain) 04 - situba",
+        "🇪🇸 西班牙 (Spain) 05 - situba",
+        "🇪🇸 西班牙 (Spain) 06 - situba"
       ]
     },
     {
@@ -68,7 +108,10 @@
       "outbounds": [
         "🇪🇸 西班牙 (Spain) 01 - situba",
         "🇪🇸 西班牙 (Spain) 02 - situba",
-        "🇪🇸 西班牙 (Spain) 03 - situba"
+        "🇪🇸 西班牙 (Spain) 03 - situba",
+        "🇪🇸 西班牙 (Spain) 04 - situba",
+        "🇪🇸 西班牙 (Spain) 05 - situba",
+        "🇪🇸 西班牙 (Spain) 06 - situba"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
