@@ -18,13 +18,20 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: chrome
 - name: 🇪🇸 西班牙 (Spain) 02 - situba
+  server: 108.181.121.226
+  port: 8388
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: WSyL4XTwNsdv
+- name: 🇪🇸 西班牙 (Spain) 03 - situba
   server: 140.174.184.5
   port: 8388
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
   password: qItG8SueYQcP
-- name: 🇪🇸 西班牙 (Spain) 03 - situba
+- name: 🇪🇸 西班牙 (Spain) 04 - situba
   server: 212.227.235.66
   port: 2053
   udp: true
@@ -36,22 +43,7 @@ proxies:
     short-id: 29e8dcd2b37aaa7f
   servername: www.apple.com
   client-fingerprint: firefox
-- name: 🇪🇸 西班牙 (Spain) 04 - situba
-  server: 66.163.118.73
-  port: 22324
-  udp: true
-  type: vmess
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
 - name: 🇪🇸 西班牙 (Spain) 05 - situba
-  server: 108.181.121.226
-  port: 8388
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: WSyL4XTwNsdv
-- name: 🇪🇸 西班牙 (Spain) 06 - situba
   server: esbe.vihodest.net
   port: 443
   udp: true
@@ -64,6 +56,20 @@ proxies:
     short-id: e93196a756abca09
   servername: esbe.vihodest.net
   client-fingerprint: chrome
+- name: 🇪🇸 西班牙 (Spain) 06 - situba
+  server: mygptagent.org
+  port: 443
+  udp: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: mygptagent.org
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /linkvws
 proxy-groups:
 - name: PROXIES
   type: select
