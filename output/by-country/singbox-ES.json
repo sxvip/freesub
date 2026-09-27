@@ -34,10 +34,10 @@
     {
       "type": "shadowsocks",
       "tag": "🇪🇸 西班牙 (Spain) 03 - situba",
-      "server": "108.181.121.226",
+      "server": "140.174.184.5",
       "server_port": 8388,
       "method": "chacha20-ietf-poly1305",
-      "password": "WSyL4XTwNsdv"
+      "password": "qItG8SueYQcP"
     },
     {
       "type": "vmess",
@@ -53,19 +53,8 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/linkvws",
-        "headers": {
-          "Host": "mygptagent.org"
-        }
+        "path": "/linkvws"
       }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇪🇸 西班牙 (Spain) 05 - situba",
-      "server": "140.174.184.5",
-      "server_port": 8388,
-      "method": "chacha20-ietf-poly1305",
-      "password": "qItG8SueYQcP"
     },
     {
       "type": "selector",
@@ -75,8 +64,7 @@
         "🇪🇸 西班牙 (Spain) 01 - situba",
         "🇪🇸 西班牙 (Spain) 02 - situba",
         "🇪🇸 西班牙 (Spain) 03 - situba",
-        "🇪🇸 西班牙 (Spain) 04 - situba",
-        "🇪🇸 西班牙 (Spain) 05 - situba"
+        "🇪🇸 西班牙 (Spain) 04 - situba"
       ]
     },
     {
@@ -86,8 +74,7 @@
         "🇪🇸 西班牙 (Spain) 01 - situba",
         "🇪🇸 西班牙 (Spain) 02 - situba",
         "🇪🇸 西班牙 (Spain) 03 - situba",
-        "🇪🇸 西班牙 (Spain) 04 - situba",
-        "🇪🇸 西班牙 (Spain) 05 - situba"
+        "🇪🇸 西班牙 (Spain) 04 - situba"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
