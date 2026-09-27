@@ -6,22 +6,14 @@
     {
       "type": "shadowsocks",
       "tag": "🇸🇪 瑞典 (Sweden) 01 - situba",
-      "server": "70.34.212.124",
-      "server_port": 8388,
-      "method": "aes-256-gcm",
-      "password": "AxIYWtskJWIIaefW"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇸🇪 瑞典 (Sweden) 02 - situba",
-      "server": "13.48.104.64",
+      "server": "16.170.163.124",
       "server_port": 443,
       "method": "aes-256-cfb",
       "password": "amazonskr05"
     },
     {
       "type": "shadowsocks",
-      "tag": "🇸🇪 瑞典 (Sweden) 03 - situba",
+      "tag": "🇸🇪 瑞典 (Sweden) 02 - situba",
       "server": "51.20.72.15",
       "server_port": 443,
       "method": "aes-256-cfb",
@@ -29,8 +21,16 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇸🇪 瑞典 (Sweden) 04 - situba",
+      "tag": "🇸🇪 瑞典 (Sweden) 03 - situba",
       "server": "51.20.122.188",
+      "server_port": 443,
+      "method": "aes-256-cfb",
+      "password": "amazonskr05"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇸🇪 瑞典 (Sweden) 04 - situba",
+      "server": "13.48.104.64",
       "server_port": 443,
       "method": "aes-256-cfb",
       "password": "amazonskr05"
@@ -38,6 +38,29 @@
     {
       "type": "vless",
       "tag": "🇸🇪 瑞典 (Sweden) 05 - situba",
+      "server": "2.27.14.218",
+      "server_port": 2096,
+      "uuid": "11d826ce-d6e5-4154-8658-6829bb17dca2",
+      "tls": {
+        "enabled": true,
+        "server_name": "stf7697.rumedia-cdn.com",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/cdn/v3/live",
+        "headers": {
+          "Host": "stf7697.rumedia-cdn.com"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇪 瑞典 (Sweden) 06 - situba",
       "server": "surstreming.vvzzkontaktezzvv.garden",
       "server_port": 443,
       "uuid": "4bdeee92-97e8-414d-bef6-ec1d5e2ab73b",
@@ -57,6 +80,14 @@
       }
     },
     {
+      "type": "shadowsocks",
+      "tag": "🇸🇪 瑞典 (Sweden) 07 - situba",
+      "server": "70.34.212.124",
+      "server_port": 8388,
+      "method": "aes-256-gcm",
+      "password": "AxIYWtskJWIIaefW"
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -65,7 +96,9 @@
         "🇸🇪 瑞典 (Sweden) 02 - situba",
         "🇸🇪 瑞典 (Sweden) 03 - situba",
         "🇸🇪 瑞典 (Sweden) 04 - situba",
-        "🇸🇪 瑞典 (Sweden) 05 - situba"
+        "🇸🇪 瑞典 (Sweden) 05 - situba",
+        "🇸🇪 瑞典 (Sweden) 06 - situba",
+        "🇸🇪 瑞典 (Sweden) 07 - situba"
       ]
     },
     {
@@ -76,7 +109,9 @@
         "🇸🇪 瑞典 (Sweden) 02 - situba",
         "🇸🇪 瑞典 (Sweden) 03 - situba",
         "🇸🇪 瑞典 (Sweden) 04 - situba",
-        "🇸🇪 瑞典 (Sweden) 05 - situba"
+        "🇸🇪 瑞典 (Sweden) 05 - situba",
+        "🇸🇪 瑞典 (Sweden) 06 - situba",
+        "🇸🇪 瑞典 (Sweden) 07 - situba"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
