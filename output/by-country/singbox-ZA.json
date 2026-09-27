@@ -6,36 +6,22 @@
     {
       "type": "shadowsocks",
       "tag": "🇿🇦 南非 (South Africa) 01 - situba",
-      "server": "102.37.156.224",
-      "server_port": 443,
-      "method": "chacha20-ietf-poly1305",
-      "password": "aduB9HGxQHjA2SBMRjkHX6"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇿🇦 南非 (South Africa) 02 - situba",
       "server": "139.84.247.164",
       "server_port": 8388,
       "method": "chacha20-ietf-poly1305",
       "password": "tfAcRikawhNoZAhu"
     },
     {
-      "type": "vless",
-      "tag": "🇿🇦 南非 (South Africa) 03 - situba",
-      "server": "platform108.golnamakcert.top",
-      "server_port": 80,
-      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
-      "transport": {
-        "type": "ws",
-        "path": "/platform108",
-        "headers": {
-          "Host": "platform108.halalkhor.info"
-        }
-      }
+      "type": "shadowsocks",
+      "tag": "🇿🇦 南非 (South Africa) 02 - situba",
+      "server": "102.133.165.160",
+      "server_port": 16233,
+      "method": "chacha20-ietf-poly1305",
+      "password": "Xsy8Ox4yOV3xLlpxtjzs3X"
     },
     {
       "type": "vless",
-      "tag": "🇿🇦 南非 (South Africa) 04 - situba",
+      "tag": "🇿🇦 南非 (South Africa) 03 - situba",
       "server": "platform101.golnamakcert.top",
       "server_port": 80,
       "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
@@ -48,68 +34,13 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇿🇦 南非 (South Africa) 05 - situba",
-      "server": "platform106.golnamakcert.top",
-      "server_port": 80,
-      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
-      "transport": {
-        "type": "ws",
-        "path": "/platform106",
-        "headers": {
-          "Host": "platform106.halalkhor.info"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇿🇦 南非 (South Africa) 06 - situba",
-      "server": "platform109.golnamakcert.top",
-      "server_port": 80,
-      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
-      "transport": {
-        "type": "ws",
-        "path": "/platform109"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇿🇦 南非 (South Africa) 07 - situba",
-      "server": "platform107.golnamakcert.top",
-      "server_port": 80,
-      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
-      "transport": {
-        "type": "ws",
-        "path": "/platform107"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇿🇦 南非 (South Africa) 08 - situba",
-      "server": "platform103.golnamakcert.top",
-      "server_port": 80,
-      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
-      "transport": {
-        "type": "ws",
-        "path": "/platform103",
-        "headers": {
-          "Host": "platform103.halalkhor.info"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇿🇦 南非 (South Africa) 01 - situba",
         "🇿🇦 南非 (South Africa) 02 - situba",
-        "🇿🇦 南非 (South Africa) 03 - situba",
-        "🇿🇦 南非 (South Africa) 04 - situba",
-        "🇿🇦 南非 (South Africa) 05 - situba",
-        "🇿🇦 南非 (South Africa) 06 - situba",
-        "🇿🇦 南非 (South Africa) 07 - situba",
-        "🇿🇦 南非 (South Africa) 08 - situba"
+        "🇿🇦 南非 (South Africa) 03 - situba"
       ]
     },
     {
@@ -118,12 +49,7 @@
       "outbounds": [
         "🇿🇦 南非 (South Africa) 01 - situba",
         "🇿🇦 南非 (South Africa) 02 - situba",
-        "🇿🇦 南非 (South Africa) 03 - situba",
-        "🇿🇦 南非 (South Africa) 04 - situba",
-        "🇿🇦 南非 (South Africa) 05 - situba",
-        "🇿🇦 南非 (South Africa) 06 - situba",
-        "🇿🇦 南非 (South Africa) 07 - situba",
-        "🇿🇦 南非 (South Africa) 08 - situba"
+        "🇿🇦 南非 (South Africa) 03 - situba"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
