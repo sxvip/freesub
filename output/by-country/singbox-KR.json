@@ -4,36 +4,23 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
+      "type": "vmess",
       "tag": "🇰🇷 韩国 (South Korea) 01 - situba",
-      "server": "131.186.19.174",
-      "server_port": 50160,
-      "password": "7302ad33229de166d393cd56143a1e4c",
-      "tls": {
-        "enabled": true,
-        "server_name": "google.com",
-        "insecure": true
-      }
+      "server": "140.238.2.250",
+      "server_port": 443,
+      "uuid": "41a7089a-040b-4538-8b8d-010902405bde",
+      "security": "auto"
     },
     {
-      "type": "vless",
+      "type": "hysteria2",
       "tag": "🇰🇷 韩国 (South Korea) 02 - situba",
-      "server": "3.39.4.109",
-      "server_port": 18967,
-      "uuid": "814bd064-544d-4255-a070-5705c03f6da9",
-      "flow": "xtls-rprx-vision",
+      "server": "152.70.237.123",
+      "server_port": 2053,
+      "password": "maintell",
       "tls": {
         "enabled": true,
-        "server_name": "www.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0",
-          "short_id": "48050fab"
-        }
+        "server_name": "bing.com",
+        "insecure": true
       }
     },
     {
@@ -51,18 +38,102 @@
     {
       "type": "hysteria2",
       "tag": "🇰🇷 韩国 (South Korea) 04 - situba",
-      "server": "152.67.200.82",
+      "server": "131.186.19.174",
       "server_port": 50160,
-      "password": "3d7634af8cb2c6cb4bac1c0efad8b43d",
+      "password": "7302ad33229de166d393cd56143a1e4c",
       "tls": {
         "enabled": true,
-        "server_name": "css.rbxcdn.com",
+        "server_name": "google.com",
         "insecure": true
       }
     },
     {
       "type": "vless",
       "tag": "🇰🇷 韩国 (South Korea) 05 - situba",
+      "server": "3.39.4.109",
+      "server_port": 18967,
+      "uuid": "814bd064-544d-4255-a070-5705c03f6da9",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0",
+          "short_id": "48050fab"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇰🇷 韩国 (South Korea) 06 - situba",
+      "server": "61.111.247.22",
+      "server_port": 443,
+      "uuid": "82C94E17-B27E-4356-82C1-2F9C79B0CF6D",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "gateway.icloud.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "F6Asg31ihdkFCmTdIuGjq_232PMYhLsCH9k3Npaa9VI",
+          "short_id": "0d9954fe36197887"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇰🇷 韩国 (South Korea) 07 - situba",
+      "server": "61.111.247.80",
+      "server_port": 443,
+      "uuid": "82C94E17-B27E-4356-82C1-2F9C79B0CF6D",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "gateway.icloud.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "Cn5_Bic3VFQ2ONvH5_npnbMYZ-oxkl4BxawPKxoRdCQ",
+          "short_id": "f8f2875b3b4cb65b"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇰🇷 韩国 (South Korea) 08 - situba",
+      "server": "3.39.4.109",
+      "server_port": 13672,
+      "uuid": "814bd064-544d-4255-a070-5705c03f6da9",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0",
+          "short_id": "48050fab"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇰🇷 韩国 (South Korea) 09 - situba",
       "server": "151.245.106.49",
       "server_port": 2053,
       "uuid": "a2de9567-9646-45a9-a410-7303a43bdb6c",
@@ -71,7 +142,7 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
@@ -81,22 +152,59 @@
       }
     },
     {
-      "type": "vmess",
-      "tag": "🇰🇷 韩国 (South Korea) 06 - situba",
-      "server": "140.238.2.250",
+      "type": "vless",
+      "tag": "🇰🇷 韩国 (South Korea) 10 - situba",
+      "server": "61.111.247.177",
       "server_port": 443,
-      "uuid": "41a7089a-040b-4538-8b8d-010902405bde",
-      "security": "auto"
+      "uuid": "82C94E17-B27E-4356-82C1-2F9C79B0CF6D",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "gateway.icloud.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "upzGwN_6mF1HLEIWveelchmljBlEL1fTNNJryHP1h0Q",
+          "short_id": "57a9322ca488758c"
+        }
+      }
     },
     {
       "type": "hysteria2",
-      "tag": "🇰🇷 韩国 (South Korea) 07 - situba",
-      "server": "150-230-252-217.liao.kdns.fr",
-      "server_port": 50160,
-      "password": "9cfc9458e48c028ec03ff86ebc71c744",
+      "tag": "🇰🇷 韩国 (South Korea) 11 - situba",
+      "server": "vpn-kr-002.fastervpn.world",
+      "server_port": 443,
+      "password": "H7mP2xY9kJ4nQ9wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "150-230-252-217.liao.kdns.fr",
+        "server_name": "vpn-kr-002.fastervpn.world",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇰🇷 韩国 (South Korea) 12 - situba",
+      "server": "152.67.200.82",
+      "server_port": 50160,
+      "password": "3d7634af8cb2c6cb4bac1c0efad8b43d",
+      "tls": {
+        "enabled": true,
+        "server_name": "t.me",
+        "insecure": true
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇰🇷 韩国 (South Korea) 13 - situba",
+      "server": "154.90.62.70",
+      "server_port": 56127,
+      "password": "p5jTPcffLgi4gaNOJd2KUTb9YEPBBD5B",
+      "tls": {
+        "enabled": true,
+        "server_name": "154.90.62.70",
         "insecure": true
       }
     },
@@ -111,7 +219,13 @@
         "🇰🇷 韩国 (South Korea) 04 - situba",
         "🇰🇷 韩国 (South Korea) 05 - situba",
         "🇰🇷 韩国 (South Korea) 06 - situba",
-        "🇰🇷 韩国 (South Korea) 07 - situba"
+        "🇰🇷 韩国 (South Korea) 07 - situba",
+        "🇰🇷 韩国 (South Korea) 08 - situba",
+        "🇰🇷 韩国 (South Korea) 09 - situba",
+        "🇰🇷 韩国 (South Korea) 10 - situba",
+        "🇰🇷 韩国 (South Korea) 11 - situba",
+        "🇰🇷 韩国 (South Korea) 12 - situba",
+        "🇰🇷 韩国 (South Korea) 13 - situba"
       ]
     },
     {
@@ -124,7 +238,13 @@
         "🇰🇷 韩国 (South Korea) 04 - situba",
         "🇰🇷 韩国 (South Korea) 05 - situba",
         "🇰🇷 韩国 (South Korea) 06 - situba",
-        "🇰🇷 韩国 (South Korea) 07 - situba"
+        "🇰🇷 韩国 (South Korea) 07 - situba",
+        "🇰🇷 韩国 (South Korea) 08 - situba",
+        "🇰🇷 韩国 (South Korea) 09 - situba",
+        "🇰🇷 韩国 (South Korea) 10 - situba",
+        "🇰🇷 韩国 (South Korea) 11 - situba",
+        "🇰🇷 韩国 (South Korea) 12 - situba",
+        "🇰🇷 韩国 (South Korea) 13 - situba"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
