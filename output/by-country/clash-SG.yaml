@@ -5,20 +5,31 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇬 新加坡 (Singapore) 01 - situba
-  server: 128.199.172.224
-  port: 8080
+  server: 188.114.97.3
+  port: 443
   udp: true
-  type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
+  type: trojan
+  password: Telegram_healer_config
+  sni: 6M1RGyIeClMRx9hef1.z6-0HlnubjIbWZpa85.wOrKerS.DEv
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /tr/ox5zBiRQjs2Rscy0XwxXY2ZzE?ed=2560
 - name: 🇸🇬 新加坡 (Singapore) 02 - situba
-  server: 149.88.23.207
-  port: 18000
+  server: 172.67.216.233
+  port: 443
   udp: true
-  type: vmess
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
+  type: vless
+  uuid: 23e34376-aa47-4c8d-97ea-02915e01fcca
+  tls: true
+  servername: J3Bx1S9MK2syLW66yJ-hSk.TJsJrKk8GbHTS0Q5-0Os.wOrKeRS.DEv
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /vl/uwojyr8LT2gMeHnQJVf2HntOGHsvRH3?ed=2560
+    headers:
+      Host: j3bx1s9mk2sylw66yj-hsk.tjsjrkk8gbhts0q5-0os.workers.dev
 - name: 🇸🇬 新加坡 (Singapore) 03 - situba
   server: 149.88.23.202
   port: 18000
@@ -28,14 +39,67 @@ proxies:
   alterId: 0
   cipher: auto
 - name: 🇸🇬 新加坡 (Singapore) 04 - situba
-  server: 138.2.73.238
-  port: 50160
+  server: 149.88.23.207
+  port: 18000
   udp: true
-  type: hysteria2
-  password: f87376e17da040ed04c9665ce8972930
-  sni: 138.2.73.238
-  skip-cert-verify: true
+  type: vmess
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
 - name: 🇸🇬 新加坡 (Singapore) 05 - situba
+  server: 128.199.172.224
+  port: 8080
+  udp: true
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+- name: 🇸🇬 新加坡 (Singapore) 06 - situba
+  server: 68.183.227.45
+  port: 8080
+  udp: true
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+- name: 🇸🇬 新加坡 (Singapore) 07 - situba
+  server: 172.236.142.114
+  port: 443
+  udp: true
+  type: vless
+  uuid: 408fbae6-a40b-4f0b-9723-0b4ce8e3d035
+  tls: true
+  servername: onhit.shalana.xyz
+  skip-cert-verify: false
+  client-fingerprint: random
+- name: 🇸🇬 新加坡 (Singapore) 08 - situba
+  server: 68.183.227.236
+  port: 8080
+  udp: true
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+- name: 🇸🇬 新加坡 (Singapore) 09 - situba
+  server: 129.150.51.127
+  port: 34249
+  udp: true
+  type: vless
+  uuid: 0590ab38-cb22-41d3-8312-6f396a5cec58
+  tls: true
+  servername: www.microsoft.com
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 10 - situba
+  server: 54.251.239.81
+  port: 26415
+  udp: true
+  type: vless
+  uuid: d00d9d18-20cf-4191-be76-6f73d43a27ec
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: eC5S3o9uFN6i_YjDjiALCXbc_dzh3kEm2C5zduDGtS8
+    short-id: b7dd999667b0406e
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 11 - situba
   server: 206.206.76.75
   port: 443
   udp: true
@@ -48,59 +112,7 @@ proxies:
     short-id: 9930177816ab09da
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 06 - situba
-  server: 5.223.74.174
-  port: 2053
-  udp: true
-  type: vless
-  uuid: 29b81e1a-1989-4778-b0cb-a7223730f59d
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: pIkxGlcFFawk7e0T-2VcdFXOc9LsjoBhl47vl8EuRgg
-    short-id: 36151c48e28cfb65
-  servername: 5.223.74.174
-  client-fingerprint: random
-- name: 🇸🇬 新加坡 (Singapore) 07 - situba
-  server: 129.150.51.127
-  port: 34249
-  udp: true
-  type: vless
-  uuid: 0590ab38-cb22-41d3-8312-6f396a5cec58
-  tls: true
-  servername: www.microsoft.com
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 08 - situba
-  server: 68.183.227.45
-  port: 8080
-  udp: true
-  type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: 🇸🇬 新加坡 (Singapore) 09 - situba
-  server: onhit.shalana.xyz
-  port: 443
-  udp: true
-  type: vless
-  uuid: 408fbae6-a40b-4f0b-9723-0b4ce8e3d035
-  tls: true
-  servername: onhit.shalana.xyz
-  skip-cert-verify: false
-  client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 10 - situba
-  server: 3.0.111.82
-  port: 17623
-  udp: true
-  type: vless
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 11 - situba
+- name: 🇸🇬 新加坡 (Singapore) 12 - situba
   server: 54.169.200.246
   port: 41688
   udp: true
@@ -113,7 +125,96 @@ proxies:
     short-id: 7f342137c20387
   servername: www.intel.com
   client-fingerprint: safari
-- name: 🇸🇬 新加坡 (Singapore) 12 - situba
+- name: 🇸🇬 新加坡 (Singapore) 13 - situba
+  server: sg-1.gsafevpnapi.com
+  port: 20270
+  udp: true
+  type: vless
+  uuid: e3a14b3d-8995-4031-a207-32ba5707c1ba
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: q78tZmuaXQTsrrjZtjjRDtoni6tzN-HhXcAY-iT5zF0
+    short-id: fc13d6208ebbae16
+  servername: www.yahoo.com
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 14 - situba
+  server: 144151f6-tmeqo0-u4zl7f-1jk6u.sg7.hyhuawei.com
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 45bc25b2-1a10-11ed-91c0-f23c91cfbbc9
+  sni: 144151f6-tmeqo0-u4zl7f-1jk6u.sg7.hyhuawei.com
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 15 - situba
+  server: 18.143.191.201
+  port: 21464
+  udp: true
+  type: vless
+  uuid: d00d9d18-20cf-4191-be76-6f73d43a27ec
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 7TVqIgOMgFzxjYG4nSSQxWWTE7cBPXjpoZwCsd337lY
+    short-id: 52f8
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 16 - situba
+  server: 57.129.130.57
+  port: 52014
+  udp: true
+  type: vless
+  uuid: 091ea5fd-4e8d-4459-90af-e4d10179efff
+  tls: true
+  servername: 5iv93opy8jus9z.bjo5si35c9i9ud4242fado49188obkoiermjuxj7zgxu.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: 5iv93opy8jus9z.bjo5si35c9i9ud4242fado49188obkoiermjuxj7zgxu.workers.dev
+- name: 🇸🇬 新加坡 (Singapore) 17 - situba
+  server: 13.212.221.197
+  port: 8686
+  udp: true
+  type: vless
+  uuid: 1a17b19d-4896-4531-af79-6e91d8ef8228
+  tls: true
+  reality-opts:
+    public-key: A3NXnUIT-W0m1Y_leRnv5so2IeCvk9FCFgL31PulfTw
+    short-id: 628b3c90c98ead4f
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 18 - situba
+  server: 129.151.64.169
+  port: 31867
+  udp: true
+  type: vless
+  uuid: f7ff2e67-b687-4098-a28a-d102c27ba19c
+  tls: true
+  servername: mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev
+- name: 🇸🇬 新加坡 (Singapore) 19 - situba
+  server: 5.223.74.174
+  port: 2053
+  udp: true
+  type: vless
+  uuid: 29b81e1a-1989-4778-b0cb-a7223730f59d
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: pIkxGlcFFawk7e0T-2VcdFXOc9LsjoBhl47vl8EuRgg
+    short-id: 36151c48e28cfb65
+  servername: 5.223.74.174
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 20 - situba
   server: 3.0.111.82
   port: 10574
   udp: true
@@ -126,33 +227,38 @@ proxies:
     short-id: 48050fab
   servername: www.apple.com
   client-fingerprint: qq
-- name: 🇸🇬 新加坡 (Singapore) 13 - situba
-  server: 217.217.254.126
-  port: 2053
+- name: 🇸🇬 新加坡 (Singapore) 21 - situba
+  server: 83.147.216.223
+  port: 4433
   udp: true
   type: vless
-  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
+  uuid: 660174a2-d32d-4521-840d-d1853bfc80b8
   tls: true
-  reality-opts:
-    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
-    short-id: 87829de0e2bb82cb
-  servername: www.cloudflare.com
+  servername: 3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev
+  skip-cert-verify: false
   client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 14 - situba
-  server: sg2-8sb.6121999.dpdns.org
-  port: 19825
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: 3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev
+- name: 🇸🇬 新加坡 (Singapore) 22 - situba
+  server: 116.251.217.65
+  port: 443
   udp: true
   type: vless
-  uuid: 2d1ad594-80a4-4bfb-87a6-038e39701f51
-  flow: xtls-rprx-vision
+  uuid: 2388e166-3890-33ae-f77e-efac00000002
   tls: true
-  reality-opts:
-    public-key: GvvkY8xYb9QjvwvzYq_uNC4tOGd0DCxRnz6770-xgkI
-    short-id: 6ba85179e30d4fc2
-  servername: sg2-8sb.6121999.dpdns.org
+  servername: netlivpn4813.ddhshhshs.workers.dev
+  skip-cert-verify: false
   client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 15 - situba
-  server: 91.193.58.255
+  network: ws
+  ws-opts:
+    path: /NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN
+    headers:
+      Host: netlivpn4813.ddhshhshs.workers.dev
+- name: 🇸🇬 新加坡 (Singapore) 23 - situba
+  server: 91.193.58.108
   port: 2096
   udp: true
   type: vless
@@ -166,20 +272,7 @@ proxies:
     path: /free-server.techsonic.dev
     headers:
       Host: free-server.techsonic.dev
-- name: 🇸🇬 新加坡 (Singapore) 16 - situba
-  server: 3.0.111.82
-  port: 12972
-  udp: true
-  type: vless
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  servername: www.apple.com
-  client-fingerprint: edge
-- name: 🇸🇬 新加坡 (Singapore) 17 - situba
+- name: 🇸🇬 新加坡 (Singapore) 24 - situba
   server: 170.114.52.22
   port: 443
   udp: true
@@ -194,6 +287,57 @@ proxies:
     path: /cs
     headers:
       Host: asia.csmasterofficial.store
+- name: 🇸🇬 新加坡 (Singapore) 25 - situba
+  server: 3.0.111.82
+  port: 12972
+  udp: true
+  type: vless
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 26 - situba
+  server: 3.0.111.82
+  port: 17623
+  udp: true
+  type: vless
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 27 - situba
+  server: sg2-8sb.6121999.dpdns.org
+  port: 19825
+  udp: true
+  type: vless
+  uuid: 2d1ad594-80a4-4bfb-87a6-038e39701f51
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: GvvkY8xYb9QjvwvzYq_uNC4tOGd0DCxRnz6770-xgkI
+    short-id: 6ba85179e30d4fc2
+  servername: sg2-8sb.6121999.dpdns.org
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 28 - situba
+  server: 217.217.254.126
+  port: 2053
+  udp: true
+  type: vless
+  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
+  tls: true
+  reality-opts:
+    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
+    short-id: 87829de0e2bb82cb
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -216,6 +360,17 @@ proxy-groups:
   - 🇸🇬 新加坡 (Singapore) 15 - situba
   - 🇸🇬 新加坡 (Singapore) 16 - situba
   - 🇸🇬 新加坡 (Singapore) 17 - situba
+  - 🇸🇬 新加坡 (Singapore) 18 - situba
+  - 🇸🇬 新加坡 (Singapore) 19 - situba
+  - 🇸🇬 新加坡 (Singapore) 20 - situba
+  - 🇸🇬 新加坡 (Singapore) 21 - situba
+  - 🇸🇬 新加坡 (Singapore) 22 - situba
+  - 🇸🇬 新加坡 (Singapore) 23 - situba
+  - 🇸🇬 新加坡 (Singapore) 24 - situba
+  - 🇸🇬 新加坡 (Singapore) 25 - situba
+  - 🇸🇬 新加坡 (Singapore) 26 - situba
+  - 🇸🇬 新加坡 (Singapore) 27 - situba
+  - 🇸🇬 新加坡 (Singapore) 28 - situba
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -238,5 +393,16 @@ proxy-groups:
   - 🇸🇬 新加坡 (Singapore) 15 - situba
   - 🇸🇬 新加坡 (Singapore) 16 - situba
   - 🇸🇬 新加坡 (Singapore) 17 - situba
+  - 🇸🇬 新加坡 (Singapore) 18 - situba
+  - 🇸🇬 新加坡 (Singapore) 19 - situba
+  - 🇸🇬 新加坡 (Singapore) 20 - situba
+  - 🇸🇬 新加坡 (Singapore) 21 - situba
+  - 🇸🇬 新加坡 (Singapore) 22 - situba
+  - 🇸🇬 新加坡 (Singapore) 23 - situba
+  - 🇸🇬 新加坡 (Singapore) 24 - situba
+  - 🇸🇬 新加坡 (Singapore) 25 - situba
+  - 🇸🇬 新加坡 (Singapore) 26 - situba
+  - 🇸🇬 新加坡 (Singapore) 27 - situba
+  - 🇸🇬 新加坡 (Singapore) 28 - situba
 rules:
 - MATCH,PROXIES
