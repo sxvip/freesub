@@ -5,18 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - situba
-  server: 89.125.147.199
-  port: 443
-  udp: true
-  type: vless
-  uuid: 246b101b-4e4a-451f-8e9c-5e8d3b64b4ef
-  tls: true
-  reality-opts:
-    public-key: iQJ8UdFw-lUWa9mXugescYHkmwNH96nuj_z-LAZvfxg
-    short-id: a1b2c3d4
-  servername: maps.apple.com
-  client-fingerprint: chrome
-- name: 🇦🇪 阿联酋 (UAE) 02 - situba
   server: 130.49.161.70
   port: 443
   udp: true
@@ -26,15 +14,15 @@ proxies:
   skip-cert-verify: false
   obfs: salamander
   obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
-- name: 🇦🇪 阿联酋 (UAE) 03 - situba
-  server: 85.204.107.181
+- name: 🇦🇪 阿联酋 (UAE) 02 - situba
+  server: 85.204.107.178
   port: 8080
   udp: true
   type: hysteria2
   password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
   sni: hopp-romania-new.roxa.org
   skip-cert-verify: true
-- name: 🇦🇪 阿联酋 (UAE) 04 - situba
+- name: 🇦🇪 阿联酋 (UAE) 03 - situba
   server: uae.unixzone.us
   port: 22573
   udp: true
@@ -43,8 +31,6 @@ proxies:
   network: ws
   ws-opts:
     path: /
-    headers:
-      Host: uae.unixzone.us
 proxy-groups:
 - name: PROXIES
   type: select
@@ -53,7 +39,6 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 01 - situba
   - 🇦🇪 阿联酋 (UAE) 02 - situba
   - 🇦🇪 阿联酋 (UAE) 03 - situba
-  - 🇦🇪 阿联酋 (UAE) 04 - situba
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -62,6 +47,5 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 01 - situba
   - 🇦🇪 阿联酋 (UAE) 02 - situba
   - 🇦🇪 阿联酋 (UAE) 03 - situba
-  - 🇦🇪 阿联酋 (UAE) 04 - situba
 rules:
 - MATCH,PROXIES
