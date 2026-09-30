@@ -4,28 +4,38 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇩🇪 德国 (Germany) 01 (家宽) - situba
-  server: 199.232.78.170
-  port: 443
+- name: 🇺🇸 美国 (United States) 01 (移动家宽) - situba
+  server: 172.64.42.85
+  port: 2082
   udp: true
-  type: trojan
-  password: mitivpn
-  sni: ssl.fastly.com
-  skip-cert-verify: false
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   network: ws
   ws-opts:
-    path: '@mehrosabiran'
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇸🇬 新加坡 (Singapore) 02 (家宽) - situba
+  server: s3.huhiuh.space
+  port: 18642
+  udp: true
+  type: hysteria2
+  password: user317_windows:c70565e9-a99f-40ef-b96c-469a3949eed2
+  sni: www.bing.com
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇩🇪 德国 (Germany) 01 (家宽) - situba
+  - 🇺🇸 美国 (United States) 01 (移动家宽) - situba
+  - 🇸🇬 新加坡 (Singapore) 02 (家宽) - situba
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 (Germany) 01 (家宽) - situba
+  - 🇺🇸 美国 (United States) 01 (移动家宽) - situba
+  - 🇸🇬 新加坡 (Singapore) 02 (家宽) - situba
 rules:
 - MATCH,PROXIES
