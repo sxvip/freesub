@@ -5,9 +5,9 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 01 (移动家宽) - situba",
-      "server": "172.64.42.85",
-      "server_port": 8080,
+      "tag": "🇺🇸 美国 (United States) 01 (家宽) - situba",
+      "server": "162.159.48.32",
+      "server_port": 2095,
       "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
       "transport": {
         "type": "ws",
@@ -18,18 +18,9 @@
       }
     },
     {
-      "type": "vmess",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - situba",
-      "server": "sbgfgov.vip23.wogacnmnagfwgov.com",
-      "server_port": 11223,
-      "uuid": "605956ee-544d-308e-8b90-51e67c6ea8da",
-      "security": "auto",
-      "alter_id": 2
-    },
-    {
       "type": "vless",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - situba",
-      "server": "hinet1.2yly.com",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - situba",
+      "server": "118.167.235.241",
       "server_port": 24215,
       "uuid": "19d5a678-8396-4e3b-93da-ece618d0e83a",
       "tls": {
@@ -37,7 +28,7 @@
         "server_name": "addons.mozilla.org",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -47,22 +38,34 @@
       }
     },
     {
+      "type": "hysteria2",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 03 (家宽) - situba",
+      "server": "324d64f1-tmm5c0-tnsc3a-1f0gu.hk3.hyhuawei.com",
+      "server_port": 443,
+      "password": "3085fcf8-a69c-11ec-bd7c-f23c913c8d2b",
+      "tls": {
+        "enabled": true,
+        "server_name": "324d64f1-tmm5c0-tnsc3a-1f0gu.hk3.hyhuawei.com",
+        "insecure": true
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇺🇸 美国 (United States) 01 (移动家宽) - situba",
+        "🇺🇸 美国 (United States) 01 (家宽) - situba",
         "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - situba",
-        "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - situba"
+        "🇭🇰 中国香港 (Hong Kong) 03 (家宽) - situba"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇺🇸 美国 (United States) 01 (移动家宽) - situba",
+        "🇺🇸 美国 (United States) 01 (家宽) - situba",
         "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - situba",
-        "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - situba"
+        "🇭🇰 中国香港 (Hong Kong) 03 (家宽) - situba"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

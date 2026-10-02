@@ -5,13 +5,13 @@
   "outbounds": [
     {
       "type": "hysteria2",
-      "tag": "🇦🇺 澳大利亚 (Australia) 01 - situba",
-      "server": "vpn-au-001.fastervpn.world",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - situba",
+      "server": "324d64f1-tmm5c0-tnsc3a-1f0gu.hk3.hyhuawei.com",
       "server_port": 443,
-      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
+      "password": "3085fcf8-a69c-11ec-bd7c-f23c913c8d2b",
       "tls": {
         "enabled": true,
-        "server_name": "vpn-au-001.fastervpn.world",
+        "server_name": "324d64f1-tmm5c0-tnsc3a-1f0gu.hk3.hyhuawei.com",
         "insecure": true
       }
     },
@@ -20,14 +20,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇦🇺 澳大利亚 (Australia) 01 - situba"
+        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - situba"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇦🇺 澳大利亚 (Australia) 01 - situba"
+        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - situba"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
