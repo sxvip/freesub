@@ -24,7 +24,7 @@ proxies:
   servername: www.blocket.se
   client-fingerprint: firefox
 - name: 🇸🇪 瑞典 (Sweden) 03 - situba
-  server: surstreming.vvzzkontaktezzvv.garden
+  server: 5.157.10.148
   port: 443
   udp: true
   type: vless
@@ -37,16 +37,20 @@ proxies:
   servername: surstreming.vvzzkontaktezzvv.garden
   client-fingerprint: firefox
 - name: 🇸🇪 瑞典 (Sweden) 04 - situba
-  server: 199.68.198.13
+  server: 94.143.231.146
   port: 443
   udp: true
   type: vless
-  uuid: 454431fc-71e2-42b1-b375-5b55dd06666a
+  uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
   tls: true
-  reality-opts:
-    public-key: aUdvs6o4PHN6jmdkIKBA2rHsN_7l8W2SaDfNgzn-BwU
-  servername: example.org
-  client-fingerprint: firefox
+  servername: sub.merky.top
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /merky-connect/de6/
+    headers:
+      Host: sub.merky.top
 proxy-groups:
 - name: PROXIES
   type: select

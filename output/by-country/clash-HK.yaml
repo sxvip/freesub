@@ -5,12 +5,16 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 - situba
-  server: telegram.khp25.com
-  port: 1080
+  server: 162.159.48.32
+  port: 2086
   udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: pno0e2keji2gsfea
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 - name: 🇭🇰 中国香港 (Hong Kong) 02 - situba
   server: telegramx.khp25.com
   port: 1080
@@ -19,39 +23,38 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: m5nsedvdczx6x06e
 - name: 🇭🇰 中国香港 (Hong Kong) 03 - situba
-  server: fc6ffc71-tmm5c0-ts3rye-mrtr.hk3.hyhuawei.com
-  port: 443
+  server: telegram.khp25.com
+  port: 1080
   udp: true
-  type: hysteria2
-  password: 28a8a4d0-3e02-11eb-a8bf-f23c91cfbbc9
-  sni: fc6ffc71-tmm5c0-ts3rye-mrtr.hk3.hyhuawei.com
-  skip-cert-verify: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: pno0e2keji2gsfea
 - name: 🇭🇰 中国香港 (Hong Kong) 04 - situba
-  server: 283aa14b-tmm5c0-tzkd63-1jr1u.nw4.hyhuawei.com
-  port: 443
-  udp: true
-  type: hysteria2
-  password: 2c01eae6-0b6a-11ee-a058-f23c91369f2d
-  sni: 283aa14b-tmm5c0-tzkd63-1jr1u.nw4.hyhuawei.com
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 05 - situba
-  server: 47.240.80.220
-  port: 2052
-  udp: true
-  type: trojan
-  password: tFjD2X1F6i9FfWp2GDU5Vbi1conuaChDKIYbw9zMFrqvMoSz
-  sni: 47.240.80.220
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 06 - situba
-  server: 202.146.222.174
+  server: 202.146.222.89
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/wangcai2🇨🇳
+  sni: https://t.me/clashv8🇨🇳
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 05 - situba
+  server: 5e367597-tmm5c0-typ01r-1p0be.hk3.hyhuawei.com
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 55cce5a4-56b7-11ee-af82-f23c9164ca5d
+  sni: 5e367597-tmm5c0-typ01r-1p0be.hk3.hyhuawei.com
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 06 - situba
+  server: a30d91ee-tmm5c0-ttx5yr-1j0y6.nw4.hyhuawei.com
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 1cce7df2-251c-11ee-9409-f23c9164ca5d
+  sni: a30d91ee-tmm5c0-ttx5yr-1j0y6.nw4.hyhuawei.com
   skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 07 - situba
-  server: 202.146.222.89
+  server: 202.146.222.174
   port: 443
   udp: true
   type: hysteria2
@@ -64,28 +67,9 @@ proxies:
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https%3a%2f%2ft.me%2fwangcai2%d1%80%d2%b9%d2%af
+  sni: "https://t.me/wangcai2ð\x9F\x87¨ð\x9F\x87³"
   skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 09 - situba
-  server: 27.0.232.36
-  port: 443
-  udp: true
-  type: vless
-  uuid: 454431fc-71e2-42b1-b375-5b55dd06666a
-  tls: true
-  reality-opts:
-    public-key: aUdvs6o4PHN6jmdkIKBA2rHsN_7l8W2SaDfNgzn-BwU
-  servername: hk.monkora.org
-  client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 10 - situba
-  server: mz.hkychina.com
-  port: 8443
-  udp: true
-  type: hysteria2
-  password: HysTeria2026!Proxy
-  sni: mz.hkychina.com
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 11 - situba
   server: 194.99.79.26
   port: 443
   udp: true
@@ -99,7 +83,15 @@ proxies:
   network: ws
   ws-opts:
     path: /linkvws
-- name: 🇭🇰 中国香港 (Hong Kong) 12 - situba
+- name: 🇭🇰 中国香港 (Hong Kong) 10 - situba
+  server: mz.hkychina.com
+  port: 8443
+  udp: true
+  type: hysteria2
+  password: HysTeria2026!Proxy
+  sni: mz.hkychina.com
+  skip-cert-verify: false
+- name: 🇭🇰 中国香港 (Hong Kong) 11 - situba
   server: 2.27.109.179
   port: 45464
   udp: true
@@ -107,6 +99,12 @@ proxies:
   password: XuMweB2PWs
   sni: 2.27.109.179.sslip.io
   skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 12 - situba
+  server: 47.240.80.220
+  port: 5100
+  udp: true
+  type: vless
+  uuid: 71a7db14-1b6f-5aec-9e5d-9bd5f8beabab
 proxy-groups:
 - name: PROXIES
   type: select
