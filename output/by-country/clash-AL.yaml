@@ -4,28 +4,28 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇹🇭 泰国 (Thailand) 01 - situba
-  server: 103.86.49.57
-  port: 80
+- name: 🇦🇱 AL 01 - situba
+  server: lv1.rovilo.ir
+  port: 2095
   udp: true
   type: vless
-  uuid: 3c52e091-6714-4915-949f-2149fe69951b
-  network: ws
-  ws-opts:
-    path: /ws
+  uuid: 452f869f-7720-47c3-a175-b6673e31d3e8
+  network: httpupgrade
+  httpupgrade-opts:
+    path: /
     headers:
-      Host: aIs.SpEeDtEsT.nEt
+      Host: connectivitycheck.android.com
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇹🇭 泰国 (Thailand) 01 - situba
+  - 🇦🇱 AL 01 - situba
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇹🇭 泰国 (Thailand) 01 - situba
+  - 🇦🇱 AL 01 - situba
 rules:
 - MATCH,PROXIES
