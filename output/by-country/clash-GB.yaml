@@ -5,17 +5,34 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇬🇧 英国 (United Kingdom) 01 - situba
-  server: 188.114.96.8
+  server: 149.102.149.207
   port: 443
   udp: true
-  type: trojan
-  password: Telegram_healer_config
-  sni: y9p34jpjmqjazaypf.piiwddilxjcqehr17af22u7xk-yu.workers.dev
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /tr/1nWXnOaq1ajP7PKxbRS7Sdck48oy?ed=2560
+  type: ss
+  cipher: aes-256-gcm
+  password: LXchLsIwtCeUAUgu
 - name: 🇬🇧 英国 (United Kingdom) 02 - situba
+  server: 149.102.132.184
+  port: 80
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: g5h5jleTRSyO3Rk4
+- name: 🇬🇧 英国 (United Kingdom) 03 - situba
+  server: 51.38.71.51
+  port: 2083
+  udp: true
+  type: ss
+  cipher: 2022-blake3-aes-256-gcm
+  password: cOiC+3JhAXMwdGV5exnrMSorJU0Rl5qlLCbCAuDlWY4=:2tFqykGqZ101XW11f6iRiERnPycFAjjYq0y2zUYhKho=
+- name: 🇬🇧 英国 (United Kingdom) 04 - situba
+  server: 141.98.101.181
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇬🇧 英国 (United Kingdom) 05 - situba
   server: 186.190.211.147
   port: 22324
   udp: true
@@ -23,23 +40,7 @@ proxies:
   uuid: 04621bae-ab36-11ec-b909-0242ac120002
   alterId: 0
   cipher: auto
-- name: 🇬🇧 英国 (United Kingdom) 03 - situba
-  server: 158.173.24.73
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: 🇬🇧 英国 (United Kingdom) 04 - situba
-  server: 66.90.104.43
-  port: 2083
-  udp: true
-  type: vless
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
-  network: grpc
-  grpc-opts:
-    grpc-service-name: vless
-- name: 🇬🇧 英国 (United Kingdom) 05 - situba
+- name: 🇬🇧 英国 (United Kingdom) 06 - situba
   server: 66.90.105.211
   port: 2083
   udp: true
@@ -48,54 +49,47 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: vless
-- name: 🇬🇧 英国 (United Kingdom) 06 - situba
-  server: 146.70.23.32
-  port: 8080
-  udp: true
-  type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
 - name: 🇬🇧 英国 (United Kingdom) 07 - situba
-  server: 141.98.101.181
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: 🇬🇧 英国 (United Kingdom) 08 - situba
   server: 51.77.225.200
   port: 8388
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
   password: zRZNBszYyWo5
-- name: 🇬🇧 英国 (United Kingdom) 09 - situba
+- name: 🇬🇧 英国 (United Kingdom) 08 - situba
   server: 146.70.61.37
   port: 8080
   udp: true
   type: ss
   cipher: rc4-md5
   password: 14fFPrbezE3HDZzsMOr6
+- name: 🇬🇧 英国 (United Kingdom) 09 - situba
+  server: 146.70.23.32
+  port: 8080
+  udp: true
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
 - name: 🇬🇧 英国 (United Kingdom) 10 - situba
-  server: 23.81.34.204
+  server: 186.190.211.188
   port: 443
   udp: true
   type: vless
-  uuid: 99955907-9070-46f0-a200-9c7a0b9d74fe
-  flow: xtls-rprx-vision
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   tls: true
-  reality-opts:
-    public-key: J_p_dxR8dIKaezk1_Ins5MZ7e4dqgrr2n9690vVuQ2s
-    short-id: b19b017d6f453873
-  servername: speed.cloudflare.com
+  servername: 186.190.211.188
+  skip-cert-verify: true
   client-fingerprint: chrome
 - name: 🇬🇧 英国 (United Kingdom) 11 - situba
-  server: 149.102.132.184
-  port: 80
+  server: 87.192.47.10
+  port: 52006
   udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: g5h5jleTRSyO3Rk4
+  type: vless
+  uuid: bc659d88-a1e0-4c65-a49a-7b51b26a7a7f
+  flow: xtls-rprx-vision
+  tls: true
+  servername: grok.setlisting.ru
+  skip-cert-verify: false
 - name: 🇬🇧 英国 (United Kingdom) 12 - situba
   server: 46.250.250.149
   port: 2053
@@ -107,109 +101,28 @@ proxies:
     public-key: hieuCHb3HYdDYHmTDyWw2SGqyfo36AVuA-wSiZMdU1M
     short-id: 9922313fffed1c63
   servername: www.apple.com
-  client-fingerprint: random
+  client-fingerprint: firefox
 - name: 🇬🇧 英国 (United Kingdom) 13 - situba
-  server: 186.190.211.67
-  port: 443
+  server: 46.250.240.80
+  port: 2053
   udp: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
+  type: vless
+  uuid: 948df76f-505d-4608-9c76-a933ee3ccc76
   tls: true
-  servername: pahobac.org
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /linkvws
-    headers:
-      Host: pahobac.org
+  reality-opts:
+    public-key: CYFeysLf--_IVhxQOCd3ZxLrAVWFFOkJzvIGHOVXN3E
+    short-id: 4cc9dc65f7770115
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
 - name: 🇬🇧 英国 (United Kingdom) 14 - situba
-  server: aksai.org
-  port: 443
-  udp: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: aksai.org
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /linkvws
-- name: 🇬🇧 英国 (United Kingdom) 15 - situba
-  server: 87.192.47.10
-  port: 52006
+  server: 66.90.104.42
+  port: 2083
   udp: true
   type: vless
-  uuid: bc659d88-a1e0-4c65-a49a-7b51b26a7a7f
-  flow: xtls-rprx-vision
-  tls: true
-  servername: grok.setlisting.ru
-  skip-cert-verify: false
-- name: 🇬🇧 英国 (United Kingdom) 16 - situba
-  server: 186.190.211.188
-  port: 443
-  udp: true
-  type: vless
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  tls: true
-  servername: 186.190.211.188
-  skip-cert-verify: true
-  client-fingerprint: chrome
-- name: 🇬🇧 英国 (United Kingdom) 17 - situba
-  server: lv1.rovilo.ir
-  port: 2095
-  udp: true
-  type: vless
-  uuid: 452f869f-7720-47c3-a175-b6673e31d3e8
-  network: httpupgrade
-  httpupgrade-opts:
-    path: /
-    headers:
-      Host: connectivitycheck.android.com
-- name: 🇬🇧 英国 (United Kingdom) 18 - situba
-  server: v36.hdacd.com
-  port: 30836
-  udp: true
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 2
-  cipher: auto
-- name: 🇬🇧 英国 (United Kingdom) 19 - situba
-  server: 94.156.250.148
-  port: 7001
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: RexnBgU7EV5ADxG
-- name: 🇬🇧 英国 (United Kingdom) 20 - situba
-  server: server.slavkiti.monster
-  port: 443
-  udp: true
-  type: vless
-  uuid: fad0b9a6-187d-4fcc-96fc-498bc5b3135a
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: J-dv-HrWfQ_IOoyutv0Kg-rO8QwoRwc02dS1dS_tblk
-    short-id: 8325360e8bd2
-  servername: www.foxsports.com
-  client-fingerprint: chrome
-- name: 🇬🇧 英国 (United Kingdom) 21 - situba
-  server: staging.lastilhame.monster
-  port: 443
-  udp: true
-  type: vless
-  uuid: aded66f1-de12-4c3c-af9e-a21d6e7d9c96
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: FjcEZNQ8t5E4R04_11T6ghsOutdqwKKrelkuadakoQg
-    short-id: 2a80364e93d9
-  servername: www.foxsports.com
-  client-fingerprint: chrome
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+  network: grpc
+  grpc-opts:
+    grpc-service-name: vless
 proxy-groups:
 - name: PROXIES
   type: select
@@ -229,13 +142,6 @@ proxy-groups:
   - 🇬🇧 英国 (United Kingdom) 12 - situba
   - 🇬🇧 英国 (United Kingdom) 13 - situba
   - 🇬🇧 英国 (United Kingdom) 14 - situba
-  - 🇬🇧 英国 (United Kingdom) 15 - situba
-  - 🇬🇧 英国 (United Kingdom) 16 - situba
-  - 🇬🇧 英国 (United Kingdom) 17 - situba
-  - 🇬🇧 英国 (United Kingdom) 18 - situba
-  - 🇬🇧 英国 (United Kingdom) 19 - situba
-  - 🇬🇧 英国 (United Kingdom) 20 - situba
-  - 🇬🇧 英国 (United Kingdom) 21 - situba
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -255,12 +161,5 @@ proxy-groups:
   - 🇬🇧 英国 (United Kingdom) 12 - situba
   - 🇬🇧 英国 (United Kingdom) 13 - situba
   - 🇬🇧 英国 (United Kingdom) 14 - situba
-  - 🇬🇧 英国 (United Kingdom) 15 - situba
-  - 🇬🇧 英国 (United Kingdom) 16 - situba
-  - 🇬🇧 英国 (United Kingdom) 17 - situba
-  - 🇬🇧 英国 (United Kingdom) 18 - situba
-  - 🇬🇧 英国 (United Kingdom) 19 - situba
-  - 🇬🇧 英国 (United Kingdom) 20 - situba
-  - 🇬🇧 英国 (United Kingdom) 21 - situba
 rules:
 - MATCH,PROXIES

@@ -4,39 +4,8 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇸🇬 新加坡 (Singapore) 01 - situba",
-      "server": "104.17.3.81",
-      "server_port": 443,
-      "uuid": "fc60147e-76b8-4bc5-b691-90b2da79e3d2",
-      "tls": {
-        "enabled": true,
-        "server_name": "nautica-cff.kloningstrife002.workers.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/138.2.74.219-28616",
-        "headers": {
-          "Host": "nautica-cff.kloningstrife002.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇸🇬 新加坡 (Singapore) 02 - situba",
-      "server": "68.183.227.4",
-      "server_port": 8080,
-      "method": "rc4-md5",
-      "password": "14fFPrbezE3HDZzsMOr6"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇸🇬 新加坡 (Singapore) 03 - situba",
       "server": "68.183.227.45",
       "server_port": 8080,
       "method": "rc4-md5",
@@ -44,8 +13,24 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇸🇬 新加坡 (Singapore) 04 - situba",
+      "tag": "🇸🇬 新加坡 (Singapore) 02 - situba",
       "server": "68.183.227.236",
+      "server_port": 8080,
+      "method": "rc4-md5",
+      "password": "14fFPrbezE3HDZzsMOr6"
+    },
+    {
+      "type": "vmess",
+      "tag": "🇸🇬 新加坡 (Singapore) 03 - situba",
+      "server": "149.88.23.207",
+      "server_port": 18000,
+      "uuid": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe",
+      "security": "auto"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇸🇬 新加坡 (Singapore) 04 - situba",
+      "server": "128.199.172.224",
       "server_port": 8080,
       "method": "rc4-md5",
       "password": "14fFPrbezE3HDZzsMOr6"
@@ -59,16 +44,39 @@
       "security": "auto"
     },
     {
-      "type": "vmess",
+      "type": "shadowsocks",
       "tag": "🇸🇬 新加坡 (Singapore) 06 - situba",
-      "server": "149.88.23.207",
-      "server_port": 18000,
-      "uuid": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe",
-      "security": "auto"
+      "server": "68.183.235.122",
+      "server_port": 8080,
+      "method": "rc4-md5",
+      "password": "14fFPrbezE3HDZzsMOr6"
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇸🇬 新加坡 (Singapore) 07 - situba",
+      "server": "04f02e2a-tmm5c0-tzzpok-1sllg.sg7.hyhuawei.com",
+      "server_port": 443,
+      "password": "d6e1207c-f41a-11ef-9495-f23c91cfbbc9",
+      "tls": {
+        "enabled": true,
+        "server_name": "04f02e2a-tmm5c0-tzzpok-1sllg.sg7.hyhuawei.com",
+        "insecure": true
+      }
     },
     {
       "type": "vless",
-      "tag": "🇸🇬 新加坡 (Singapore) 07 - situba",
+      "tag": "🇸🇬 新加坡 (Singapore) 08 - situba",
+      "server": "5.223.41.51",
+      "server_port": 80,
+      "uuid": "80c38933-9747-443d-9d87-15c80f8663ea",
+      "transport": {
+        "type": "ws",
+        "path": "/"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇬 新加坡 (Singapore) 09 - situba",
       "server": "5.223.41.125",
       "server_port": 80,
       "uuid": "3b821031-d7d4-4368-918b-15f2312dba2b",
@@ -78,70 +86,17 @@
     },
     {
       "type": "vless",
-      "tag": "🇸🇬 新加坡 (Singapore) 08 - situba",
+      "tag": "🇸🇬 新加坡 (Singapore) 10 - situba",
       "server": "5.223.41.179",
       "server_port": 80,
       "uuid": "ff642d7a-9a24-4078-a031-f8c656f4554e",
       "transport": {
-        "type": "ws",
-        "path": "/"
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇸🇬 新加坡 (Singapore) 09 - situba",
-      "server": "68.183.235.122",
-      "server_port": 8080,
-      "method": "rc4-md5",
-      "password": "14fFPrbezE3HDZzsMOr6"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇸🇬 新加坡 (Singapore) 10 - situba",
-      "server": "128.199.172.224",
-      "server_port": 8080,
-      "method": "rc4-md5",
-      "password": "14fFPrbezE3HDZzsMOr6"
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇸🇬 新加坡 (Singapore) 11 - situba",
-      "server": "57a8371c-tmm5c0-tqbai3-1hpo0.sg7.hyhuawei.com",
-      "server_port": 443,
-      "password": "c3dc8d26-ab2b-11ec-a8bf-f23c91cfbbc9",
-      "tls": {
-        "enabled": true,
-        "server_name": "57a8371c-tmm5c0-tqbai3-1hpo0.sg7.hyhuawei.com",
-        "insecure": true
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇸🇬 新加坡 (Singapore) 12 - situba",
-      "server": "holy-lamb.rooster465.autos",
-      "server_port": 443,
-      "password": "UX82473651",
-      "tls": {
-        "enabled": true,
-        "server_name": "holy-lamb.rooster465.autos",
-        "insecure": true
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇸🇬 新加坡 (Singapore) 13 - situba",
-      "server": "glowing-marmoset.rooster465.autos",
-      "server_port": 443,
-      "password": "UX82473651",
-      "tls": {
-        "enabled": true,
-        "server_name": "glowing-marmoset.rooster465.autos",
-        "insecure": false
+        "type": "ws"
       }
     },
     {
       "type": "vless",
-      "tag": "🇸🇬 新加坡 (Singapore) 14 - situba",
+      "tag": "🇸🇬 新加坡 (Singapore) 11 - situba",
       "server": "5.223.41.164",
       "server_port": 80,
       "uuid": "ef24e9b9-e7b2-4e01-b335-f289612d2d7a",
@@ -151,83 +106,41 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇸🇬 新加坡 (Singapore) 15 - situba",
-      "server": "38.180.190.67",
+      "type": "trojan",
+      "tag": "🇸🇬 新加坡 (Singapore) 12 - situba",
+      "server": "real-cardinal.rooster465.autos",
       "server_port": 443,
-      "uuid": "de83320d-9b23-473e-93f6-d66482124c06",
+      "password": "UX82473651",
+      "tls": {
+        "enabled": true,
+        "server_name": "real-cardinal.rooster465.autos",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇬 新加坡 (Singapore) 13 - situba",
+      "server": "172.104.164.70",
+      "server_port": 443,
+      "uuid": "d90087c3-54f5-4283-a13f-615260c8b0c7",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.apple.com",
+        "server_name": "googleapis.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "C3TC3BxZM2ehdAprVXOSsL8R_O-G2Be0XqqZhoEQLD0",
-          "short_id": "1fda1fb3436cf8b0"
+          "public_key": "hTweFDvbSucrGERtiiwDfoqD3vo_Z9cuaqboff3FTXQ",
+          "short_id": ""
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇸🇬 新加坡 (Singapore) 16 - situba",
-      "server": "support.zoom.us",
-      "server_port": 80,
-      "uuid": "cac6ec8f-99f0-44c5-814f-2f3f65e4db74",
-      "transport": {
-        "type": "ws",
-        "path": "/dula",
-        "headers": {
-          "Host": "speed.dulacloud.store"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇬 新加坡 (Singapore) 17 - situba",
-      "server": "5.223.41.51",
-      "server_port": 80,
-      "uuid": "80c38933-9747-443d-9d87-15c80f8663ea",
-      "transport": {
-        "type": "ws"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇬 新加坡 (Singapore) 18 - situba",
-      "server": "5.223.41.121",
-      "server_port": 80,
-      "uuid": "0f7996b1-3ef7-4274-b612-0310270d2a41",
-      "transport": {
-        "type": "ws"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇬 新加坡 (Singapore) 19 - situba",
-      "server": "217.217.254.126",
-      "server_port": 2053,
-      "uuid": "cb15cce9-73ed-4928-b38c-462f0732cbe9",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw",
-          "short_id": "87829de0e2bb82cb"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇬 新加坡 (Singapore) 20 - situba",
+      "tag": "🇸🇬 新加坡 (Singapore) 14 - situba",
       "server": "146.235.16.130",
       "server_port": 19825,
       "uuid": "2d1ad594-80a4-4bfb-87a6-038e39701f51",
@@ -248,19 +161,80 @@
     },
     {
       "type": "vless",
-      "tag": "🇸🇬 新加坡 (Singapore) 21 - situba",
+      "tag": "🇸🇬 新加坡 (Singapore) 15 - situba",
+      "server": "5.223.41.121",
+      "server_port": 80,
+      "uuid": "0f7996b1-3ef7-4274-b612-0310270d2a41",
+      "transport": {
+        "type": "ws"
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇸🇬 新加坡 (Singapore) 16 - situba",
+      "server": "68.183.227.4",
+      "server_port": 8080,
+      "method": "rc4-md5",
+      "password": "14fFPrbezE3HDZzsMOr6"
+    },
+    {
+      "type": "trojan",
+      "tag": "🇸🇬 新加坡 (Singapore) 17 - situba",
+      "server": "18.143.92.167",
+      "server_port": 443,
+      "password": "UX82473651",
+      "tls": {
+        "enabled": true,
+        "server_name": "glowing-marmoset.rooster465.autos",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇬 新加坡 (Singapore) 18 - situba",
       "server": "5.223.41.93",
       "server_port": 80,
       "uuid": "f2eada1b-fdec-48c6-8638-18ade32993d4",
       "transport": {
-        "type": "ws",
-        "path": "/"
+        "type": "ws"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇬 新加坡 (Singapore) 19 - situba",
+      "server": "217.217.254.126",
+      "server_port": 2053,
+      "uuid": "cb15cce9-73ed-4928-b38c-462f0732cbe9",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw",
+          "short_id": "87829de0e2bb82cb"
+        }
       }
     },
     {
       "type": "trojan",
-      "tag": "🇸🇬 新加坡 (Singapore) 22 - situba",
-      "server": "desired-boxer.rooster465.autos",
+      "tag": "🇸🇬 新加坡 (Singapore) 20 - situba",
+      "server": "holy-lamb.rooster465.autos",
+      "server_port": 443,
+      "password": "UX82473651",
+      "tls": {
+        "enabled": true,
+        "server_name": "holy-lamb.rooster465.autos",
+        "insecure": true
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇸🇬 新加坡 (Singapore) 21 - situba",
+      "server": "54.254.59.149",
       "server_port": 443,
       "password": "UX82473651",
       "tls": {
@@ -270,20 +244,99 @@
       }
     },
     {
-      "type": "trojan",
-      "tag": "🇸🇬 新加坡 (Singapore) 23 - situba",
-      "server": "real-cardinal.rooster465.autos",
+      "type": "vless",
+      "tag": "🇸🇬 新加坡 (Singapore) 22 - situba",
+      "server": "38.180.190.67",
       "server_port": 443,
-      "password": "UX82473651",
+      "uuid": "de83320d-9b23-473e-93f6-d66482124c06",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "real-cardinal.rooster465.autos",
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "C3TC3BxZM2ehdAprVXOSsL8R_O-G2Be0XqqZhoEQLD0",
+          "short_id": "1fda1fb3436cf8b0"
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇸🇬 新加坡 (Singapore) 23 - situba",
+      "server": "sg4.dexlos.com",
+      "server_port": 20654,
+      "password": "8A9905B7-801B-41AF-BFC9-2034212770F6",
+      "tls": {
+        "enabled": true,
+        "server_name": "sg4.dexlos.com",
         "insecure": false
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "xK9mN2pLq5vR8wB3"
       }
     },
     {
       "type": "vless",
       "tag": "🇸🇬 新加坡 (Singapore) 24 - situba",
+      "server": "54.169.200.246",
+      "server_port": 41688,
+      "uuid": "49c0aac1-5e05-4f04-b624-248fc59e03c4",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.intel.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "srwIElIGTPs0kshpN1vvPsn4wixV_pLd56y_v9m0sTk",
+          "short_id": "7f342137c20387"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇬 新加坡 (Singapore) 25 - situba",
+      "server": "3.0.111.82",
+      "server_port": 12972,
+      "uuid": "814bd064-544d-4255-a070-5705c03f6da9",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "safari"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0",
+          "short_id": "48050fab"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇸🇬 新加坡 (Singapore) 26 - situba",
+      "server": "pet-antelope.rooster465.autos",
+      "server_port": 443,
+      "password": "UX82473651",
+      "tls": {
+        "enabled": true,
+        "server_name": "pet-antelope.rooster465.autos",
+        "insecure": false
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇬 新加坡 (Singapore) 27 - situba",
       "server": "3.0.111.82",
       "server_port": 10574,
       "uuid": "814bd064-544d-4255-a070-5705c03f6da9",
@@ -304,21 +357,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇸🇬 新加坡 (Singapore) 25 - situba",
-      "server": "support.zoom.us",
-      "server_port": 80,
-      "uuid": "a57223c7-3581-4fec-9bc4-ad5c30900efb",
-      "transport": {
-        "type": "ws",
-        "path": "/free-server.techsonic.dev",
-        "headers": {
-          "Host": "free-server.techsonic.dev"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇬 新加坡 (Singapore) 26 - situba",
+      "tag": "🇸🇬 新加坡 (Singapore) 28 - situba",
       "server": "173.234.14.105",
       "server_port": 59615,
       "uuid": "e2632874-614e-4261-af62-52aca3358e4e",
@@ -339,8 +378,8 @@
     },
     {
       "type": "vless",
-      "tag": "🇸🇬 新加坡 (Singapore) 27 - situba",
-      "server": "141.193.213.21",
+      "tag": "🇸🇬 新加坡 (Singapore) 29 - situba",
+      "server": "141.193.213.20",
       "server_port": 8443,
       "uuid": "29c3dd6b-b164-40ca-a0d5-f06aca52a8b2",
       "tls": {
@@ -361,20 +400,31 @@
       }
     },
     {
-      "type": "trojan",
-      "tag": "🇸🇬 新加坡 (Singapore) 28 - situba",
-      "server": "inviting-ferret.rooster465.autos",
-      "server_port": 443,
-      "password": "UX82473651",
+      "type": "vless",
+      "tag": "🇸🇬 新加坡 (Singapore) 30 - situba",
+      "server": "139.162.27.96",
+      "server_port": 2096,
+      "uuid": "6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2",
       "tls": {
         "enabled": true,
-        "server_name": "inviting-ferret.rooster465.autos",
-        "insecure": true
+        "server_name": "free-server.techsonic.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/free-server.techsonic.dev",
+        "headers": {
+          "Host": "free-server.techsonic.dev"
+        }
       }
     },
     {
       "type": "vless",
-      "tag": "🇸🇬 新加坡 (Singapore) 29 - situba",
+      "tag": "🇸🇬 新加坡 (Singapore) 31 - situba",
       "server": "3.0.111.82",
       "server_port": 17623,
       "uuid": "814bd064-544d-4255-a070-5705c03f6da9",
@@ -384,7 +434,7 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "edge"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -395,7 +445,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇸🇬 新加坡 (Singapore) 30 - situba",
+      "tag": "🇸🇬 新加坡 (Singapore) 32 - situba",
       "server": "jumpernode.site",
       "server_port": 443,
       "uuid": "440f986b-9469-4d80-adf0-01ba37af73c5",
@@ -415,36 +465,38 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇸🇬 新加坡 (Singapore) 31 - situba",
-      "server": "3.0.111.82",
-      "server_port": 12972,
-      "uuid": "814bd064-544d-4255-a070-5705c03f6da9",
-      "flow": "xtls-rprx-vision",
+      "type": "trojan",
+      "tag": "🇸🇬 新加坡 (Singapore) 33 - situba",
+      "server": "inviting-ferret.rooster465.autos",
+      "server_port": 443,
+      "password": "UX82473651",
       "tls": {
         "enabled": true,
-        "server_name": "www.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0",
-          "short_id": "48050fab"
-        }
+        "server_name": "inviting-ferret.rooster465.autos",
+        "insecure": true
       }
     },
     {
-      "type": "trojan",
-      "tag": "🇸🇬 新加坡 (Singapore) 32 - situba",
-      "server": "gsg192i.zxom.eu.org",
-      "server_port": 20008,
-      "password": "5b140fc6a0a74e7f",
+      "type": "vless",
+      "tag": "🇸🇬 新加坡 (Singapore) 34 - situba",
+      "server": "141.193.213.20",
+      "server_port": 8443,
+      "uuid": "7967bf59-57e3-4cde-9898-527b0fe60022",
       "tls": {
         "enabled": true,
-        "server_name": "gsg192i.zxom.eu.org",
-        "insecure": true
+        "server_name": "speed.dulacloud.store",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/dula",
+        "headers": {
+          "Host": "speed.dulacloud.store"
+        }
       }
     },
     {
@@ -483,7 +535,9 @@
         "🇸🇬 新加坡 (Singapore) 29 - situba",
         "🇸🇬 新加坡 (Singapore) 30 - situba",
         "🇸🇬 新加坡 (Singapore) 31 - situba",
-        "🇸🇬 新加坡 (Singapore) 32 - situba"
+        "🇸🇬 新加坡 (Singapore) 32 - situba",
+        "🇸🇬 新加坡 (Singapore) 33 - situba",
+        "🇸🇬 新加坡 (Singapore) 34 - situba"
       ]
     },
     {
@@ -521,7 +575,9 @@
         "🇸🇬 新加坡 (Singapore) 29 - situba",
         "🇸🇬 新加坡 (Singapore) 30 - situba",
         "🇸🇬 新加坡 (Singapore) 31 - situba",
-        "🇸🇬 新加坡 (Singapore) 32 - situba"
+        "🇸🇬 新加坡 (Singapore) 32 - situba",
+        "🇸🇬 新加坡 (Singapore) 33 - situba",
+        "🇸🇬 新加坡 (Singapore) 34 - situba"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

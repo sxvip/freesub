@@ -20,6 +20,34 @@
     {
       "type": "vless",
       "tag": "🇨🇱 智利 (Chile) 02 - situba",
+      "server": "64.176.16.32",
+      "server_port": 80,
+      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
+      "transport": {
+        "type": "ws",
+        "path": "/platform113",
+        "headers": {
+          "Host": "platform113.halalkhor.info"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇱 智利 (Chile) 03 - situba",
+      "server": "platform109.golnamakcert.top",
+      "server_port": 80,
+      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
+      "transport": {
+        "type": "ws",
+        "path": "/platform109",
+        "headers": {
+          "Host": "platform109.halalkhor.info"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇱 智利 (Chile) 04 - situba",
       "server": "platform107.golnamakcert.top",
       "server_port": 80,
       "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
@@ -33,43 +61,15 @@
     },
     {
       "type": "vless",
-      "tag": "🇨🇱 智利 (Chile) 03 - situba",
-      "server": "platform103.golnamakcert.top",
-      "server_port": 80,
-      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
-      "transport": {
-        "type": "ws",
-        "path": "/platform103",
-        "headers": {
-          "Host": "platform103.halalkhor.info"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇱 智利 (Chile) 04 - situba",
-      "server": "platform115.golnamakcert.top",
-      "server_port": 80,
-      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
-      "transport": {
-        "type": "ws",
-        "path": "/platform115",
-        "headers": {
-          "Host": "platform115.halalkhor.info"
-        }
-      }
-    },
-    {
-      "type": "vless",
       "tag": "🇨🇱 智利 (Chile) 05 - situba",
-      "server": "platform102.golnamakcert.top",
+      "server": "platform117.golnamakcert.top",
       "server_port": 80,
       "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
       "transport": {
         "type": "ws",
-        "path": "/platform102",
+        "path": "/platform117",
         "headers": {
-          "Host": "platform102.halalkhor.info"
+          "Host": "platform117.halalkhor.info"
         }
       }
     },
@@ -90,14 +90,14 @@
     {
       "type": "vless",
       "tag": "🇨🇱 智利 (Chile) 07 - situba",
-      "server": "platform117.golnamakcert.top",
+      "server": "platform103.golnamakcert.top",
       "server_port": 80,
       "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
       "transport": {
         "type": "ws",
-        "path": "/platform117",
+        "path": "/platform103",
         "headers": {
-          "Host": "platform117.halalkhor.info"
+          "Host": "platform103.halalkhor.info"
         }
       }
     },
@@ -118,14 +118,28 @@
     {
       "type": "vless",
       "tag": "🇨🇱 智利 (Chile) 09 - situba",
-      "server": "platform109.golnamakcert.top",
+      "server": "platform115.golnamakcert.top",
       "server_port": 80,
       "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
       "transport": {
         "type": "ws",
-        "path": "/platform109",
+        "path": "/platform115",
         "headers": {
-          "Host": "platform109.halalkhor.info"
+          "Host": "platform115.halalkhor.info"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇱 智利 (Chile) 10 - situba",
+      "server": "platform102.golnamakcert.top",
+      "server_port": 80,
+      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
+      "transport": {
+        "type": "ws",
+        "path": "/platform102",
+        "headers": {
+          "Host": "platform102.halalkhor.info"
         }
       }
     },
@@ -142,7 +156,8 @@
         "🇨🇱 智利 (Chile) 06 - situba",
         "🇨🇱 智利 (Chile) 07 - situba",
         "🇨🇱 智利 (Chile) 08 - situba",
-        "🇨🇱 智利 (Chile) 09 - situba"
+        "🇨🇱 智利 (Chile) 09 - situba",
+        "🇨🇱 智利 (Chile) 10 - situba"
       ]
     },
     {
@@ -157,7 +172,8 @@
         "🇨🇱 智利 (Chile) 06 - situba",
         "🇨🇱 智利 (Chile) 07 - situba",
         "🇨🇱 智利 (Chile) 08 - situba",
-        "🇨🇱 智利 (Chile) 09 - situba"
+        "🇨🇱 智利 (Chile) 09 - situba",
+        "🇨🇱 智利 (Chile) 10 - situba"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
