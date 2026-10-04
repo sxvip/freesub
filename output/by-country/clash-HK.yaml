@@ -5,53 +5,47 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 - situba
+  server: telegramx.khp25.com
+  port: 1080
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: m5nsedvdczx6x06e
+- name: 🇭🇰 中国香港 (Hong Kong) 02 - situba
   server: sth.free-outline.giize.com
   port: 1081
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
-  password: n7vuxdsmlqnrbxqe
-- name: 🇭🇰 中国香港 (Hong Kong) 02 - situba
-  server: 202.146.222.29
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https%3a%2f%2ft.me%2fwangcai2%c3%b0%c2%9f%c2%87%c2%a8%c3%b0%c2%9f%c2%87%c2%b3
-  skip-cert-verify: true
+  password: 5koepr9k4rjabc1z
 - name: 🇭🇰 中国香港 (Hong Kong) 03 - situba
-  server: 202.146.222.174
-  port: 443
+  server: 181.215.18.196
+  port: 1080
   udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https%3a%2f%2ft.me%2foneclickvpnkeys
-  skip-cert-verify: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: pno0e2keji2gsfea
 - name: 🇭🇰 中国香港 (Hong Kong) 04 - situba
-  server: 202.146.222.89
+  server: 61b2ab79-tmm5c0-u1q5od-t6fv.hk3.hyhuawei.com
   port: 443
   udp: true
   type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 202.146.222.89
+  password: af7ddbb2-3567-11ec-bd7c-f23c913c8d2b
+  sni: 61b2ab79-tmm5c0-u1q5od-t6fv.hk3.hyhuawei.com
   skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 05 - situba
-  server: 185.244.208.69
+  server: 35.220.207.209
   port: 443
   udp: true
-  type: trojan
-  password: UX82473651
-  sni: strong-haddock.rooster465.autos
-  skip-cert-verify: false
+  type: vless
+  uuid: 90153538-ef08-4942-b8e1-41e7c523e659
+  tls: true
+  reality-opts:
+    public-key: tSBJnEt6E1dy6UgX9gX5wUfvZ2KAXjGWVKsEq886OWM
+    short-id: 56d4e7ae4f86fa39
+  servername: www.cloudflare.com
+  client-fingerprint: qq
 - name: 🇭🇰 中国香港 (Hong Kong) 06 - situba
-  server: eadd8612-tmm5c0-u2e9xs-2b2n.hk3.hyhuawei.com
-  port: 443
-  udp: true
-  type: hysteria2
-  password: fcd39788-ca23-11ed-86e2-f23c913c8d2b
-  sni: eadd8612-tmm5c0-u2e9xs-2b2n.hk3.hyhuawei.com
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 07 - situba
   server: 34.96.188.243
   port: 443
   udp: true
@@ -63,23 +57,55 @@ proxies:
     short-id: 64b3f192fc0669e1
   servername: www.cloudflare.com
   client-fingerprint: chrome
+- name: 🇭🇰 中国香港 (Hong Kong) 07 - situba
+  server: 202.146.222.89
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: t.me
+  skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 08 - situba
+  server: 202.146.222.174
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: https://t.me/wangcai2🇨🇳
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 09 - situba
+  server: strong-haddock.rooster465.autos
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: strong-haddock.rooster465.autos
+  skip-cert-verify: false
+- name: 🇭🇰 中国香港 (Hong Kong) 10 - situba
+  server: ru1.xiaoliyu.cyou
+  port: 18333
+  udp: true
+  type: hysteria2
+  password: 19f72087-4591-4d72-930b-2697078ec2be
+  sni: ru1.xiaoliyu.cyou
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 11 - situba
   server: mz.hkychina.com
   port: 8443
   udp: true
   type: hysteria2
   password: HysTeria2026!Proxy
   sni: mz.hkychina.com
-  skip-cert-verify: false
-- name: 🇭🇰 中国香港 (Hong Kong) 09 - situba
-  server: hk2.xiaoliyu.cyou
-  port: 4433
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 12 - situba
+  server: 202.146.222.29
+  port: 443
   udp: true
   type: hysteria2
-  password: 19f72087-4591-4d72-930b-2697078ec2be
-  sni: hk2.xiaoliyu.cyou
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: 202.146.222.29
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 10 - situba
+- name: 🇭🇰 中国香港 (Hong Kong) 13 - situba
   server: 194.99.79.26
   port: 443
   udp: true
@@ -110,6 +136,9 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 08 - situba
   - 🇭🇰 中国香港 (Hong Kong) 09 - situba
   - 🇭🇰 中国香港 (Hong Kong) 10 - situba
+  - 🇭🇰 中国香港 (Hong Kong) 11 - situba
+  - 🇭🇰 中国香港 (Hong Kong) 12 - situba
+  - 🇭🇰 中国香港 (Hong Kong) 13 - situba
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -125,5 +154,8 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 08 - situba
   - 🇭🇰 中国香港 (Hong Kong) 09 - situba
   - 🇭🇰 中国香港 (Hong Kong) 10 - situba
+  - 🇭🇰 中国香港 (Hong Kong) 11 - situba
+  - 🇭🇰 中国香港 (Hong Kong) 12 - situba
+  - 🇭🇰 中国香港 (Hong Kong) 13 - situba
 rules:
 - MATCH,PROXIES

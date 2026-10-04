@@ -5,29 +5,61 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇴 罗马尼亚 (Romania) 01 - situba
-  server: 162.249.127.136
-  port: 8443
-  udp: true
-  type: hysteria2
-  password: 9Me_Jx935gnHx13_Nx45M_NYXe037js_Be4z
-  sni: hop-germany-september.dynuddns.com
-  skip-cert-verify: true
-- name: 🇷🇴 罗马尼亚 (Romania) 02 - situba
-  server: 154.46.31.106
-  port: 443
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: QFWzCw2uX9B9i6qAYeFBIE
-- name: 🇷🇴 罗马尼亚 (Romania) 03 - situba
-  server: 77.74.123.101
+  server: 77.74.123.99
   port: 8443
   udp: true
   type: hysteria2
   password: s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z
   sni: grape-test-italy.dynuddns.net
   skip-cert-verify: true
+- name: 🇷🇴 罗马尼亚 (Romania) 02 - situba
+  server: 109.104.106.15
+  port: 443
+  udp: true
+  type: vless
+  uuid: 87fd990d-ca93-440a-bbd4-e8281c4a0910
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: a_v5l6R-rpVGlENLeONW4sz-GdRwIoDqISOWXGov8nw
+    short-id: 87709fed663228e5
+  servername: d3-ro.cloud-cdn.xyz
+  client-fingerprint: firefox
+- name: 🇷🇴 罗马尼亚 (Romania) 03 - situba
+  server: 109.104.106.149
+  port: 443
+  udp: true
+  type: vless
+  uuid: 87fd990d-ca93-440a-bbd4-e8281c4a0910
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: a_v5l6R-rpVGlENLeONW4sz-GdRwIoDqISOWXGov8nw
+    short-id: 87709fed663228e5
+  servername: d3-ro.cloud-cdn.xyz
+  client-fingerprint: edge
 - name: 🇷🇴 罗马尼亚 (Romania) 04 - situba
+  server: 162.249.127.154
+  port: 8443
+  udp: true
+  type: hysteria2
+  password: 9Me_Jx935gnHx13_Nx45M_NYXe037js_Be4z
+  sni: hop-germany-september.dynuddns.com
+  skip-cert-verify: false
+- name: 🇷🇴 罗马尼亚 (Romania) 05 - situba
+  server: 146.70.124.85
+  port: 443
+  udp: true
+  type: vless
+  uuid: 40abbe13-f02e-4da2-9b19-966c2c3eb4ee
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: byzvlw97wjAAAfHs5AZRV0P0H6_JKBEZ4yfLS0HNewE
+    short-id: fe24f8a0a560056e
+  servername: www.datadoghq.com
+  client-fingerprint: chrome
+- name: 🇷🇴 罗马尼亚 (Romania) 06 - situba
   server: 162.249.125.133
   port: 443
   udp: true
@@ -37,6 +69,26 @@ proxies:
   skip-cert-verify: false
   obfs: salamander
   obfs-password: c1b4086fea89914496c7e10967a419216566
+- name: 🇷🇴 罗马尼亚 (Romania) 07 - situba
+  server: bl3fk52.sysopnova.art
+  port: 443
+  udp: true
+  type: vless
+  uuid: 441afe11-a180-4516-bb80-80a8a6b38705
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: gE8LUmGFXik94SoDXNiAG5KprGyhjoRwDuhGebgAVWk
+    short-id: 5ee019e02e6ed99a
+  servername: yandex.ru
+  client-fingerprint: ''
+- name: 🇷🇴 罗马尼亚 (Romania) 08 - situba
+  server: bogging-eyeteeth-fly.freesocks.work
+  port: 443
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: QFWzCw2uX9B9i6qAYeFBIE
 proxy-groups:
 - name: PROXIES
   type: select
@@ -46,6 +98,10 @@ proxy-groups:
   - 🇷🇴 罗马尼亚 (Romania) 02 - situba
   - 🇷🇴 罗马尼亚 (Romania) 03 - situba
   - 🇷🇴 罗马尼亚 (Romania) 04 - situba
+  - 🇷🇴 罗马尼亚 (Romania) 05 - situba
+  - 🇷🇴 罗马尼亚 (Romania) 06 - situba
+  - 🇷🇴 罗马尼亚 (Romania) 07 - situba
+  - 🇷🇴 罗马尼亚 (Romania) 08 - situba
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -55,5 +111,9 @@ proxy-groups:
   - 🇷🇴 罗马尼亚 (Romania) 02 - situba
   - 🇷🇴 罗马尼亚 (Romania) 03 - situba
   - 🇷🇴 罗马尼亚 (Romania) 04 - situba
+  - 🇷🇴 罗马尼亚 (Romania) 05 - situba
+  - 🇷🇴 罗马尼亚 (Romania) 06 - situba
+  - 🇷🇴 罗马尼亚 (Romania) 07 - situba
+  - 🇷🇴 罗马尼亚 (Romania) 08 - situba
 rules:
 - MATCH,PROXIES
