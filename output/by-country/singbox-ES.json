@@ -24,8 +24,16 @@
       }
     },
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇪🇸 西班牙 (Spain) 02 - situba",
+      "server": "108.181.121.226",
+      "server_port": 8388,
+      "method": "chacha20-ietf-poly1305",
+      "password": "WSyL4XTwNsdv"
+    },
+    {
+      "type": "vless",
+      "tag": "🇪🇸 西班牙 (Spain) 03 - situba",
       "server": "193.238.154.5",
       "server_port": 443,
       "uuid": "e0b9fb0f-1bbd-478b-9580-c2294778338b",
@@ -45,40 +53,11 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇪🇸 西班牙 (Spain) 03 - situba",
-      "server": "108.181.121.226",
-      "server_port": 8388,
-      "method": "chacha20-ietf-poly1305",
-      "password": "WSyL4XTwNsdv"
-    },
-    {
-      "type": "shadowsocks",
       "tag": "🇪🇸 西班牙 (Spain) 04 - situba",
       "server": "140.174.184.5",
       "server_port": 8388,
       "method": "chacha20-ietf-poly1305",
       "password": "qItG8SueYQcP"
-    },
-    {
-      "type": "vless",
-      "tag": "🇪🇸 西班牙 (Spain) 05 - situba",
-      "server": "46.28.71.247",
-      "server_port": 443,
-      "uuid": "12c53e32-e589-47d6-b857-e4132294f767",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "v4MuZIvFrTPT5GHMSaPryUAbIZlLstmsUTzmC1E-JTE",
-          "short_id": "0dfc23fe80778c00"
-        }
-      }
     },
     {
       "type": "selector",
@@ -88,8 +67,7 @@
         "🇪🇸 西班牙 (Spain) 01 - situba",
         "🇪🇸 西班牙 (Spain) 02 - situba",
         "🇪🇸 西班牙 (Spain) 03 - situba",
-        "🇪🇸 西班牙 (Spain) 04 - situba",
-        "🇪🇸 西班牙 (Spain) 05 - situba"
+        "🇪🇸 西班牙 (Spain) 04 - situba"
       ]
     },
     {
@@ -99,8 +77,7 @@
         "🇪🇸 西班牙 (Spain) 01 - situba",
         "🇪🇸 西班牙 (Spain) 02 - situba",
         "🇪🇸 西班牙 (Spain) 03 - situba",
-        "🇪🇸 西班牙 (Spain) 04 - situba",
-        "🇪🇸 西班牙 (Spain) 05 - situba"
+        "🇪🇸 西班牙 (Spain) 04 - situba"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
