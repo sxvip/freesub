@@ -5,25 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇼 中国台湾 (Taiwan) 01 - situba
-  server: tw1.dexlos.com
-  port: 8080
+  server: 165.154.195.38
+  port: 35034
   udp: true
-  type: tuic
-  uuid: D7286728-678E-443B-B76B-B699654C66DD
-  password: D7286728-678E-443B-B76B-B699654C66DD
-  sni: tw1.dexlos.com
-  skip-cert-verify: true
-  congestion-controller: bbr
-  udp-relay-mode: native
-  alpn:
-  - h3
+  type: vmess
+  uuid: 959a8caf-4cea-43d0-a548-3628e7ddfafc
+  alterId: 0
+  cipher: auto
 - name: 🇹🇼 中国台湾 (Taiwan) 02 - situba
   server: 103.115.109.49
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 'https:'
+  sni: https://t.me/oneclickvpnkeys
   skip-cert-verify: true
 - name: 🇹🇼 中国台湾 (Taiwan) 03 - situba
   server: 60.248.219.78
@@ -51,6 +46,32 @@ proxies:
     short-id: d74a6321deec9f31
   servername: www.cloudflare.com
   client-fingerprint: qq
+- name: 🇹🇼 中国台湾 (Taiwan) 05 - situba
+  server: tw3.dexlos.com
+  port: 8080
+  udp: true
+  type: tuic
+  uuid: 8A9905B7-801B-41AF-BFC9-2034212770F6
+  password: 8A9905B7-801B-41AF-BFC9-2034212770F6
+  sni: tw3.dexlos.com
+  skip-cert-verify: true
+  congestion-controller: bbr
+  udp-relay-mode: native
+  alpn:
+  - h3
+- name: 🇹🇼 中国台湾 (Taiwan) 06 - situba
+  server: tw6.dexlos.com
+  port: 8080
+  udp: true
+  type: tuic
+  uuid: D7286728-678E-443B-B76B-B699654C66DD
+  password: D7286728-678E-443B-B76B-B699654C66DD
+  sni: tw6.dexlos.com
+  skip-cert-verify: true
+  congestion-controller: bbr
+  udp-relay-mode: native
+  alpn:
+  - h3
 proxy-groups:
 - name: PROXIES
   type: select
@@ -60,6 +81,8 @@ proxy-groups:
   - 🇹🇼 中国台湾 (Taiwan) 02 - situba
   - 🇹🇼 中国台湾 (Taiwan) 03 - situba
   - 🇹🇼 中国台湾 (Taiwan) 04 - situba
+  - 🇹🇼 中国台湾 (Taiwan) 05 - situba
+  - 🇹🇼 中国台湾 (Taiwan) 06 - situba
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -69,5 +92,7 @@ proxy-groups:
   - 🇹🇼 中国台湾 (Taiwan) 02 - situba
   - 🇹🇼 中国台湾 (Taiwan) 03 - situba
   - 🇹🇼 中国台湾 (Taiwan) 04 - situba
+  - 🇹🇼 中国台湾 (Taiwan) 05 - situba
+  - 🇹🇼 中国台湾 (Taiwan) 06 - situba
 rules:
 - MATCH,PROXIES

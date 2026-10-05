@@ -4,129 +4,45 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "trojan",
       "tag": "🇷🇺 俄罗斯 (Russia) 01 - situba",
-      "server": "104.21.31.137",
+      "server": "104.21.67.113",
       "server_port": 443,
-      "uuid": "59c70620-d2f3-4255-9d6f-f4c5103d64ce",
+      "password": "Telegram_healer_config",
       "tls": {
         "enabled": true,
-        "server_name": "59fssIBE-SDDrRs3qW83QQZz0H1NT-o.q7qwsxItB6BYi5nMTa4naAlz.woRkErs.deV",
+        "server_name": "x0C3lq1A15ip-65Kc4-l1A1tx.cv4CGvqS05m-F4Hg5xU07wIAlm0.wOrkerS.DeV",
         "insecure": false,
         "alpn": [
           "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
+        ]
       },
       "transport": {
         "type": "ws",
-        "path": "/vl/FpYFoMlg8sRpgV7SSaOaRYa3fagqGu?ed",
+        "path": "/tr/rkSn26veCGpvDy162Z?ed=2560",
         "headers": {
-          "Host": "59fssibe-sddrrs3qw83qqzz0h1nt-o.q7qwsxitb6byi5nmta4naalz.workers.dev"
+          "Host": "x0c3lq1a15ip-65kc4-l1a1tx.cv4cgvqs05m-f4hg5xu07wialm0.workers.dev"
         }
       }
     },
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇷🇺 俄罗斯 (Russia) 02 - situba",
-      "server": "45.12.75.242",
-      "server_port": 26424,
-      "uuid": "633f424e-2b11-48da-a6b3-a849dd71456f",
-      "tls": {
-        "enabled": true,
-        "server_name": "ya.ru",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0",
-          "short_id": "23103e1e"
-        }
-      }
+      "server": "130.49.189.158",
+      "server_port": 43558,
+      "method": "chacha20-ietf-poly1305",
+      "password": "mhXYDvaSfHzHZXBswC/zo/o8VqdU3XSBpwWx050Y6MU="
     },
     {
-      "type": "vless",
+      "type": "hysteria2",
       "tag": "🇷🇺 俄罗斯 (Russia) 03 - situba",
-      "server": "176.57.218.235",
-      "server_port": 443,
-      "uuid": "65616081-1772-49d7-a793-42bc13d22f69",
+      "server": "srv-17e124.21freedom.net",
+      "server_port": 11592,
+      "password": "41edb44c8e",
       "tls": {
         "enabled": true,
-        "server_name": "ru-1-8.imnotgay.party",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "edge"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "gS0qvWKumWcOVoAgf8SHt6Sm3tqpBw07c5sA_Clb1hg",
-          "short_id": ""
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 04 - situba",
-      "server": "185.104.114.92",
-      "server_port": 443,
-      "uuid": "65616081-1772-49d7-a793-42bc13d22f69",
-      "tls": {
-        "enabled": true,
-        "server_name": "ru-1-5.imnotgay.party",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "edge"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "gS0qvWKumWcOVoAgf8SHt6Sm3tqpBw07c5sA_Clb1hg",
-          "short_id": ""
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 05 - situba",
-      "server": "89.23.117.99",
-      "server_port": 443,
-      "uuid": "65616081-1772-49d7-a793-42bc13d22f69",
-      "tls": {
-        "enabled": true,
-        "server_name": "ru-1-9.imnotgay.party",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "gS0qvWKumWcOVoAgf8SHt6Sm3tqpBw07c5sA_Clb1hg",
-          "short_id": ""
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 06 - situba",
-      "server": "109.68.214.220",
-      "server_port": 443,
-      "uuid": "65616081-1772-49d7-a793-42bc13d22f69",
-      "tls": {
-        "enabled": true,
-        "server_name": "ru-1-7.imnotgay.party",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "gS0qvWKumWcOVoAgf8SHt6Sm3tqpBw07c5sA_Clb1hg",
-          "short_id": ""
-        }
+        "server_name": "srv-17e124.21freedom.net",
+        "insecure": true
       }
     },
     {
@@ -136,10 +52,7 @@
         "auto",
         "🇷🇺 俄罗斯 (Russia) 01 - situba",
         "🇷🇺 俄罗斯 (Russia) 02 - situba",
-        "🇷🇺 俄罗斯 (Russia) 03 - situba",
-        "🇷🇺 俄罗斯 (Russia) 04 - situba",
-        "🇷🇺 俄罗斯 (Russia) 05 - situba",
-        "🇷🇺 俄罗斯 (Russia) 06 - situba"
+        "🇷🇺 俄罗斯 (Russia) 03 - situba"
       ]
     },
     {
@@ -148,10 +61,7 @@
       "outbounds": [
         "🇷🇺 俄罗斯 (Russia) 01 - situba",
         "🇷🇺 俄罗斯 (Russia) 02 - situba",
-        "🇷🇺 俄罗斯 (Russia) 03 - situba",
-        "🇷🇺 俄罗斯 (Russia) 04 - situba",
-        "🇷🇺 俄罗斯 (Russia) 05 - situba",
-        "🇷🇺 俄罗斯 (Russia) 06 - situba"
+        "🇷🇺 俄罗斯 (Russia) 03 - situba"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

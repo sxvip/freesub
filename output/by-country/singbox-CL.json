@@ -6,20 +6,6 @@
     {
       "type": "vless",
       "tag": "🇨🇱 智利 (Chile) 01 - situba",
-      "server": "64.176.10.89",
-      "server_port": 80,
-      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
-      "transport": {
-        "type": "ws",
-        "path": "/platform102",
-        "headers": {
-          "Host": "platform102.halalkhor.info"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇱 智利 (Chile) 02 - situba",
       "server": "platform103.golnamakcert.top",
       "server_port": 80,
       "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
@@ -33,46 +19,21 @@
     },
     {
       "type": "vless",
+      "tag": "🇨🇱 智利 (Chile) 02 - situba",
+      "server": "platform101.golnamakcert.top",
+      "server_port": 80,
+      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
+      "transport": {
+        "type": "ws",
+        "path": "/platform101",
+        "headers": {
+          "Host": "platform101.halalkhor.info"
+        }
+      }
+    },
+    {
+      "type": "vless",
       "tag": "🇨🇱 智利 (Chile) 03 - situba",
-      "server": "platform109.golnamakcert.top",
-      "server_port": 80,
-      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
-      "transport": {
-        "type": "ws",
-        "path": "/platform109",
-        "headers": {
-          "Host": "platform109.halalkhor.info"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇱 智利 (Chile) 04 - situba",
-      "server": "platform106.golnamakcert.top",
-      "server_port": 80,
-      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
-      "transport": {
-        "type": "ws",
-        "path": "/platform106",
-        "headers": {
-          "Host": "platform106.halalkhor.info"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇱 智利 (Chile) 05 - situba",
-      "server": "platform107.golnamakcert.top",
-      "server_port": 80,
-      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
-      "transport": {
-        "type": "ws",
-        "path": "/platform107"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇱 智利 (Chile) 06 - situba",
       "server": "platform117.golnamakcert.top",
       "server_port": 80,
       "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
@@ -86,7 +47,35 @@
     },
     {
       "type": "vless",
-      "tag": "🇨🇱 智利 (Chile) 07 - situba",
+      "tag": "🇨🇱 智利 (Chile) 04 - situba",
+      "server": "platform108.golnamakcert.top",
+      "server_port": 80,
+      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
+      "transport": {
+        "type": "ws",
+        "path": "/platform108",
+        "headers": {
+          "Host": "platform108.halalkhor.info"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇱 智利 (Chile) 05 - situba",
+      "server": "platform102.golnamakcert.top",
+      "server_port": 80,
+      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
+      "transport": {
+        "type": "ws",
+        "path": "/platform102",
+        "headers": {
+          "Host": "platform102.halalkhor.info"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇱 智利 (Chile) 06 - situba",
       "server": "platform118.golnamakcert.top",
       "server_port": 80,
       "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
@@ -95,6 +84,20 @@
         "path": "/platform118",
         "headers": {
           "Host": "platform118.halalkhor.info"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇱 智利 (Chile) 07 - situba",
+      "server": "platform109.golnamakcert.top",
+      "server_port": 80,
+      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
+      "transport": {
+        "type": "ws",
+        "path": "/platform109",
+        "headers": {
+          "Host": "platform109.halalkhor.info"
         }
       }
     },
@@ -129,14 +132,28 @@
     {
       "type": "vless",
       "tag": "🇨🇱 智利 (Chile) 10 - situba",
-      "server": "platform101.golnamakcert.top",
+      "server": "platform106.golnamakcert.top",
       "server_port": 80,
       "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
       "transport": {
         "type": "ws",
-        "path": "/platform101",
+        "path": "/platform106",
         "headers": {
-          "Host": "platform101.halalkhor.info"
+          "Host": "platform106.halalkhor.info"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇱 智利 (Chile) 11 - situba",
+      "server": "platform107.golnamakcert.top",
+      "server_port": 80,
+      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
+      "transport": {
+        "type": "ws",
+        "path": "/platform107",
+        "headers": {
+          "Host": "platform107.halalkhor.info"
         }
       }
     },
@@ -154,7 +171,8 @@
         "🇨🇱 智利 (Chile) 07 - situba",
         "🇨🇱 智利 (Chile) 08 - situba",
         "🇨🇱 智利 (Chile) 09 - situba",
-        "🇨🇱 智利 (Chile) 10 - situba"
+        "🇨🇱 智利 (Chile) 10 - situba",
+        "🇨🇱 智利 (Chile) 11 - situba"
       ]
     },
     {
@@ -170,7 +188,8 @@
         "🇨🇱 智利 (Chile) 07 - situba",
         "🇨🇱 智利 (Chile) 08 - situba",
         "🇨🇱 智利 (Chile) 09 - situba",
-        "🇨🇱 智利 (Chile) 10 - situba"
+        "🇨🇱 智利 (Chile) 10 - situba",
+        "🇨🇱 智利 (Chile) 11 - situba"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
