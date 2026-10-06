@@ -5,39 +5,17 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇱 智利 (Chile) 01 - situba
-  server: platform103.golnamakcert.top
+  server: platform106.golnamakcert.top
   port: 80
   udp: true
   type: vless
   uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
   network: ws
   ws-opts:
-    path: /platform103
+    path: /platform106
     headers:
-      Host: platform103.halalkhor.info
+      Host: platform106.halalkhor.info
 - name: 🇨🇱 智利 (Chile) 02 - situba
-  server: platform101.golnamakcert.top
-  port: 80
-  udp: true
-  type: vless
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  network: ws
-  ws-opts:
-    path: /platform101
-    headers:
-      Host: platform101.halalkhor.info
-- name: 🇨🇱 智利 (Chile) 03 - situba
-  server: platform117.golnamakcert.top
-  port: 80
-  udp: true
-  type: vless
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  network: ws
-  ws-opts:
-    path: /platform117
-    headers:
-      Host: platform117.halalkhor.info
-- name: 🇨🇱 智利 (Chile) 04 - situba
   server: platform108.golnamakcert.top
   port: 80
   udp: true
@@ -48,30 +26,19 @@ proxies:
     path: /platform108
     headers:
       Host: platform108.halalkhor.info
-- name: 🇨🇱 智利 (Chile) 05 - situba
-  server: platform102.golnamakcert.top
+- name: 🇨🇱 智利 (Chile) 03 - situba
+  server: platform107.golnamakcert.top
   port: 80
   udp: true
   type: vless
   uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
   network: ws
   ws-opts:
-    path: /platform102
+    path: /platform107
     headers:
-      Host: platform102.halalkhor.info
-- name: 🇨🇱 智利 (Chile) 06 - situba
-  server: platform118.golnamakcert.top
-  port: 80
-  udp: true
-  type: vless
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  network: ws
-  ws-opts:
-    path: /platform118
-    headers:
-      Host: platform118.halalkhor.info
-- name: 🇨🇱 智利 (Chile) 07 - situba
-  server: platform109.golnamakcert.top
+      Host: platform107.halalkhor.info
+- name: 🇨🇱 智利 (Chile) 04 - situba
+  server: 64.176.2.25
   port: 80
   udp: true
   type: vless
@@ -79,9 +46,7 @@ proxies:
   network: ws
   ws-opts:
     path: /platform109
-    headers:
-      Host: platform109.halalkhor.info
-- name: 🇨🇱 智利 (Chile) 08 - situba
+- name: 🇨🇱 智利 (Chile) 05 - situba
   server: platform113.golnamakcert.top
   port: 80
   udp: true
@@ -92,6 +57,39 @@ proxies:
     path: /platform113
     headers:
       Host: platform113.halalkhor.info
+- name: 🇨🇱 智利 (Chile) 06 - situba
+  server: platform102.golnamakcert.top
+  port: 80
+  udp: true
+  type: vless
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  network: ws
+  ws-opts:
+    path: /platform102
+    headers:
+      Host: platform102.halalkhor.info
+- name: 🇨🇱 智利 (Chile) 07 - situba
+  server: platform118.golnamakcert.top
+  port: 80
+  udp: true
+  type: vless
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  network: ws
+  ws-opts:
+    path: /platform118
+    headers:
+      Host: platform118.halalkhor.info
+- name: 🇨🇱 智利 (Chile) 08 - situba
+  server: platform117.golnamakcert.top
+  port: 80
+  udp: true
+  type: vless
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  network: ws
+  ws-opts:
+    path: /platform117
+    headers:
+      Host: platform117.halalkhor.info
 - name: 🇨🇱 智利 (Chile) 09 - situba
   server: platform115.golnamakcert.top
   port: 80
@@ -104,27 +102,27 @@ proxies:
     headers:
       Host: platform115.halalkhor.info
 - name: 🇨🇱 智利 (Chile) 10 - situba
-  server: platform106.golnamakcert.top
+  server: platform101.golnamakcert.top
   port: 80
   udp: true
   type: vless
   uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
   network: ws
   ws-opts:
-    path: /platform106
+    path: /platform101
     headers:
-      Host: platform106.halalkhor.info
+      Host: platform101.halalkhor.info
 - name: 🇨🇱 智利 (Chile) 11 - situba
-  server: platform107.golnamakcert.top
+  server: platform103.golnamakcert.top
   port: 80
   udp: true
   type: vless
   uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
   network: ws
   ws-opts:
-    path: /platform107
+    path: /platform103
     headers:
-      Host: platform107.halalkhor.info
+      Host: platform103.halalkhor.info
 proxy-groups:
 - name: PROXIES
   type: select
