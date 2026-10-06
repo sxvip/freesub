@@ -4,25 +4,28 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇦🇲 亚美尼亚 (Armenia) 01 - situba
-  server: us3.xiaoliyu.cyou
-  port: 18333
+- name: 🇺🇦 乌克兰 (Ukraine) 01 - situba
+  server: 199.232.78.101
+  port: 443
   udp: true
-  type: hysteria2
-  password: 19f72087-4591-4d72-930b-2697078ec2be
-  sni: us3.xiaoliyu.cyou
+  type: trojan
+  password: mitivpn
+  sni: ssl.fastly.com
   skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇦🇲 亚美尼亚 (Armenia) 01 - situba
+  - 🇺🇦 乌克兰 (Ukraine) 01 - situba
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇦🇲 亚美尼亚 (Armenia) 01 - situba
+  - 🇺🇦 乌克兰 (Ukraine) 01 - situba
 rules:
 - MATCH,PROXIES
