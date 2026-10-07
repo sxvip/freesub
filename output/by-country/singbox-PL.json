@@ -17,16 +17,6 @@
     {
       "type": "vless",
       "tag": "🇵🇱 波兰 (Poland) 02 - situba",
-      "server": "70.34.255.101",
-      "server_port": 80,
-      "uuid": "a889262f-5fe3-4c93-9aaa-3721318dd389",
-      "transport": {
-        "type": "ws"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 03 - situba",
       "server": "81.90.20.200",
       "server_port": 443,
       "uuid": "51c14658-8873-4454-9383-c41fc80bde4b",
@@ -38,42 +28,19 @@
       }
     },
     {
-      "type": "trojan",
+      "type": "vless",
+      "tag": "🇵🇱 波兰 (Poland) 03 - situba",
+      "server": "70.34.255.101",
+      "server_port": 80,
+      "uuid": "a889262f-5fe3-4c93-9aaa-3721318dd389",
+      "transport": {
+        "type": "ws"
+      }
+    },
+    {
+      "type": "vless",
       "tag": "🇵🇱 波兰 (Poland) 04 - situba",
-      "server": "202.78.163.237",
-      "server_port": 443,
-      "password": "UX82473651",
-      "tls": {
-        "enabled": true,
-        "server_name": "cheerful-swan.rooster465.autos",
-        "insecure": false
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 05 - situba",
       "server": "177.1.192.74",
-      "server_port": 443,
-      "uuid": "4d852af3-a121-41aa-9aed-4ca40a6f7b4d",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "addons.mozilla.org",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "qC0g7Y0pwyLFTGAPG2zfZNuo64Cda695wdKgLU4KkF8",
-          "short_id": "770618b6"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 06 - situba",
-      "server": "177.1.192.72",
       "server_port": 443,
       "uuid": "4d852af3-a121-41aa-9aed-4ca40a6f7b4d",
       "flow": "xtls-rprx-vision",
@@ -86,41 +53,33 @@
         },
         "reality": {
           "enabled": true,
-          "public_key": "y3YCXTqEVks0nGfiSwJ43ol4pY69-mWFUZsdmveoVDM",
-          "short_id": "46455ff0"
+          "public_key": "qC0g7Y0pwyLFTGAPG2zfZNuo64Cda695wdKgLU4KkF8",
+          "short_id": "770618b6"
         }
       }
     },
     {
-      "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 07 - situba",
-      "server": "78.17.109.97",
-      "server_port": 6443,
-      "uuid": "dfe8ea9e-fd77-48e6-86ee-7bc1019de1e7",
+      "type": "trojan",
+      "tag": "🇵🇱 波兰 (Poland) 05 - situba",
+      "server": "202.78.163.237",
+      "server_port": 443,
+      "password": "UX82473651",
       "tls": {
         "enabled": true,
-        "server_name": "ok.ru",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "NP5_ymQeqYr_EP7aAPIl3YBRghX60zLq6m74Ht4bFUI",
-          "short_id": "2c043ed8"
-        }
+        "server_name": "cheerful-swan.rooster465.autos",
+        "insecure": true
       }
     },
     {
       "type": "hysteria2",
-      "tag": "🇵🇱 波兰 (Poland) 08 - situba",
+      "tag": "🇵🇱 波兰 (Poland) 06 - situba",
       "server": "144.31.49.47",
       "server_port": 443,
       "password": "YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc",
       "tls": {
         "enabled": true,
         "server_name": "admin.wwwinternetvideo.click",
-        "insecure": true
+        "insecure": false
       }
     },
     {
@@ -133,9 +92,7 @@
         "🇵🇱 波兰 (Poland) 03 - situba",
         "🇵🇱 波兰 (Poland) 04 - situba",
         "🇵🇱 波兰 (Poland) 05 - situba",
-        "🇵🇱 波兰 (Poland) 06 - situba",
-        "🇵🇱 波兰 (Poland) 07 - situba",
-        "🇵🇱 波兰 (Poland) 08 - situba"
+        "🇵🇱 波兰 (Poland) 06 - situba"
       ]
     },
     {
@@ -147,9 +104,7 @@
         "🇵🇱 波兰 (Poland) 03 - situba",
         "🇵🇱 波兰 (Poland) 04 - situba",
         "🇵🇱 波兰 (Poland) 05 - situba",
-        "🇵🇱 波兰 (Poland) 06 - situba",
-        "🇵🇱 波兰 (Poland) 07 - situba",
-        "🇵🇱 波兰 (Poland) 08 - situba"
+        "🇵🇱 波兰 (Poland) 06 - situba"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
