@@ -12,16 +12,13 @@
       "security": "auto",
       "transport": {
         "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "152.67.8.205"
-        }
+        "path": "/"
       }
     },
     {
       "type": "vmess",
       "tag": "🇮🇳 印度 (India) 02 - situba",
-      "server": "aksai.org",
+      "server": "185.67.125.90",
       "server_port": 443,
       "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
       "security": "auto",

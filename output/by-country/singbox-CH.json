@@ -4,16 +4,12 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
+      "type": "shadowsocks",
       "tag": "🇨🇭 瑞士 (Switzerland) 01 - situba",
-      "server": "82.38.64.237",
-      "server_port": 8443,
-      "password": "we9_I1893UFj3149xbr1_k8qvJ8734ic_Mx82gH",
-      "tls": {
-        "enabled": true,
-        "server_name": "hopp-swizland-new.mysynology.net",
-        "insecure": false
-      }
+      "server": "132.243.175.144",
+      "server_port": 8388,
+      "method": "chacha20-ietf-poly1305",
+      "password": "e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3"
     },
     {
       "type": "hysteria2",
@@ -28,30 +24,15 @@
       }
     },
     {
-      "type": "shadowsocks",
+      "type": "hysteria2",
       "tag": "🇨🇭 瑞士 (Switzerland) 03 - situba",
-      "server": "132.243.175.144",
-      "server_port": 8388,
-      "method": "chacha20-ietf-poly1305",
-      "password": "e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3"
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇭 瑞士 (Switzerland) 04 - situba",
-      "server": "199.68.196.67",
-      "server_port": 443,
-      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
+      "server": "82.38.64.235",
+      "server_port": 8443,
+      "password": "we9_I1893UFj3149xbr1_k8qvJ8734ic_Mx82gH",
       "tls": {
         "enabled": true,
-        "server_name": "fzo5i.ir46.90k.hh.ov0.kdns.fr",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/glasspanel/guest000_0_5de14443985f/",
-        "headers": {
-          "Host": "fzo5i.ir46.90k.hh.ov0.kdns.fr"
-        }
+        "server_name": "hopp-swizland-new.mysynology.net",
+        "insecure": true
       }
     },
     {
@@ -61,8 +42,7 @@
         "auto",
         "🇨🇭 瑞士 (Switzerland) 01 - situba",
         "🇨🇭 瑞士 (Switzerland) 02 - situba",
-        "🇨🇭 瑞士 (Switzerland) 03 - situba",
-        "🇨🇭 瑞士 (Switzerland) 04 - situba"
+        "🇨🇭 瑞士 (Switzerland) 03 - situba"
       ]
     },
     {
@@ -71,8 +51,7 @@
       "outbounds": [
         "🇨🇭 瑞士 (Switzerland) 01 - situba",
         "🇨🇭 瑞士 (Switzerland) 02 - situba",
-        "🇨🇭 瑞士 (Switzerland) 03 - situba",
-        "🇨🇭 瑞士 (Switzerland) 04 - situba"
+        "🇨🇭 瑞士 (Switzerland) 03 - situba"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
