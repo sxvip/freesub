@@ -14,16 +14,6 @@ proxies:
   ws-opts:
     path: /
 - name: 🇵🇱 波兰 (Poland) 02 - situba
-  server: 81.90.20.200
-  port: 443
-  udp: true
-  type: vless
-  uuid: 51c14658-8873-4454-9383-c41fc80bde4b
-  flow: xtls-rprx-vision
-  tls: true
-  servername: pl.pupoe.sbs
-  skip-cert-verify: false
-- name: 🇵🇱 波兰 (Poland) 03 - situba
   server: 70.34.255.101
   port: 80
   udp: true
@@ -32,8 +22,16 @@ proxies:
   network: ws
   ws-opts:
     path: /
+- name: 🇵🇱 波兰 (Poland) 03 - situba
+  server: 45.192.12.93
+  port: 443
+  udp: true
+  type: hysteria2
+  password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
+  sni: admin.wwwinternetvideo.click
+  skip-cert-verify: false
 - name: 🇵🇱 波兰 (Poland) 04 - situba
-  server: 177.1.192.74
+  server: 177.1.192.72
   port: 443
   udp: true
   type: vless
@@ -41,8 +39,8 @@ proxies:
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: qC0g7Y0pwyLFTGAPG2zfZNuo64Cda695wdKgLU4KkF8
-    short-id: 770618b6
+    public-key: y3YCXTqEVks0nGfiSwJ43ol4pY69-mWFUZsdmveoVDM
+    short-id: 46455ff0
   servername: addons.mozilla.org
   client-fingerprint: randomized
 - name: 🇵🇱 波兰 (Poland) 05 - situba
@@ -54,13 +52,26 @@ proxies:
   sni: cheerful-swan.rooster465.autos
   skip-cert-verify: true
 - name: 🇵🇱 波兰 (Poland) 06 - situba
-  server: 144.31.49.47
+  server: 177.1.192.74
+  port: 443
+  udp: true
+  type: vless
+  uuid: 4d852af3-a121-41aa-9aed-4ca40a6f7b4d
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: qC0g7Y0pwyLFTGAPG2zfZNuo64Cda695wdKgLU4KkF8
+    short-id: 770618b6
+  servername: addons.mozilla.org
+  client-fingerprint: chrome
+- name: 🇵🇱 波兰 (Poland) 07 - situba
+  server: admin.wwwinternetvideo.click
   port: 443
   udp: true
   type: hysteria2
   password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
   sni: admin.wwwinternetvideo.click
-  skip-cert-verify: false
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -72,6 +83,7 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 04 - situba
   - 🇵🇱 波兰 (Poland) 05 - situba
   - 🇵🇱 波兰 (Poland) 06 - situba
+  - 🇵🇱 波兰 (Poland) 07 - situba
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -83,5 +95,6 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 04 - situba
   - 🇵🇱 波兰 (Poland) 05 - situba
   - 🇵🇱 波兰 (Poland) 06 - situba
+  - 🇵🇱 波兰 (Poland) 07 - situba
 rules:
 - MATCH,PROXIES
