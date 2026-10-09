@@ -4,20 +4,8 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
-      "tag": "🇪🇸 西班牙 (Spain) 01 - situba",
-      "server": "185.174.137.172",
-      "server_port": 8446,
-      "password": "e9dc02d400b67c727aca1620",
-      "tls": {
-        "enabled": true,
-        "server_name": "185.174.137.172",
-        "insecure": true
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇪🇸 西班牙 (Spain) 02 - situba",
+      "tag": "🇪🇸 西班牙 (Spain) 01 - situba",
       "server": "212.227.235.66",
       "server_port": 2053,
       "uuid": "ead0dd61-d398-40ad-80d6-a0e1e516d7d3",
@@ -37,7 +25,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇪🇸 西班牙 (Spain) 03 - situba",
+      "tag": "🇪🇸 西班牙 (Spain) 02 - situba",
       "server": "185.220.249.44",
       "server_port": 2053,
       "uuid": "6d1590ed-4c0f-4bbc-931d-2431737615dd",
@@ -64,8 +52,7 @@
       "outbounds": [
         "auto",
         "🇪🇸 西班牙 (Spain) 01 - situba",
-        "🇪🇸 西班牙 (Spain) 02 - situba",
-        "🇪🇸 西班牙 (Spain) 03 - situba"
+        "🇪🇸 西班牙 (Spain) 02 - situba"
       ]
     },
     {
@@ -73,8 +60,7 @@
       "tag": "auto",
       "outbounds": [
         "🇪🇸 西班牙 (Spain) 01 - situba",
-        "🇪🇸 西班牙 (Spain) 02 - situba",
-        "🇪🇸 西班牙 (Spain) 03 - situba"
+        "🇪🇸 西班牙 (Spain) 02 - situba"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

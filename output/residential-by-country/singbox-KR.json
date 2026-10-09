@@ -4,29 +4,26 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇸🇰 斯洛伐克 (Slovakia) 01 - situba",
-      "server": "80.243.228.73",
-      "server_port": 2085,
-      "uuid": "41fe1f2f-f981-44a5-939f-9b59d15ca955",
-      "transport": {
-        "type": "grpc",
-        "service_name": "vless"
-      }
+      "type": "shadowsocks",
+      "tag": "🇰🇷 韩国 (South Korea) 01 (家宽) - situba",
+      "server": "218.237.185.234",
+      "server_port": 4652,
+      "method": "aes-256-cfb",
+      "password": "qwerREWQ@@"
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇸🇰 斯洛伐克 (Slovakia) 01 - situba"
+        "🇰🇷 韩国 (South Korea) 01 (家宽) - situba"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇸🇰 斯洛伐克 (Slovakia) 01 - situba"
+        "🇰🇷 韩国 (South Korea) 01 (家宽) - situba"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
