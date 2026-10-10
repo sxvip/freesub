@@ -5,29 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 - situba
-  server: 104.21.19.76
-  port: 2096
-  udp: true
-  type: vless
-  uuid: fee1da7e-a258-4456-8e5e-8ecf6518ed12
-  tls: true
-  servername: ez-82c7e7.aBoBaBA.WorkeRS.dEv
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoiemxGMEFDU1VDRyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0
-    headers:
-      Host: ez-82c7e7.abobaba.workers.dev
-- name: 🇭🇰 中国香港 (Hong Kong) 02 - situba
-  server: 43.161.230.103
-  port: 8443
-  udp: true
-  type: hysteria2
-  password: HysTeria2026!Proxy
-  sni: mz.hkychina.com
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 03 - situba
   server: 82.29.36.250
   port: 443
   udp: true
@@ -37,10 +14,34 @@ proxies:
   tls: true
   reality-opts:
     public-key: 09XPceP705hC-5sEDXDSLeL2eMOrF-mFISK8JaJ7q2g
-    short-id: 09353d6dc5b789
+    short-id: ac3342a709db
   servername: aws.amazon.com
   client-fingerprint: chrome
+- name: 🇭🇰 中国香港 (Hong Kong) 02 - situba
+  server: 202.146.222.29
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: www.bing.com
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 03 - situba
+  server: 202.146.222.89
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: https%253a%252f%252ft.me%252fclashv8%25f0%259f%2587%25a8%25f0%259f%2587%25b3
+  skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 04 - situba
+  server: 202.146.222.174
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: t.me
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 05 - situba
   server: 34.92.19.135
   port: 443
   udp: true
@@ -51,28 +52,29 @@ proxies:
     public-key: tSBJnEt6E1dy6UgX9gX5wUfvZ2KAXjGWVKsEq886OWM
     short-id: 56d4e7ae4f86fa39
   servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 05 - situba
-  server: 202.146.222.29
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/wangcai2�
-  skip-cert-verify: true
+  client-fingerprint: ios
 - name: 🇭🇰 中国香港 (Hong Kong) 06 - situba
-  server: 20.205.14.234
-  port: 26480
+  server: 156.224.77.171
+  port: 9443
   udp: true
   type: vless
-  uuid: 01de63ee-d2d6-4842-b2f0-d54c7eca267a
+  uuid: fe0721ac-c577-4938-b7ca-8ab5f43bb8da
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: thefrz26hPQjCrKszJ6m_41nLmThPGkTEKBjYVDGM0E
-  servername: addons.mozilla.org
-  client-fingerprint: firefox
+    public-key: 0hIFPaEn4RdFib8_eP8HYxMywR5izEwM3JA2W1Zo8U4
+    short-id: b390142456517acc
+  servername: www.amazon.com
+  client-fingerprint: random
 - name: 🇭🇰 中国香港 (Hong Kong) 07 - situba
+  server: 2.27.109.179
+  port: 45464
+  udp: true
+  type: trojan
+  password: XuMweB2PWs
+  sni: 2.27.109.179.sslip.io
+  skip-cert-verify: false
+- name: 🇭🇰 中国香港 (Hong Kong) 08 - situba
   server: full-ox.rooster465.autos
   port: 443
   udp: true
@@ -80,46 +82,7 @@ proxies:
   password: UX82473651
   sni: full-ox.rooster465.autos
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 08 - situba
-  server: 202.146.222.174
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 202.146.222.174
-  skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 09 - situba
-  server: 130.94.33.80
-  port: 443
-  udp: true
-  type: vless
-  uuid: 365bebc8-894e-424f-95bf-7edbef311b23
-  tls: true
-  servername: hk.sepporated.com
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: hk.sepporated.com
-- name: 🇭🇰 中国香港 (Hong Kong) 10 - situba
-  server: 202.146.222.89
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: vk.com
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 11 - situba
-  server: 2.27.109.179
-  port: 45464
-  udp: true
-  type: trojan
-  password: XuMweB2PWs
-  sni: 2.27.109.179.sslip.io
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 12 - situba
   server: 3696b38bsg.murphyweb.sbs
   port: 32134
   udp: true
@@ -132,35 +95,14 @@ proxies:
     short-id: 6c6c7c97
   servername: buylite.music.apple.com
   client-fingerprint: random
-- name: 🇭🇰 中国香港 (Hong Kong) 13 - situba
-  server: 154.37.216.186
-  port: 443
+- name: 🇭🇰 中国香港 (Hong Kong) 10 - situba
+  server: mz.hkychina.com
+  port: 8443
   udp: true
-  type: vless
-  uuid: ebdec762-050b-4d54-b7bf-0406ce22f734
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: KkSH2hoA6PuNJL5ZNUDGuWoAYe5kIwcGbrbCYuxHTx8
-    short-id: f39ad9d9eb26df47
-  servername: www.bing.com
-  client-fingerprint: firefox
-- name: 🇭🇰 中国香港 (Hong Kong) 14 - situba
-  server: yg1.ygkkk.dpdns.org
-  port: 443
-  udp: true
-  type: vmess
-  uuid: b2ba4a73-3123-479e-aa96-5973a9ecd0c0
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: jmp1.907737.xyz
+  type: hysteria2
+  password: HysTeria2026!Proxy
+  sni: mz.hkychina.com
   skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /b2ba4a73-3123-479e-aa96-5973a9ecd0c0-vm
-    headers:
-      Host: jmp1.907737.xyz
 proxy-groups:
 - name: PROXIES
   type: select
@@ -176,10 +118,6 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 08 - situba
   - 🇭🇰 中国香港 (Hong Kong) 09 - situba
   - 🇭🇰 中国香港 (Hong Kong) 10 - situba
-  - 🇭🇰 中国香港 (Hong Kong) 11 - situba
-  - 🇭🇰 中国香港 (Hong Kong) 12 - situba
-  - 🇭🇰 中国香港 (Hong Kong) 13 - situba
-  - 🇭🇰 中国香港 (Hong Kong) 14 - situba
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -195,9 +133,5 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 08 - situba
   - 🇭🇰 中国香港 (Hong Kong) 09 - situba
   - 🇭🇰 中国香港 (Hong Kong) 10 - situba
-  - 🇭🇰 中国香港 (Hong Kong) 11 - situba
-  - 🇭🇰 中国香港 (Hong Kong) 12 - situba
-  - 🇭🇰 中国香港 (Hong Kong) 13 - situba
-  - 🇭🇰 中国香港 (Hong Kong) 14 - situba
 rules:
 - MATCH,PROXIES

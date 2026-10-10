@@ -13,6 +13,14 @@ proxies:
   sni: adapting-basilisk.rooster465.autos
   skip-cert-verify: true
 - name: 🇮🇪 爱尔兰 (Ireland) 02 - situba
+  server: master-possum.rooster465.autos
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: master-possum.rooster465.autos
+  skip-cert-verify: false
+- name: 🇮🇪 爱尔兰 (Ireland) 03 - situba
   server: sacred-anemone.rooster465.autos
   port: 443
   udp: true
@@ -20,7 +28,15 @@ proxies:
   password: UX82473651
   sni: sacred-anemone.rooster465.autos
   skip-cert-verify: false
-- name: 🇮🇪 爱尔兰 (Ireland) 03 - situba
+- name: 🇮🇪 爱尔兰 (Ireland) 04 - situba
+  server: loved-shark.rooster465.autos
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: loved-shark.rooster465.autos
+  skip-cert-verify: false
+- name: 🇮🇪 爱尔兰 (Ireland) 05 - situba
   server: 3.255.76.207
   port: 443
   udp: true
@@ -36,6 +52,8 @@ proxy-groups:
   - 🇮🇪 爱尔兰 (Ireland) 01 - situba
   - 🇮🇪 爱尔兰 (Ireland) 02 - situba
   - 🇮🇪 爱尔兰 (Ireland) 03 - situba
+  - 🇮🇪 爱尔兰 (Ireland) 04 - situba
+  - 🇮🇪 爱尔兰 (Ireland) 05 - situba
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -44,5 +62,7 @@ proxy-groups:
   - 🇮🇪 爱尔兰 (Ireland) 01 - situba
   - 🇮🇪 爱尔兰 (Ireland) 02 - situba
   - 🇮🇪 爱尔兰 (Ireland) 03 - situba
+  - 🇮🇪 爱尔兰 (Ireland) 04 - situba
+  - 🇮🇪 爱尔兰 (Ireland) 05 - situba
 rules:
 - MATCH,PROXIES

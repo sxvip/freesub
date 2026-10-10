@@ -5,8 +5,8 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01 - situba
-  server: 185.103.110.68
-  port: 18283
+  server: 185.103.110.66
+  port: 18280
   udp: true
   type: ss
   cipher: aes-128-gcm
@@ -17,7 +17,7 @@ proxies:
   udp: true
   type: hysteria2
   password: cf83b611-6cba-4535-adcb-8da06c6a9146
-  sni: 144.31.212.253
+  sni: vps155-edge.kermemehori.ru
   skip-cert-verify: true
 - name: 🇫🇮 芬兰 (Finland) 03 - situba
   server: 87.242.94.135

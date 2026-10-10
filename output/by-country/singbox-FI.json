@@ -6,8 +6,8 @@
     {
       "type": "shadowsocks",
       "tag": "🇫🇮 芬兰 (Finland) 01 - situba",
-      "server": "185.103.110.68",
-      "server_port": 18283,
+      "server": "185.103.110.66",
+      "server_port": 18280,
       "method": "aes-128-gcm",
       "password": "f9300a9bf39ae0347c3a3bfbc4dd7754"
     },
@@ -19,7 +19,7 @@
       "password": "cf83b611-6cba-4535-adcb-8da06c6a9146",
       "tls": {
         "enabled": true,
-        "server_name": "144.31.212.253",
+        "server_name": "vps155-edge.kermemehori.ru",
         "insecure": true
       }
     },
