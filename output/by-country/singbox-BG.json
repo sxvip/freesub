@@ -7,23 +7,33 @@
       "type": "shadowsocks",
       "tag": "🇧🇬 保加利亚 (Bulgaria) 01 - situba",
       "server": "213.183.63.60",
-      "server_port": 9066,
+      "server_port": 9064,
       "method": "aes-256-cfb",
-      "password": "2KUaE2a8NWTvuCZ3"
+      "password": "cp8pRSUAyLhTfVWH"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 02 - situba",
+      "server": "213.183.63.60",
+      "server_port": 9098,
+      "method": "aes-256-cfb",
+      "password": "aLpQtfEZe445QyHk"
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇧🇬 保加利亚 (Bulgaria) 01 - situba"
+        "🇧🇬 保加利亚 (Bulgaria) 01 - situba",
+        "🇧🇬 保加利亚 (Bulgaria) 02 - situba"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇧🇬 保加利亚 (Bulgaria) 01 - situba"
+        "🇧🇬 保加利亚 (Bulgaria) 01 - situba",
+        "🇧🇬 保加利亚 (Bulgaria) 02 - situba"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

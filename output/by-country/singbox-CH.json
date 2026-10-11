@@ -4,20 +4,28 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
+      "type": "shadowsocks",
       "tag": "🇨🇭 瑞士 (Switzerland) 01 - situba",
+      "server": "132.243.175.144",
+      "server_port": 8388,
+      "method": "chacha20-ietf-poly1305",
+      "password": "e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3"
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇨🇭 瑞士 (Switzerland) 02 - situba",
       "server": "82.38.64.229",
       "server_port": 8443,
       "password": "we9_I1893UFj3149xbr1_k8qvJ8734ic_Mx82gH",
       "tls": {
         "enabled": true,
         "server_name": "hopp-swizland-new.mysynology.net",
-        "insecure": false
+        "insecure": true
       }
     },
     {
       "type": "hysteria2",
-      "tag": "🇨🇭 瑞士 (Switzerland) 02 - situba",
+      "tag": "🇨🇭 瑞士 (Switzerland) 03 - situba",
       "server": "140.238.213.114",
       "server_port": 50160,
       "password": "84a506ca5aca505696a454d828420b3f",
@@ -29,55 +37,8 @@
     },
     {
       "type": "vless",
-      "tag": "🇨🇭 瑞士 (Switzerland) 03 - situba",
-      "server": "138.124.63.224",
-      "server_port": 8444,
-      "uuid": "f55e9aba-7b14-4f6f-b59a-d5b3d45c9309",
-      "tls": {
-        "enabled": true,
-        "server_name": "github.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0",
-          "short_id": "457fab2ac885dbe0"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "GunService"
-      }
-    },
-    {
-      "type": "vless",
       "tag": "🇨🇭 瑞士 (Switzerland) 04 - situba",
-      "server": "116.204.164.30",
-      "server_port": 7443,
-      "uuid": "d5f29a64-da5d-4f99-b3c4-ae92cc39ad5f",
-      "tls": {
-        "enabled": true,
-        "server_name": "ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/@Marisa_kristi",
-        "headers": {
-          "Host": "ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇭 瑞士 (Switzerland) 05 - situba",
-      "server": "153.76.161.58",
+      "server": "153.76.161.59",
       "server_port": 2096,
       "uuid": "3fcec4e4-a674-44d2-8cae-c253cec43b9c",
       "tls": {
@@ -85,7 +46,7 @@
         "server_name": "id.vk.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "edge"
+          "fingerprint": "safari"
         },
         "reality": {
           "enabled": true,
@@ -99,14 +60,6 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇨🇭 瑞士 (Switzerland) 06 - situba",
-      "server": "132.243.175.144",
-      "server_port": 8388,
-      "method": "chacha20-ietf-poly1305",
-      "password": "e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3"
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -114,9 +67,7 @@
         "🇨🇭 瑞士 (Switzerland) 01 - situba",
         "🇨🇭 瑞士 (Switzerland) 02 - situba",
         "🇨🇭 瑞士 (Switzerland) 03 - situba",
-        "🇨🇭 瑞士 (Switzerland) 04 - situba",
-        "🇨🇭 瑞士 (Switzerland) 05 - situba",
-        "🇨🇭 瑞士 (Switzerland) 06 - situba"
+        "🇨🇭 瑞士 (Switzerland) 04 - situba"
       ]
     },
     {
@@ -126,9 +77,7 @@
         "🇨🇭 瑞士 (Switzerland) 01 - situba",
         "🇨🇭 瑞士 (Switzerland) 02 - situba",
         "🇨🇭 瑞士 (Switzerland) 03 - situba",
-        "🇨🇭 瑞士 (Switzerland) 04 - situba",
-        "🇨🇭 瑞士 (Switzerland) 05 - situba",
-        "🇨🇭 瑞士 (Switzerland) 06 - situba"
+        "🇨🇭 瑞士 (Switzerland) 04 - situba"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
