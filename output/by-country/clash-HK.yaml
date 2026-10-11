@@ -5,64 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 - situba
-  server: 82.29.36.250
-  port: 443
+  server: 46.29.166.27
+  port: 20221
   udp: true
-  type: vless
-  uuid: 41a7af38-0bb1-4493-aa8d-634af0c2548b
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 09XPceP705hC-5sEDXDSLeL2eMOrF-mFISK8JaJ7q2g
-    short-id: 09353d6dc5b789
-  servername: aws.amazon.com
-  client-fingerprint: random
+  type: ss
+  cipher: aes-256-gcm
+  password: 6b39ae3234dfd68b
 - name: 🇭🇰 中国香港 (Hong Kong) 02 - situba
-  server: 202.146.222.89
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/clashv8
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 03 - situba
-  server: 43.161.230.103
-  port: 8443
-  udp: true
-  type: hysteria2
-  password: HysTeria2026!Proxy
-  sni: mz.hkychina.com
-  skip-cert-verify: false
-- name: 🇭🇰 中国香港 (Hong Kong) 04 - situba
-  server: 202.146.222.29
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/wangcai2üá
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 05 - situba
-  server: 154.37.216.186
-  port: 443
-  udp: true
-  type: vless
-  uuid: ebdec762-050b-4d54-b7bf-0406ce22f734
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: KkSH2hoA6PuNJL5ZNUDGuWoAYe5kIwcGbrbCYuxHTx8
-    short-id: f39ad9d9eb26df47
-  servername: www.bing.com
-  client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 06 - situba
-  server: 202.146.222.174
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 'off'
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 07 - situba
   server: 156.224.77.171
   port: 9443
   udp: true
@@ -75,7 +24,44 @@ proxies:
     short-id: b390142456517acc
   servername: www.amazon.com
   client-fingerprint: random
-- name: 🇭🇰 中国香港 (Hong Kong) 08 - situba
+- name: 🇭🇰 中国香港 (Hong Kong) 03 - situba
+  server: 82.29.36.250
+  port: 443
+  udp: true
+  type: vless
+  uuid: 41a7af38-0bb1-4493-aa8d-634af0c2548b
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 09XPceP705hC-5sEDXDSLeL2eMOrF-mFISK8JaJ7q2g
+    short-id: 09353d6dc5b789
+  servername: aws.amazon.com
+  client-fingerprint: chrome
+- name: 🇭🇰 中国香港 (Hong Kong) 04 - situba
+  server: 202.146.222.89
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: https://t.me/clashv8🇨🇳
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 05 - situba
+  server: 202.146.222.174
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: 202.146.222.174
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 06 - situba
+  server: 202.146.222.29
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: https://t.me/wangcai2ⁿß
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 07 - situba
   server: full-ox.rooster465.autos
   port: 443
   udp: true
@@ -83,22 +69,21 @@ proxies:
   password: UX82473651
   sni: full-ox.rooster465.autos
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 09 - situba
-  server: 8.217.13.103
+- name: 🇭🇰 中国香港 (Hong Kong) 08 - situba
+  server: n2.whuiy.xyz
   port: 443
   udp: true
-  type: vmess
-  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
-  alterId: 0
-  cipher: auto
+  type: vless
+  uuid: edee8379-1a08-45c8-8401-338452d8ca9b
   tls: true
-  servername: qtkdr8jxe3wefxjm.v.3dns.vip
+  servername: n2.whuiy.xyz
   skip-cert-verify: false
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /ws-vmess
+    path: /vless-cdn
     headers:
-      Host: qtkdr8jxe3wefxjm.v.3dns.vip
+      Host: n2.whuiy.xyz
 proxy-groups:
 - name: PROXIES
   type: select
@@ -112,7 +97,6 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 06 - situba
   - 🇭🇰 中国香港 (Hong Kong) 07 - situba
   - 🇭🇰 中国香港 (Hong Kong) 08 - situba
-  - 🇭🇰 中国香港 (Hong Kong) 09 - situba
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -126,6 +110,5 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 06 - situba
   - 🇭🇰 中国香港 (Hong Kong) 07 - situba
   - 🇭🇰 中国香港 (Hong Kong) 08 - situba
-  - 🇭🇰 中国香港 (Hong Kong) 09 - situba
 rules:
 - MATCH,PROXIES

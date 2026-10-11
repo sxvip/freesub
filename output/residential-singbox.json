@@ -5,22 +5,22 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 01 - situba",
-      "server": "se3.h1cloud.net",
-      "server_port": 25119,
-      "uuid": "f90b7d43-69e2-4b46-a672-8029bc6796a2",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - situba",
+      "server": "t4.qifei.app",
+      "server_port": 443,
+      "uuid": "b98d4c6e-6770-4a31-8256-a4750cdea0e7",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.samsung.com",
+        "server_name": "s3.ap-east-1.amazonaws.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "szPq4a3cvxfBOmGyg-UJCV3d1Jqjnj7YR3gaxyYtnk4",
-          "short_id": "10f517"
+          "public_key": "0i_xAxYgSNx5NMpK2lOaWGS-CvAiD_LneYPO0MF0owo",
+          "short_id": "1a"
         }
       }
     },
@@ -29,14 +29,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇸🇪 瑞典 (Sweden) 01 - situba"
+        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - situba"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇸🇪 瑞典 (Sweden) 01 - situba"
+        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - situba"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
