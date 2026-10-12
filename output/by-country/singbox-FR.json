@@ -4,77 +4,17 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇫🇷 法国 (France) 01 - situba",
-      "server": "51.77.217.70",
-      "server_port": 2053,
-      "uuid": "bf16ee0c-8b3c-41e4-ab3a-8b48033c404e",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "g63cT3uI0Y5iUtj3m__RYz7nmR1eIK4AYikdnZCl63w",
-          "short_id": "bfe58beb41f1d09f"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇫🇷 法国 (France) 02 - situba",
-      "server": "185.18.250.245",
-      "server_port": 443,
-      "password": "humanity",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.calmlunch.com",
-        "insecure": true
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/assignment",
-        "headers": {
-          "Host": "www.calmlunch.com"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇷 法国 (France) 03 - situba",
-      "server": "62.210.91.2",
-      "server_port": 23576,
-      "uuid": "48ff2b70-e180-582f-8866-d9a2edeed5f5",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "fuck.rkn",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s",
-          "short_id": "01"
-        }
-      }
-    },
-    {
       "type": "shadowsocks",
-      "tag": "🇫🇷 法国 (France) 04 - situba",
-      "server": "pl134.vpnbook.com",
-      "server_port": 443,
+      "tag": "🇫🇷 法国 (France) 01 - situba",
+      "server": "51.255.13.232",
+      "server_port": 8388,
       "method": "chacha20-ietf-poly1305",
-      "password": "e5c65ph"
+      "password": "BqnqToih0PbU"
     },
     {
       "type": "vless",
-      "tag": "🇫🇷 法国 (France) 05 - situba",
-      "server": "e3k67dwms3-51255166202-direct.tavafog.com",
+      "tag": "🇫🇷 法国 (France) 02 - situba",
+      "server": "51.255.166.202",
       "server_port": 443,
       "uuid": "593bf46b-8316-5050-9357-d8a41e4db78b",
       "flow": "xtls-rprx-vision",
@@ -89,17 +29,61 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇫🇷 法国 (France) 06 - situba",
-      "server": "pl140.vpnbook.com",
+      "type": "trojan",
+      "tag": "🇫🇷 法国 (France) 03 - situba",
+      "server": "104.16.71.213",
       "server_port": 443,
-      "method": "chacha20-ietf-poly1305",
-      "password": "e5c65ph"
+      "password": "humanity",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.calmlunch.com",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/assignment",
+        "headers": {
+          "Host": "www.calmlunch.com"
+        }
+      }
     },
     {
       "type": "vless",
-      "tag": "🇫🇷 法国 (France) 07 - situba",
-      "server": "rgiw5k0gg5-1492025789-direct.kheibarr.com",
+      "tag": "🇫🇷 法国 (France) 04 - situba",
+      "server": "62.210.91.2",
+      "server_port": 23576,
+      "uuid": "48ff2b70-e180-582f-8866-d9a2edeed5f5",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "fuck.rkn",
+        "utls": {
+          "enabled": true,
+          "fingerprint": ""
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s",
+          "short_id": "01"
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇫🇷 法国 (France) 05 - situba",
+      "server": "62.210.124.146",
+      "server_port": 22000,
+      "password": "dongtaiwang.com",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.microsoft.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇷 法国 (France) 06 - situba",
+      "server": "149.202.57.89",
       "server_port": 443,
       "uuid": "rgiw5k0gg5",
       "flow": "xtls-rprx-vision",
@@ -115,7 +99,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇷 法国 (France) 08 - situba",
+      "tag": "🇫🇷 法国 (France) 07 - situba",
       "server": "62.210.91.10",
       "server_port": 23576,
       "uuid": "48ff2b70-e180-582f-8866-d9a2edeed5f5",
@@ -125,13 +109,36 @@
         "server_name": "fuck.rkn",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": ""
         },
         "reality": {
           "enabled": true,
           "public_key": "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s",
           "short_id": "01"
         }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇷 法国 (France) 08 - situba",
+      "server": "fr4.sodahub.online",
+      "server_port": 8443,
+      "uuid": "c6db98c5-9959-425e-9340-300779fc4e4b",
+      "tls": {
+        "enabled": true,
+        "server_name": "fr4.sodahub.online",
+        "insecure": false,
+        "alpn": [
+          "h2"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "fr4grpc"
       }
     },
     {
@@ -154,113 +161,41 @@
     {
       "type": "vless",
       "tag": "🇫🇷 法国 (France) 10 - situba",
-      "server": "fr4.sodahub.online",
-      "server_port": 8443,
+      "server": "f4.vimeostream.online",
+      "server_port": 11443,
       "uuid": "c6db98c5-9959-425e-9340-300779fc4e4b",
       "tls": {
         "enabled": true,
-        "server_name": "fr4.sodahub.online",
-        "insecure": false
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "fr4grpc"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇷 法国 (France) 11 - situba",
-      "server": "37.49.230.85",
-      "server_port": 8443,
-      "uuid": "c6db98c5-9959-425e-9340-300779fc4e4b",
-      "tls": {
-        "enabled": true,
-        "server_name": "fr5.sodahub.online",
-        "insecure": false
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "fr5grpc"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇷 法国 (France) 12 - situba",
-      "server": "152.228.139.33",
-      "server_port": 35108,
-      "uuid": "81dc0b61-f9fe-4ad6-8b4e-b8c067b73712",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.nvidia.com",
+        "server_name": "f4.vimeostream.online",
+        "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "X_lOw5Zz4SJBa1cRHV4dAq5msYE-ClY5-WNcBmBWRxg",
-          "short_id": "52add08b86a5ccea"
+          "fingerprint": "firefox"
         }
       },
       "transport": {
-        "type": "grpc",
-        "service_name": "grpc-common3"
+        "type": "ws",
+        "path": "/api/v2/stream/ws",
+        "headers": {
+          "Host": "f4.vimeostream.online"
+        }
       }
     },
     {
       "type": "hysteria2",
-      "tag": "🇫🇷 法国 (France) 13 - situba",
+      "tag": "🇫🇷 法国 (France) 11 - situba",
       "server": "62.210.7.139",
       "server_port": 60111,
       "password": "github.com/Alvin9999-newpac/fanqiang",
       "tls": {
         "enabled": true,
-        "server_name": "bing.com",
+        "server_name": "62.210.7.139",
         "insecure": true
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇫🇷 法国 (France) 14 - situba",
-      "server": "173.212.201.85",
-      "server_port": 443,
-      "password": "gf1:gfhysteria2024",
-      "tls": {
-        "enabled": true,
-        "server_name": "173.212.201.85",
-        "insecure": true
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇫🇷 法国 (France) 15 - situba",
-      "server": "51.255.13.232",
-      "server_port": 8388,
-      "method": "chacha20-ietf-poly1305",
-      "password": "BqnqToih0PbU"
-    },
-    {
       "type": "trojan",
-      "tag": "🇫🇷 法国 (France) 16 - situba",
-      "server": "185.220.100.168",
-      "server_port": 443,
-      "password": "humanity",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.calmlunch.com",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/assignment",
-        "headers": {
-          "Host": "www.calmlunch.com"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇫🇷 法国 (France) 17 - situba",
+      "tag": "🇫🇷 法国 (France) 12 - situba",
       "server": "185.114.72.31",
       "server_port": 2053,
       "password": "humanity",
@@ -278,8 +213,29 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇫🇷 法国 (France) 13 - situba",
+      "server": "fr5.wizard.select",
+      "server_port": 443,
+      "uuid": "2acc3742-c568-11f1-9902-a337233c6cda",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "fr5.wizard.select",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "uqLRHVERHP974FJk39ltiV8pkcGAWYKJfOJ1nMALahU",
+          "short_id": "984f"
+        }
+      }
+    },
+    {
       "type": "vmess",
-      "tag": "🇫🇷 法国 (France) 18 - situba",
+      "tag": "🇫🇷 法国 (France) 14 - situba",
       "server": "145.239.55.210",
       "server_port": 80,
       "uuid": "e5e563fb-cf72-4250-bfff-fa0385301061",
@@ -293,41 +249,16 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇫🇷 法国 (France) 19 - situba",
-      "server": "51.255.165.170",
+      "type": "shadowsocks",
+      "tag": "🇫🇷 法国 (France) 15 - situba",
+      "server": "pl134.vpnbook.com",
       "server_port": 443,
-      "uuid": "40fbeade-2b35-55e2-8e72-39893b5917ea",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "tyxyrytyro-51255165170-direct.araghchy.com",
-        "insecure": false
-      }
+      "method": "chacha20-ietf-poly1305",
+      "password": "e5c65ph"
     },
     {
       "type": "vless",
-      "tag": "🇫🇷 法国 (France) 20 - situba",
-      "server": "best.valaiqm.ir",
-      "server_port": 3030,
-      "uuid": "a1fb63f7-a942-4010-a830-bc395703a9a4",
-      "tls": {
-        "enabled": true,
-        "server_name": "telewebion.ir",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "7sQ48HLZKlTXobpwnmr28_esiMRwzjS3DppR9yC3i1U",
-          "short_id": "86490e13"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇷 法国 (France) 21 - situba",
+      "tag": "🇫🇷 法国 (France) 16 - situba",
       "server": "88.151.197.213",
       "server_port": 443,
       "uuid": "ee18d188-14cc-417e-beb1-70e4add6d023",
@@ -347,8 +278,27 @@
       }
     },
     {
+      "type": "trojan",
+      "tag": "🇫🇷 法国 (France) 17 - situba",
+      "server": "45.87.41.18",
+      "server_port": 443,
+      "password": "humanity",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.calmlunch.com",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/assignment",
+        "headers": {
+          "Host": "www.calmlunch.com"
+        }
+      }
+    },
+    {
       "type": "vless",
-      "tag": "🇫🇷 法国 (France) 22 - situba",
+      "tag": "🇫🇷 法国 (France) 18 - situba",
       "server": "8.47.69.0",
       "server_port": 2053,
       "uuid": "9d672694-c146-422e-b3b5-3717a38a0fcc",
@@ -362,6 +312,68 @@
         "path": "/api/voip/updates/static/fr2035",
         "headers": {
           "Host": "fr.api-music-fa.com"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇷 法国 (France) 19 - situba",
+      "server": "104.21.72.47",
+      "server_port": 443,
+      "uuid": "50414e45-4c5f-5a45-5553-ef859652a80e",
+      "tls": {
+        "enabled": true,
+        "server_name": "trex-panel-nubj0s.samifakor.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/stream/TrexBridge/ef859652a80e",
+        "headers": {
+          "Host": "trex-panel-nubj0s.samifakor.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇫🇷 法国 (France) 20 - situba",
+      "server": "185.255.179.166",
+      "server_port": 443,
+      "password": "humanity",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.calmlunch.com",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/assignment",
+        "headers": {
+          "Host": "www.calmlunch.com"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇷 法国 (France) 21 - situba",
+      "server": "tyxyrytyro-51255165170-direct.araghchy.com",
+      "server_port": 443,
+      "uuid": "tyxyrytyro",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "tyxyrytyro-51255165170-direct.araghchy.com",
+        "insecure": false,
+        "alpn": [
+          "h2"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
         }
       }
     },
@@ -390,8 +402,7 @@
         "🇫🇷 法国 (France) 18 - situba",
         "🇫🇷 法国 (France) 19 - situba",
         "🇫🇷 法国 (France) 20 - situba",
-        "🇫🇷 法国 (France) 21 - situba",
-        "🇫🇷 法国 (France) 22 - situba"
+        "🇫🇷 法国 (France) 21 - situba"
       ]
     },
     {
@@ -418,8 +429,7 @@
         "🇫🇷 法国 (France) 18 - situba",
         "🇫🇷 法国 (France) 19 - situba",
         "🇫🇷 法国 (France) 20 - situba",
-        "🇫🇷 法国 (France) 21 - situba",
-        "🇫🇷 法国 (France) 22 - situba"
+        "🇫🇷 法国 (France) 21 - situba"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

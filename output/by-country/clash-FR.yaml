@@ -5,29 +5,35 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇷 法国 (France) 01 - situba
-  server: 51.77.217.70
-  port: 2053
+  server: 51.255.13.232
+  port: 8388
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: BqnqToih0PbU
+- name: 🇫🇷 法国 (France) 02 - situba
+  server: 51.255.166.202
+  port: 443
   udp: true
   type: vless
-  uuid: bf16ee0c-8b3c-41e4-ab3a-8b48033c404e
+  uuid: 593bf46b-8316-5050-9357-d8a41e4db78b
+  flow: xtls-rprx-vision
   tls: true
-  reality-opts:
-    public-key: g63cT3uI0Y5iUtj3m__RYz7nmR1eIK4AYikdnZCl63w
-    short-id: bfe58beb41f1d09f
-  servername: www.apple.com
+  servername: e3k67dwms3-51255166202-direct.tavafog.com
+  skip-cert-verify: false
   client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 02 - situba
-  server: 185.18.250.245
+- name: 🇫🇷 法国 (France) 03 - situba
+  server: 104.16.71.213
   port: 443
   udp: true
   type: trojan
   password: humanity
   sni: www.calmlunch.com
-  skip-cert-verify: true
+  skip-cert-verify: false
   network: ws
   ws-opts:
     path: /assignment
-- name: 🇫🇷 法国 (France) 03 - situba
+- name: 🇫🇷 法国 (France) 04 - situba
   server: 62.210.91.2
   port: 23576
   udp: true
@@ -39,34 +45,17 @@ proxies:
     public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
     short-id: '01'
   servername: fuck.rkn
-  client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 04 - situba
-  server: pl134.vpnbook.com
-  port: 443
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: e5c65ph
+  client-fingerprint: ''
 - name: 🇫🇷 法国 (France) 05 - situba
-  server: e3k67dwms3-51255166202-direct.tavafog.com
-  port: 443
+  server: 62.210.124.146
+  port: 22000
   udp: true
-  type: vless
-  uuid: 593bf46b-8316-5050-9357-d8a41e4db78b
-  flow: xtls-rprx-vision
-  tls: true
-  servername: e3k67dwms3-51255166202-direct.tavafog.com
-  skip-cert-verify: false
-  client-fingerprint: chrome
+  type: hysteria2
+  password: dongtaiwang.com
+  sni: www.microsoft.com
+  skip-cert-verify: true
 - name: 🇫🇷 法国 (France) 06 - situba
-  server: pl140.vpnbook.com
-  port: 443
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: e5c65ph
-- name: 🇫🇷 法国 (France) 07 - situba
-  server: rgiw5k0gg5-1492025789-direct.kheibarr.com
+  server: 149.202.57.89
   port: 443
   udp: true
   type: vless
@@ -76,7 +65,7 @@ proxies:
   servername: rgiw5k0gg5-1492025789-direct.kheibarr.com
   skip-cert-verify: false
   client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 08 - situba
+- name: 🇫🇷 法国 (France) 07 - situba
   server: 62.210.91.10
   port: 23576
   udp: true
@@ -88,7 +77,20 @@ proxies:
     public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
     short-id: '01'
   servername: fuck.rkn
+  client-fingerprint: ''
+- name: 🇫🇷 法国 (France) 08 - situba
+  server: fr4.sodahub.online
+  port: 8443
+  udp: true
+  type: vless
+  uuid: c6db98c5-9959-425e-9340-300779fc4e4b
+  tls: true
+  servername: fr4.sodahub.online
+  skip-cert-verify: false
   client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: fr4grpc
 - name: 🇫🇷 法国 (France) 09 - situba
   server: 193.70.85.96
   port: 443
@@ -101,79 +103,29 @@ proxies:
   skip-cert-verify: false
   client-fingerprint: firefox
 - name: 🇫🇷 法国 (France) 10 - situba
-  server: fr4.sodahub.online
-  port: 8443
+  server: f4.vimeostream.online
+  port: 11443
   udp: true
   type: vless
   uuid: c6db98c5-9959-425e-9340-300779fc4e4b
   tls: true
-  servername: fr4.sodahub.online
+  servername: f4.vimeostream.online
   skip-cert-verify: false
-  network: grpc
-  grpc-opts:
-    grpc-service-name: fr4grpc
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /api/v2/stream/ws
+    headers:
+      Host: f4.vimeostream.online
 - name: 🇫🇷 法国 (France) 11 - situba
-  server: 37.49.230.85
-  port: 8443
-  udp: true
-  type: vless
-  uuid: c6db98c5-9959-425e-9340-300779fc4e4b
-  tls: true
-  servername: fr5.sodahub.online
-  skip-cert-verify: false
-  network: grpc
-  grpc-opts:
-    grpc-service-name: fr5grpc
-- name: 🇫🇷 法国 (France) 12 - situba
-  server: 152.228.139.33
-  port: 35108
-  udp: true
-  type: vless
-  uuid: 81dc0b61-f9fe-4ad6-8b4e-b8c067b73712
-  tls: true
-  reality-opts:
-    public-key: X_lOw5Zz4SJBa1cRHV4dAq5msYE-ClY5-WNcBmBWRxg
-    short-id: 52add08b86a5ccea
-  servername: www.nvidia.com
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc-common3
-- name: 🇫🇷 法国 (France) 13 - situba
   server: 62.210.7.139
   port: 60111
   udp: true
   type: hysteria2
   password: github.com/Alvin9999-newpac/fanqiang
-  sni: bing.com
+  sni: 62.210.7.139
   skip-cert-verify: true
-- name: 🇫🇷 法国 (France) 14 - situba
-  server: 173.212.201.85
-  port: 443
-  udp: true
-  type: hysteria2
-  password: gf1:gfhysteria2024
-  sni: 173.212.201.85
-  skip-cert-verify: true
-- name: 🇫🇷 法国 (France) 15 - situba
-  server: 51.255.13.232
-  port: 8388
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: BqnqToih0PbU
-- name: 🇫🇷 法国 (France) 16 - situba
-  server: 185.220.100.168
-  port: 443
-  udp: true
-  type: trojan
-  password: humanity
-  sni: www.calmlunch.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /assignment
-- name: 🇫🇷 法国 (France) 17 - situba
+- name: 🇫🇷 法国 (France) 12 - situba
   server: 185.114.72.31
   port: 2053
   udp: true
@@ -184,7 +136,20 @@ proxies:
   network: ws
   ws-opts:
     path: /assignment
-- name: 🇫🇷 法国 (France) 18 - situba
+- name: 🇫🇷 法国 (France) 13 - situba
+  server: fr5.wizard.select
+  port: 443
+  udp: true
+  type: vless
+  uuid: 2acc3742-c568-11f1-9902-a337233c6cda
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: uqLRHVERHP974FJk39ltiV8pkcGAWYKJfOJ1nMALahU
+    short-id: 984f
+  servername: fr5.wizard.select
+  client-fingerprint: chrome
+- name: 🇫🇷 法国 (France) 14 - situba
   server: 145.239.55.210
   port: 80
   udp: true
@@ -197,29 +162,14 @@ proxies:
     path: /
     headers:
       Host: google.whatsapp.snapp.torob.basalam.fortresshost.ir.
-- name: 🇫🇷 法国 (France) 19 - situba
-  server: 51.255.165.170
+- name: 🇫🇷 法国 (France) 15 - situba
+  server: pl134.vpnbook.com
   port: 443
   udp: true
-  type: vless
-  uuid: 40fbeade-2b35-55e2-8e72-39893b5917ea
-  flow: xtls-rprx-vision
-  tls: true
-  servername: tyxyrytyro-51255165170-direct.araghchy.com
-  skip-cert-verify: false
-- name: 🇫🇷 法国 (France) 20 - situba
-  server: best.valaiqm.ir
-  port: 3030
-  udp: true
-  type: vless
-  uuid: a1fb63f7-a942-4010-a830-bc395703a9a4
-  tls: true
-  reality-opts:
-    public-key: 7sQ48HLZKlTXobpwnmr28_esiMRwzjS3DppR9yC3i1U
-    short-id: 86490e13
-  servername: telewebion.ir
-  client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 21 - situba
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: e5c65ph
+- name: 🇫🇷 法国 (France) 16 - situba
   server: 88.151.197.213
   port: 443
   udp: true
@@ -232,7 +182,18 @@ proxies:
     short-id: 0da7e14db353e7d0
   servername: frafra.nztvpn.com
   client-fingerprint: random
-- name: 🇫🇷 法国 (France) 22 - situba
+- name: 🇫🇷 法国 (France) 17 - situba
+  server: 45.87.41.18
+  port: 443
+  udp: true
+  type: trojan
+  password: humanity
+  sni: www.calmlunch.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /assignment
+- name: 🇫🇷 法国 (France) 18 - situba
   server: 8.47.69.0
   port: 2053
   udp: true
@@ -246,6 +207,43 @@ proxies:
     path: /api/voip/updates/static/fr2035
     headers:
       Host: fr.api-music-fa.com
+- name: 🇫🇷 法国 (France) 19 - situba
+  server: 104.21.72.47
+  port: 443
+  udp: true
+  type: vless
+  uuid: 50414e45-4c5f-5a45-5553-ef859652a80e
+  tls: true
+  servername: trex-panel-nubj0s.samifakor.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /stream/TrexBridge/ef859652a80e
+    headers:
+      Host: trex-panel-nubj0s.samifakor.workers.dev
+- name: 🇫🇷 法国 (France) 20 - situba
+  server: 185.255.179.166
+  port: 443
+  udp: true
+  type: trojan
+  password: humanity
+  sni: www.calmlunch.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /assignment
+- name: 🇫🇷 法国 (France) 21 - situba
+  server: tyxyrytyro-51255165170-direct.araghchy.com
+  port: 443
+  udp: true
+  type: vless
+  uuid: tyxyrytyro
+  flow: xtls-rprx-vision
+  tls: true
+  servername: tyxyrytyro-51255165170-direct.araghchy.com
+  skip-cert-verify: false
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -272,7 +270,6 @@ proxy-groups:
   - 🇫🇷 法国 (France) 19 - situba
   - 🇫🇷 法国 (France) 20 - situba
   - 🇫🇷 法国 (France) 21 - situba
-  - 🇫🇷 法国 (France) 22 - situba
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -299,6 +296,5 @@ proxy-groups:
   - 🇫🇷 法国 (France) 19 - situba
   - 🇫🇷 法国 (France) 20 - situba
   - 🇫🇷 法国 (France) 21 - situba
-  - 🇫🇷 法国 (France) 22 - situba
 rules:
 - MATCH,PROXIES
