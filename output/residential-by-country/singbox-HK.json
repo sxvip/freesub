@@ -4,30 +4,27 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
-      "tag": "🇸🇪 瑞典 (Sweden) 01 - situba",
-      "server": "sweedenqfds777.qcloud.surf",
-      "server_port": 21223,
-      "password": "8bd04756-3beb-4348-82c9-d35453df50ce",
-      "tls": {
-        "enabled": true,
-        "server_name": "sweedenqfds777.qcloud.surf",
-        "insecure": true
-      }
+      "type": "vmess",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - situba",
+      "server": "v10.hdacd.com",
+      "server_port": 30807,
+      "uuid": "cbb3f877-d1fb-344c-87a9-d153bffd5484",
+      "security": "auto",
+      "alter_id": 2
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇸🇪 瑞典 (Sweden) 01 - situba"
+        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - situba"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇸🇪 瑞典 (Sweden) 01 - situba"
+        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - situba"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

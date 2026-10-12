@@ -4,16 +4,21 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 01 (家宽) R40 - situba",
-      "server": "188.114.97.6",
-      "server_port": 8080,
-      "uuid": "fee1da7e-a258-4456-8e5e-8ecf6518ed12",
+      "type": "trojan",
+      "tag": "🌐 其他地区 (Other) 01 - situba",
+      "server": "www.calmlunch.com",
+      "server_port": 443,
+      "password": "humanity",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.calmlunch.com",
+        "insecure": false
+      },
       "transport": {
         "type": "ws",
-        "path": "/eyJqdW5rIjoiemxGMEFDU1VDRyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0",
+        "path": "/assignment",
         "headers": {
-          "Host": "ez-82c7e7.abobaba.workers.dev"
+          "Host": "www.calmlunch.com"
         }
       }
     },
@@ -22,14 +27,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇺🇸 美国 (United States) 01 (家宽) R40 - situba"
+        "🌐 其他地区 (Other) 01 - situba"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇺🇸 美国 (United States) 01 (家宽) R40 - situba"
+        "🌐 其他地区 (Other) 01 - situba"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
