@@ -5,82 +5,62 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇬 新加坡 (Singapore) 01 - situba
-  server: 104.17.3.81
-  port: 443
+  server: 149.88.23.202
+  port: 18000
   udp: true
-  type: vless
-  uuid: fc60147e-76b8-4bc5-b691-90b2da79e3d2
-  tls: true
-  servername: nautica-cff.kloningstrife002.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /138.2.74.219-28616
-    headers:
-      Host: nautica-cff.kloningstrife002.workers.dev
+  type: vmess
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
 - name: 🇸🇬 新加坡 (Singapore) 02 - situba
-  server: 172.67.150.22
-  port: 443
-  udp: true
-  type: trojan
-  password: LcICDcp!jD9TFV$NbH
-  sni: dl2uF-iVdeZILZ3E86rK18.Hhvt37tjm2XBOsQL5HXogN-Y.woRKERS.dEv
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /tr/pg4wM48V9O859nmqsJg22EOFKN4S570y?ed
-- name: 🇸🇬 新加坡 (Singapore) 03 - situba
   server: 68.183.227.236
   port: 8080
   udp: true
   type: ss
   cipher: rc4-md5
   password: 14fFPrbezE3HDZzsMOr6
-- name: 🇸🇬 新加坡 (Singapore) 04 - situba
-  server: 68.183.227.4
-  port: 8080
-  udp: true
-  type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: 🇸🇬 新加坡 (Singapore) 05 - situba
-  server: 128.199.172.224
-  port: 8080
-  udp: true
-  type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: 🇸🇬 新加坡 (Singapore) 06 - situba
+- name: 🇸🇬 新加坡 (Singapore) 03 - situba
   server: 68.183.227.45
   port: 8080
   udp: true
   type: ss
   cipher: rc4-md5
   password: 14fFPrbezE3HDZzsMOr6
-- name: 🇸🇬 新加坡 (Singapore) 07 - situba
+- name: 🇸🇬 新加坡 (Singapore) 04 - situba
   server: 45.128.12.20
   port: 14249
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
   password: 9epp3o9ng8ej59uv
-- name: 🇸🇬 新加坡 (Singapore) 08 - situba
-  server: 139.180.146.200
-  port: 8886
-  udp: true
-  type: trojan
-  password: e26a229d-e8f2-4ff9-8c7d-58a9d83ee437
-  sni: 139.180.146.200
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 09 - situba
+- name: 🇸🇬 新加坡 (Singapore) 05 - situba
   server: 68.183.235.122
   port: 8080
   udp: true
   type: ss
   cipher: rc4-md5
   password: 14fFPrbezE3HDZzsMOr6
-- name: 🇸🇬 新加坡 (Singapore) 10 - situba
+- name: 🇸🇬 新加坡 (Singapore) 06 - situba
+  server: 54.169.200.246
+  port: 41688
+  udp: true
+  type: vless
+  uuid: 49c0aac1-5e05-4f04-b624-248fc59e03c4
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: srwIElIGTPs0kshpN1vvPsn4wixV_pLd56y_v9m0sTk
+    short-id: 7f342137c20387
+  servername: www.intel.com
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 07 - situba
+  server: 68.183.227.4
+  port: 8080
+  udp: true
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+- name: 🇸🇬 新加坡 (Singapore) 08 - situba
   server: 146.235.16.130
   port: 19825
   udp: true
@@ -92,45 +72,39 @@ proxies:
     public-key: GvvkY8xYb9QjvwvzYq_uNC4tOGd0DCxRnz6770-xgkI
     short-id: 6ba85179e30d4fc2
   servername: sg2-8sb.6121999.dpdns.org
-  client-fingerprint: firefox
-- name: 🇸🇬 新加坡 (Singapore) 11 - situba
-  server: 47.131.250.125
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 09 - situba
+  server: 3.1.252.137
   port: 443
   udp: true
   type: trojan
   password: UX82473651
-  sni: simple-molly.rooster465.autos
+  sni: brave-tomcat.rooster465.autos
   skip-cert-verify: false
-- name: 🇸🇬 新加坡 (Singapore) 12 - situba
-  server: 54.251.9.130
-  port: 24146
+- name: 🇸🇬 新加坡 (Singapore) 10 - situba
+  server: 128.199.172.224
+  port: 8080
   udp: true
-  type: vless
-  uuid: 9d9a048b-3aea-4b3e-b106-1106bf301feb
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: VeluC9A7XDurAWQNgXKShS2SJSgoK79QHFgiAMYrvGo
-    short-id: 7205d9079521832c
-  servername: www.intel.com
-  client-fingerprint: random
-- name: 🇸🇬 新加坡 (Singapore) 13 - situba
-  server: 149.88.23.207
-  port: 18000
-  udp: true
-  type: vmess
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-- name: 🇸🇬 新加坡 (Singapore) 14 - situba
-  server: musical-mouse.rooster465.autos
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+- name: 🇸🇬 新加坡 (Singapore) 11 - situba
+  server: glorious-glider.rooster465.autos
   port: 443
   udp: true
   type: trojan
   password: UX82473651
-  sni: musical-mouse.rooster465.autos
+  sni: glorious-glider.rooster465.autos
   skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 15 - situba
+- name: 🇸🇬 新加坡 (Singapore) 12 - situba
+  server: inviting-ferret.rooster465.autos
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: inviting-ferret.rooster465.autos
+  skip-cert-verify: false
+- name: 🇸🇬 新加坡 (Singapore) 13 - situba
   server: cdn-dynmedia.shalana.shop
   port: 119
   udp: true
@@ -138,15 +112,23 @@ proxies:
   password: A7GQgrEcSn
   sni: whatsapp.net
   skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 16 - situba
-  server: 138.2.73.238
-  port: 50160
+- name: 🇸🇬 新加坡 (Singapore) 14 - situba
+  server: ww11.levikogjgfdd.ir
+  port: 18000
   udp: true
-  type: hysteria2
-  password: f87376e17da040ed04c9665ce8972930
-  sni: 'off'
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 17 - situba
+  type: vmess
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+- name: 🇸🇬 新加坡 (Singapore) 15 - situba
+  server: 54.151.181.75
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: moral-basilisk.rooster465.autos
+  skip-cert-verify: false
+- name: 🇸🇬 新加坡 (Singapore) 16 - situba
   server: 104.64.205.103
   port: 443
   udp: true
@@ -155,78 +137,7 @@ proxies:
   tls: true
   servername: cdn-dynmedia.shalana.shop
   skip-cert-verify: false
-  client-fingerprint: random
-- name: 🇸🇬 新加坡 (Singapore) 18 - situba
-  server: brave-tomcat.rooster465.autos
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: brave-tomcat.rooster465.autos
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 19 - situba
-  server: 3.0.111.82
-  port: 17623
-  udp: true
-  type: vless
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  servername: www.apple.com
-  client-fingerprint: safari
-- name: 🇸🇬 新加坡 (Singapore) 20 - situba
-  server: 34.87.113.18
-  port: 443
-  udp: true
-  type: vless
-  uuid: 5567cac6-2a32-4318-83cd-7df3a9eebbd7
-  tls: true
-  reality-opts:
-    public-key: hJCcmOf_ECJ3GUfHUjsgfcFKcgGb22H7cz_m_FvcVm4
-    short-id: eb97ce837da2f6ad
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
-- name: 🇸🇬 新加坡 (Singapore) 21 - situba
-  server: glorious-glider.rooster465.autos
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: glorious-glider.rooster465.autos
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 22 - situba
-  server: 54.151.181.75
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: moral-basilisk.rooster465.autos
-  skip-cert-verify: false
-- name: 🇸🇬 新加坡 (Singapore) 23 - situba
-  server: 3.0.111.82
-  port: 10574
-  udp: true
-  type: vless
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  servername: www.apple.com
-  client-fingerprint: random
-- name: 🇸🇬 新加坡 (Singapore) 24 - situba
-  server: 149.88.23.202
-  port: 18000
-  udp: true
-  type: vmess
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-- name: 🇸🇬 新加坡 (Singapore) 25 - situba
+- name: 🇸🇬 新加坡 (Singapore) 17 - situba
   server: 45.118.133.249
   port: 443
   udp: true
@@ -240,27 +151,50 @@ proxies:
     path: /
     headers:
       Host: free.nadun.store
-- name: 🇸🇬 新加坡 (Singapore) 26 - situba
-  server: 217.217.254.126
-  port: 2053
-  udp: true
-  type: vless
-  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
-  tls: true
-  reality-opts:
-    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
-    short-id: 87829de0e2bb82cb
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 27 - situba
-  server: inviting-ferret.rooster465.autos
+- name: 🇸🇬 新加坡 (Singapore) 18 - situba
+  server: 18.141.136.8
   port: 443
   udp: true
   type: trojan
   password: UX82473651
-  sni: inviting-ferret.rooster465.autos
+  sni: musical-mouse.rooster465.autos
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 19 - situba
+  server: 47.131.250.125
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: simple-molly.rooster465.autos
   skip-cert-verify: false
-- name: 🇸🇬 新加坡 (Singapore) 28 - situba
+- name: 🇸🇬 新加坡 (Singapore) 20 - situba
+  server: 3.0.111.82
+  port: 10574
+  udp: true
+  type: vless
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
+  client-fingerprint: firefox
+- name: 🇸🇬 新加坡 (Singapore) 21 - situba
+  server: v.toe.dpdns.org
+  port: 443
+  udp: true
+  type: vless
+  uuid: 715eb586-1d27-413c-b144-cab6be5d8af1
+  tls: true
+  servername: pw.gams.dpdns.org
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /vplaetshs
+    headers:
+      Host: pw.gams.dpdns.org
+- name: 🇸🇬 新加坡 (Singapore) 22 - situba
   server: 3.0.111.82
   port: 12972
   udp: true
@@ -272,8 +206,8 @@ proxies:
     public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
     short-id: 48050fab
   servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 29 - situba
+  client-fingerprint: firefox
+- name: 🇸🇬 新加坡 (Singapore) 23 - situba
   server: 139.162.27.96
   port: 2096
   udp: true
@@ -282,6 +216,7 @@ proxies:
   tls: true
   servername: free-server.techsonic.dev
   skip-cert-verify: false
+  client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /free-server.techsonic.dev
@@ -315,12 +250,6 @@ proxy-groups:
   - 🇸🇬 新加坡 (Singapore) 21 - situba
   - 🇸🇬 新加坡 (Singapore) 22 - situba
   - 🇸🇬 新加坡 (Singapore) 23 - situba
-  - 🇸🇬 新加坡 (Singapore) 24 - situba
-  - 🇸🇬 新加坡 (Singapore) 25 - situba
-  - 🇸🇬 新加坡 (Singapore) 26 - situba
-  - 🇸🇬 新加坡 (Singapore) 27 - situba
-  - 🇸🇬 新加坡 (Singapore) 28 - situba
-  - 🇸🇬 新加坡 (Singapore) 29 - situba
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -349,11 +278,5 @@ proxy-groups:
   - 🇸🇬 新加坡 (Singapore) 21 - situba
   - 🇸🇬 新加坡 (Singapore) 22 - situba
   - 🇸🇬 新加坡 (Singapore) 23 - situba
-  - 🇸🇬 新加坡 (Singapore) 24 - situba
-  - 🇸🇬 新加坡 (Singapore) 25 - situba
-  - 🇸🇬 新加坡 (Singapore) 26 - situba
-  - 🇸🇬 新加坡 (Singapore) 27 - situba
-  - 🇸🇬 新加坡 (Singapore) 28 - situba
-  - 🇸🇬 新加坡 (Singapore) 29 - situba
 rules:
 - MATCH,PROXIES
