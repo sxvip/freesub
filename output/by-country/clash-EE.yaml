@@ -13,19 +13,6 @@ proxies:
   sni: 109.206.241.10
   skip-cert-verify: true
 - name: 🇪🇪 爱沙尼亚 (Estonia) 02 - situba
-  server: 93.123.39.84
-  port: 443
-  udp: true
-  type: vless
-  uuid: 5298d5c5-0633-4989-95c8-68ee13cd507e
-  tls: true
-  servername: ee2x.global-cdn.org
-  skip-cert-verify: false
-  client-fingerprint: edge
-  network: grpc
-  grpc-opts:
-    grpc-service-name: content.v1.Feed
-- name: 🇪🇪 爱沙尼亚 (Estonia) 03 - situba
   server: 94.183.170.135
   port: 8443
   udp: true
@@ -34,6 +21,27 @@ proxies:
   tls: true
   servername: estproxy4.lockdwn.com
   skip-cert-verify: false
+- name: 🇪🇪 爱沙尼亚 (Estonia) 03 - situba
+  server: 94.183.170.135
+  port: 443
+  udp: true
+  type: vless
+  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇪🇪 爱沙尼亚 (Estonia) 04 - situba
+  server: zahvatpribaltovonline.vvzzkontaktezzvv.garden
+  port: 443
+  udp: true
+  type: vless
+  uuid: ace33fb8-c593-4b17-8f72-f3359b6e9638
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: r1MW0o1DsC6EEWN-KPKnoXszb1trxlKShRIgOpxqHBk
+    short-id: d98e7afec9c0c359
+  servername: zahvatpribaltovonline.vvzzkontaktezzvv.garden
   client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
@@ -43,6 +51,7 @@ proxy-groups:
   - 🇪🇪 爱沙尼亚 (Estonia) 01 - situba
   - 🇪🇪 爱沙尼亚 (Estonia) 02 - situba
   - 🇪🇪 爱沙尼亚 (Estonia) 03 - situba
+  - 🇪🇪 爱沙尼亚 (Estonia) 04 - situba
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -51,5 +60,6 @@ proxy-groups:
   - 🇪🇪 爱沙尼亚 (Estonia) 01 - situba
   - 🇪🇪 爱沙尼亚 (Estonia) 02 - situba
   - 🇪🇪 爱沙尼亚 (Estonia) 03 - situba
+  - 🇪🇪 爱沙尼亚 (Estonia) 04 - situba
 rules:
 - MATCH,PROXIES
