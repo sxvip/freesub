@@ -5,13 +5,12 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇭 瑞士 (Switzerland) 01 - situba
-  server: 140.238.213.114
-  port: 50160
+  server: 132.243.175.144
+  port: 8388
   udp: true
-  type: hysteria2
-  password: 84a506ca5aca505696a454d828420b3f
-  sni: 'off'
-  skip-cert-verify: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3
 - name: 🇨🇭 瑞士 (Switzerland) 02 - situba
   server: 138.124.63.224
   port: 8444
@@ -28,12 +27,35 @@ proxies:
   grpc-opts:
     grpc-service-name: GunService
 - name: 🇨🇭 瑞士 (Switzerland) 03 - situba
-  server: 132.243.175.144
-  port: 8388
+  server: 116.204.164.5
+  port: 7443
   udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3
+  type: vless
+  uuid: 2416ff70-cb17-4cdc-834d-a89c00261e01
+  tls: true
+  servername: o-85ley6knn8ut.6nvkygqh144t7xtdyvh0y3o4gzo3ujhnk8n.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: o-85ley6knn8ut.6nvkygqh144t7xtdyvh0y3o4gzo3ujhnk8n.workers.dev
+- name: 🇨🇭 瑞士 (Switzerland) 04 - situba
+  server: 129.151.64.169
+  port: 31867
+  udp: true
+  type: vless
+  uuid: f7ff2e67-b687-4098-a28a-d102c27ba19c
+  tls: true
+  servername: mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -42,6 +64,7 @@ proxy-groups:
   - 🇨🇭 瑞士 (Switzerland) 01 - situba
   - 🇨🇭 瑞士 (Switzerland) 02 - situba
   - 🇨🇭 瑞士 (Switzerland) 03 - situba
+  - 🇨🇭 瑞士 (Switzerland) 04 - situba
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -50,5 +73,6 @@ proxy-groups:
   - 🇨🇭 瑞士 (Switzerland) 01 - situba
   - 🇨🇭 瑞士 (Switzerland) 02 - situba
   - 🇨🇭 瑞士 (Switzerland) 03 - situba
+  - 🇨🇭 瑞士 (Switzerland) 04 - situba
 rules:
 - MATCH,PROXIES

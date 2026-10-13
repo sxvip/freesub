@@ -14,6 +14,20 @@
     {
       "type": "vless",
       "tag": "🇹🇭 泰国 (Thailand) 02 - situba",
+      "server": "103.86.49.57",
+      "server_port": 80,
+      "uuid": "3c52e091-6714-4915-949f-2149fe69951b",
+      "transport": {
+        "type": "ws",
+        "path": "/ws",
+        "headers": {
+          "Host": "aIs.SpEeDtEsT.nEt"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇭 泰国 (Thailand) 03 - situba",
       "server": "154.21.203.106",
       "server_port": 21033,
       "uuid": "57beeeb0-03fc-4fc9-94da-7604488a7134",
@@ -23,7 +37,7 @@
         "server_name": "www.kaidee.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -34,7 +48,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇹🇭 泰国 (Thailand) 03 - situba",
+      "tag": "🇹🇭 泰国 (Thailand) 04 - situba",
       "server": "104.16.10.2",
       "server_port": 443,
       "uuid": "3c52e091-6714-4915-949f-2149fe69951b",
@@ -53,7 +67,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇹🇭 泰国 (Thailand) 04 - situba",
+      "tag": "🇹🇭 泰国 (Thailand) 05 - situba",
       "server": "pphfree2.mvpnpvpn.de5.net",
       "server_port": 52351,
       "method": "aes-256-gcm",
@@ -67,7 +81,8 @@
         "🇹🇭 泰国 (Thailand) 01 - situba",
         "🇹🇭 泰国 (Thailand) 02 - situba",
         "🇹🇭 泰国 (Thailand) 03 - situba",
-        "🇹🇭 泰国 (Thailand) 04 - situba"
+        "🇹🇭 泰国 (Thailand) 04 - situba",
+        "🇹🇭 泰国 (Thailand) 05 - situba"
       ]
     },
     {
@@ -77,7 +92,8 @@
         "🇹🇭 泰国 (Thailand) 01 - situba",
         "🇹🇭 泰国 (Thailand) 02 - situba",
         "🇹🇭 泰国 (Thailand) 03 - situba",
-        "🇹🇭 泰国 (Thailand) 04 - situba"
+        "🇹🇭 泰国 (Thailand) 04 - situba",
+        "🇹🇭 泰国 (Thailand) 05 - situba"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

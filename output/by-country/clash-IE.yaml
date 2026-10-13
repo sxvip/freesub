@@ -11,9 +11,9 @@ proxies:
   type: trojan
   password: UX82473651
   sni: adapting-basilisk.rooster465.autos
-  skip-cert-verify: true
+  skip-cert-verify: false
 - name: 🇮🇪 爱尔兰 (Ireland) 02 - situba
-  server: 3.253.106.233
+  server: loved-shark.rooster465.autos
   port: 443
   udp: true
   type: trojan
