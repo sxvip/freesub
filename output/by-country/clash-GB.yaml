@@ -5,40 +5,55 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇬🇧 英国 (United Kingdom) 01 - situba
-  server: 35.179.134.0
-  port: 443
+  server: 172.66.44.124
+  port: 8443
+  udp: true
+  type: vless
+  uuid: b2f2f9f2-1864-48ea-839b-22815faff1f1
+  tls: true
+  servername: stf839dvvyog9d2qa4-b8z6ahgn7b7qi.pages.dev
+  skip-cert-verify: false
+  client-fingerprint: randomized
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: stf839dvvyog9d2qa4-b8z6ahgn7b7qi.pages.dev
+- name: 🇬🇧 英国 (United Kingdom) 02 - situba
+  server: 146.70.61.18
+  port: 8080
   udp: true
   type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇬🇧 英国 (United Kingdom) 02 - situba
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+- name: 🇬🇧 英国 (United Kingdom) 03 - situba
   server: 141.98.101.181
   port: 443
   udp: true
   type: ss
   cipher: aes-128-gcm
   password: shadowsocks
-- name: 🇬🇧 英国 (United Kingdom) 03 - situba
-  server: 51.77.225.200
-  port: 8388
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: zRZNBszYyWo5
 - name: 🇬🇧 英国 (United Kingdom) 04 - situba
-  server: 149.102.132.184
-  port: 80
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: g5h5jleTRSyO3Rk4
-- name: 🇬🇧 英国 (United Kingdom) 05 - situba
-  server: 16.60.8.87
+  server: 186.190.211.188
   port: 443
   udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
+  type: vless
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  tls: true
+  servername: 186.190.211.188
+  skip-cert-verify: true
+  client-fingerprint: chrome
+- name: 🇬🇧 英国 (United Kingdom) 05 - situba
+  server: 206.245.166.203
+  port: 443
+  udp: true
+  type: vless
+  uuid: b8254d35-1cb0-4b74-8f7f-d2bc985196a0
+  flow: xtls-rprx-vision
+  tls: true
+  servername: laga20.api3-max.ru
+  skip-cert-verify: false
+  client-fingerprint: firefox
 - name: 🇬🇧 英国 (United Kingdom) 06 - situba
   server: 45.141.118.213
   port: 443
@@ -64,27 +79,48 @@ proxies:
   servername: speed.cloudflare.com
   client-fingerprint: chrome
 - name: 🇬🇧 英国 (United Kingdom) 08 - situba
-  server: 206.245.166.203
+  server: 206.245.166.173
   port: 443
   udp: true
   type: vless
   uuid: b8254d35-1cb0-4b74-8f7f-d2bc985196a0
   flow: xtls-rprx-vision
   tls: true
-  servername: laga20.api3-max.ru
+  servername: laga19.api3-max.ru
   skip-cert-verify: false
   client-fingerprint: firefox
 - name: 🇬🇧 英国 (United Kingdom) 09 - situba
-  server: 51.38.71.147
-  port: 8443
+  server: 206.245.166.249
+  port: 443
   udp: true
   type: vless
-  uuid: c08f0056-7a6d-4931-813b-aaa3cdd00aed
+  uuid: b8254d35-1cb0-4b74-8f7f-d2bc985196a0
+  flow: xtls-rprx-vision
   tls: true
-  servername: node-uk.connectsuite.org
+  servername: laga18.api3-max.ru
   skip-cert-verify: false
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 - name: 🇬🇧 英国 (United Kingdom) 10 - situba
+  server: 51.77.225.200
+  port: 8388
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: zRZNBszYyWo5
+- name: 🇬🇧 英国 (United Kingdom) 11 - situba
+  server: 57.129.132.223
+  port: 80
+  udp: true
+  type: vmess
+  uuid: a25cbf11-2908-4a1b-a3a8-9a571777dca3
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /vmess/
+    headers:
+      Host: google.com
+- name: 🇬🇧 英国 (United Kingdom) 12 - situba
   server: 46.250.250.149
   port: 2053
   udp: true
@@ -96,28 +132,6 @@ proxies:
     short-id: 9922313fffed1c63
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇬🇧 英国 (United Kingdom) 11 - situba
-  server: laga18.api3-max.ru
-  port: 443
-  udp: true
-  type: vless
-  uuid: b8254d35-1cb0-4b74-8f7f-d2bc985196a0
-  flow: xtls-rprx-vision
-  tls: true
-  servername: laga18.api3-max.ru
-  skip-cert-verify: false
-  client-fingerprint: firefox
-- name: 🇬🇧 英国 (United Kingdom) 12 - situba
-  server: laga19.api3-max.ru
-  port: 443
-  udp: true
-  type: vless
-  uuid: b8254d35-1cb0-4b74-8f7f-d2bc985196a0
-  flow: xtls-rprx-vision
-  tls: true
-  servername: laga19.api3-max.ru
-  skip-cert-verify: false
-  client-fingerprint: firefox
 - name: 🇬🇧 英国 (United Kingdom) 13 - situba
   server: lagad17.api3-max.ru
   port: 443
@@ -128,21 +142,40 @@ proxies:
   tls: true
   servername: lagad17.api3-max.ru
   skip-cert-verify: false
+  client-fingerprint: firefox
 - name: 🇬🇧 英国 (United Kingdom) 14 - situba
-  server: 185.223.252.175
-  port: 443
+  server: 109.248.169.195
+  port: 43000
   udp: true
   type: vless
-  uuid: b0a100ee-c397-43f2-bdae-2adfb7a0d4e5
+  uuid: caed9423-a900-4704-9045-d207a8d4697b
+  flow: xtls-rprx-vision
   tls: true
-  servername: rnxq-1lpi3m.linmeisoft.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /b0a100ee-c397-43f2-bdae-2adfb7a0d4e5
-    headers:
-      Host: rnxq-1lpi3m.linmeisoft.com
+  reality-opts:
+    public-key: 0cVL3RpP9S7OYgQDyZMoV6n3LtrbDJ7DjjUk_0ZizWc
+    short-id: 445b41ed
+  servername: 109.248.169.195
+  client-fingerprint: chrome
 - name: 🇬🇧 英国 (United Kingdom) 15 - situba
+  server: 46.250.240.80
+  port: 2053
+  udp: true
+  type: vless
+  uuid: 948df76f-505d-4608-9c76-a933ee3ccc76
+  tls: true
+  reality-opts:
+    public-key: CYFeysLf--_IVhxQOCd3ZxLrAVWFFOkJzvIGHOVXN3E
+    short-id: 4cc9dc65f7770115
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+- name: 🇬🇧 英国 (United Kingdom) 16 - situba
+  server: 13.135.102.116
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇬🇧 英国 (United Kingdom) 17 - situba
   server: webdisk.jaggyslawa.org
   port: 443
   udp: true
@@ -155,7 +188,7 @@ proxies:
     short-id: baf023e1026a
   servername: www.mozilla.org
   client-fingerprint: edge
-- name: 🇬🇧 英国 (United Kingdom) 16 - situba
+- name: 🇬🇧 英国 (United Kingdom) 18 - situba
   server: server.slavkiti.monster
   port: 443
   udp: true
@@ -168,16 +201,13 @@ proxies:
     short-id: 8325360e8bd2
   servername: www.foxsports.com
   client-fingerprint: chrome
-- name: 🇬🇧 英国 (United Kingdom) 17 - situba
-  server: 186.190.211.188
-  port: 443
+- name: 🇬🇧 英国 (United Kingdom) 19 - situba
+  server: 94.156.250.148
+  port: 7001
   udp: true
-  type: vless
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  tls: true
-  servername: 186.190.211.188
-  skip-cert-verify: true
-  client-fingerprint: chrome
+  type: ss
+  cipher: aes-256-gcm
+  password: RexnBgU7EV5ADxG
 proxy-groups:
 - name: PROXIES
   type: select
@@ -200,6 +230,8 @@ proxy-groups:
   - 🇬🇧 英国 (United Kingdom) 15 - situba
   - 🇬🇧 英国 (United Kingdom) 16 - situba
   - 🇬🇧 英国 (United Kingdom) 17 - situba
+  - 🇬🇧 英国 (United Kingdom) 18 - situba
+  - 🇬🇧 英国 (United Kingdom) 19 - situba
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -222,5 +254,7 @@ proxy-groups:
   - 🇬🇧 英国 (United Kingdom) 15 - situba
   - 🇬🇧 英国 (United Kingdom) 16 - situba
   - 🇬🇧 英国 (United Kingdom) 17 - situba
+  - 🇬🇧 英国 (United Kingdom) 18 - situba
+  - 🇬🇧 英国 (United Kingdom) 19 - situba
 rules:
 - MATCH,PROXIES
