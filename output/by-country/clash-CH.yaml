@@ -28,16 +28,17 @@ proxies:
   grpc-opts:
     grpc-service-name: GunService
 - name: 🇨🇭 瑞士 (Switzerland) 03 - situba
-  server: 185.18.250.245
-  port: 443
+  server: 208.69.78.217
+  port: 2053
   udp: true
-  type: trojan
-  password: humanity
-  sni: www.calmlunch.com
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /assignment
+  type: vless
+  uuid: c0dd6d59-1573-43af-8b70-1470b2632a6d
+  tls: true
+  reality-opts:
+    public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
+    short-id: ad86e2d52ff40ebd
+  servername: www.apple.com
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
